@@ -25,6 +25,7 @@ public class Simon : MonoBehaviour
     {
         if(list_sprite.FindIndex(spriteRenderer.sprite) == list_id_sprite.Find(cp))
         {
+            if(cp == 4) //finish
             cp++;
             //action qui fait que la carte s'allume
         }
