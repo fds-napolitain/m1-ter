@@ -33,11 +33,11 @@ public class Memory : MonoBehaviour
     {
         get
         {
-            return card_Name;
+            return carte_Name;
         }
         set
         {
-            card_Name = value;
+            carte_Name = value;
         }
     }
 
