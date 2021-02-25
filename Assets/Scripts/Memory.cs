@@ -29,7 +29,7 @@ public class Memory : MonoBehaviour
 
     }
 
-    public string cardName
+    public string carte_Name
     {
         get
         {
