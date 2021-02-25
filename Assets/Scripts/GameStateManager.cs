@@ -9,12 +9,12 @@ public class GameStateManager : MonoBehaviour
 
     public bool isFinished;
 
-    public string Intro;
-    public string SampleScene;
-    public string Ending;
+    public string intro;
+    public string game;
+    public string ending;
 
-    public string Memory;
-    public string Simon;
+    public string memory;
+    public string simon;
 
     private string currentScene;
 
@@ -26,7 +26,7 @@ public class GameStateManager : MonoBehaviour
 
         isFinished = false;
         DontDestroyOnLoad(this.gameObject);
-        currentScene = Intro;
+        currentScene = intro;
         SceneManager.sceneLoaded += OnSceneLoaded;
 
     }
@@ -35,7 +35,7 @@ public class GameStateManager : MonoBehaviour
     void Update()
     {
 
-        if (currentScene == Intro) {
+        if (currentScene == intro) {
 
             if (Input.GetKey(KeyCode.Space)) {
 
@@ -43,11 +43,11 @@ public class GameStateManager : MonoBehaviour
             }
         }
 
-        if (currentScene == SampleScene) {
+        if (currentScene == game) {
 
             if (Input.GetKey(KeyCode.Space)) {
 
-                LoadMemory();
+                LoadEnding();
             }
         }
 
@@ -72,19 +72,19 @@ public class GameStateManager : MonoBehaviour
     public void LoadIntro()
     {
 
-        LoadScene(Intro);
+        LoadScene(intro);
     }
 
     public void LoadGame()
     {
 
-        LoadScene(SampleScene);
+        LoadScene(game);
     }
 
     public void LoadEnding()
     {
 
-        LoadScene(Ending);
+        LoadScene(ending);
     }
 
     //Mini games scenes loaders
@@ -92,6 +92,12 @@ public class GameStateManager : MonoBehaviour
     public void LoadMemory()
     {
 
-        LoadScene(Memory);
-    }   
+        LoadScene(memory);
+    }
+
+    public void LoadSimon()
+    {
+
+        LoadScene(simon);
+    }
 }

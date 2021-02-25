@@ -16,12 +16,12 @@ public class Simon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
         //action qui fait le simon mdr
         //initialise list_id_sprite
     }
 
-    private void OnMouseDown() //This function is called each time player clicks on GameObject
+    /*private void OnMouseDown() //This function is called each time player clicks on GameObject
     {
         if(list_sprite.FindIndex(spriteRenderer.sprite) == list_id_sprite.Find(cp))
         {
@@ -33,7 +33,7 @@ public class Simon : MonoBehaviour
         {
             cp = 0;
         }
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
