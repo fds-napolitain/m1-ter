@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameStateManager : MonoBehaviour
 {
 
-    public bool isFinished;
+    //public bool isFinished;
 
     public string intro;
     public string game;
@@ -24,7 +24,7 @@ public class GameStateManager : MonoBehaviour
     void Start()
     {
 
-        isFinished = false;
+        //isFinished = false;
         DontDestroyOnLoad(this.gameObject);
         currentScene = intro;
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -39,17 +39,18 @@ public class GameStateManager : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Space)) {
 
-                LoadGame();
+                LoadMemory();
+                //LoadGame();
             }
         }
 
-        if (currentScene == game) {
+        /*if (currentScene == game) {
 
             if (Input.GetKey(KeyCode.Space)) {
 
-                LoadEnding();
+                LoadMemory();
             }
-        }
+        }*/
 
     }
 
