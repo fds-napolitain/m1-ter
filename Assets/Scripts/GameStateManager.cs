@@ -8,97 +8,28 @@ public class GameStateManager : MonoBehaviour
 {
 
     //public bool isFinished;
-
-    public string intro;
-    public string game;
-    public string ending;
-
-    public string memory;
-    public string simon;
-
-    private string currentScene;
-
-    public float lastUpdate;
+    private string projectPath;
 
     // Start is called before the first frame update
     void Start()
     {
-
         //isFinished = false;
         DontDestroyOnLoad(this.gameObject);
-        currentScene = intro;
-        SceneManager.sceneLoaded += OnSceneLoaded;
-
+        projectPath = Application.dataPath;
+        SceneManager.LoadScene("Intro");
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (currentScene == intro) {
-
-            if (Input.GetKey(KeyCode.Space)) {
-
-                LoadMemory();
-                //LoadGame();
-            }
+        // Scene change on click (space/touch)
+        // https://docs.unity3d.com/ScriptReference/Input.GetKey.html
+        if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0) {
+            // https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html
+            // https://gamedevbeginner.com/how-to-load-a-new-scene-in-unity-with-a-loading-screen/
+            // ici on incrémente betement pour tester les jeux, a changer une fois l'arbre fait
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
-
-        /*if (currentScene == game) {
-
-            if (Input.GetKey(KeyCode.Space)) {
-
-                LoadMemory();
-            }
-        }*/
-
     }
 
-    //To load a scene:
-
-    private void LoadScene(string scene)
-    {
-
-        SceneManager.LoadScene(scene);
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-
-        currentScene = scene.name;
-    }
-
-    //Classic scenes loaders
-
-    public void LoadIntro()
-    {
-
-        LoadScene(intro);
-    }
-
-    public void LoadGame()
-    {
-
-        LoadScene(game);
-    }
-
-    public void LoadEnding()
-    {
-
-        LoadScene(ending);
-    }
-
-    //Mini games scenes loaders
-
-    public void LoadMemory()
-    {
-
-        LoadScene(memory);
-    }
-
-    public void LoadSimon()
-    {
-
-        LoadScene(simon);
-    }
 }
