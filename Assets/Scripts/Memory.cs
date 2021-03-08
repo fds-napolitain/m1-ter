@@ -7,17 +7,11 @@ public class Memory : MonoBehaviour
 
     Sprite carte;
     Sprite carte_dos;
-
     public int cp = 0;
-
     public string carte_prec;
-
-    public string carte_Name;
-
-    public int erreur = 2; //maximum 2
-
+    private string carte_Name;
+    private int erreur = 2; //maximum 2
     private bool isUpsideDown = false;
-
     private SpriteRenderer spriteRenderer;
 
 
