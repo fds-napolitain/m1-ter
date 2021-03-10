@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 142664285}
   - component: {fileID: 142664284}
+  - component: {fileID: 142664286}
   m_Layer: 0
   m_Name: card_back
   m_TagString: Untagged
@@ -202,6 +203,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &142664286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142664283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &291595891
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 291595893}
   - component: {fileID: 291595892}
+  - component: {fileID: 291595894}
   m_Layer: 0
   m_Name: card_back (11)
   m_TagString: Untagged
@@ -283,6 +299,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &291595894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291595891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &311931104
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,6 +323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 311931106}
   - component: {fileID: 311931105}
+  - component: {fileID: 311931107}
   m_Layer: 0
   m_Name: card_back (2)
   m_TagString: Untagged
@@ -364,6 +395,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &311931107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311931104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &362871382
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 473355362}
   - component: {fileID: 473355361}
+  - component: {fileID: 473355363}
   m_Layer: 0
   m_Name: card_back (1)
   m_TagString: Untagged
@@ -528,6 +574,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &473355363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473355360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &512094858
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d700a09b6599c33479281c901353341e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFinished: 0
   intro: Intro
   game: SampleScene
   ending: Ending
@@ -588,6 +647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 623780911}
   - component: {fileID: 623780910}
+  - component: {fileID: 623780912}
   m_Layer: 0
   m_Name: card_back (5)
   m_TagString: Untagged
@@ -659,6 +719,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &623780912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623780909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &876774236
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,6 +743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 876774238}
   - component: {fileID: 876774237}
+  - component: {fileID: 876774239}
   m_Layer: 0
   m_Name: banana (1)
   m_TagString: Untagged
@@ -740,6 +815,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &876774239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876774236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &888567705
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,6 +839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 888567707}
   - component: {fileID: 888567706}
+  - component: {fileID: 888567708}
   m_Layer: 0
   m_Name: alien_ship_alt (1)
   m_TagString: Untagged
@@ -821,6 +911,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &888567708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888567705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &918569642
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918569644}
   - component: {fileID: 918569643}
+  - component: {fileID: 918569645}
   m_Layer: 0
   m_Name: asteroid (1)
   m_TagString: Untagged
@@ -902,6 +1007,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &918569645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918569642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &965415242
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +1031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 965415244}
   - component: {fileID: 965415243}
+  - component: {fileID: 965415245}
   m_Layer: 0
   m_Name: alien_ship_alt
   m_TagString: Untagged
@@ -983,6 +1103,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &965415245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965415242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &995878043
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995878045}
   - component: {fileID: 995878044}
+  - component: {fileID: 995878046}
   m_Layer: 0
   m_Name: card_back (3)
   m_TagString: Untagged
@@ -1064,6 +1199,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &995878046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995878043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1103720651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,6 +1223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1103720653}
   - component: {fileID: 1103720652}
+  - component: {fileID: 1103720654}
   m_Layer: 0
   m_Name: moon
   m_TagString: Untagged
@@ -1145,6 +1295,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1103720654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103720651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1111637235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,6 +1319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1111637237}
   - component: {fileID: 1111637236}
+  - component: {fileID: 1111637238}
   m_Layer: 0
   m_Name: card_back (8)
   m_TagString: Untagged
@@ -1226,6 +1391,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1111637238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111637235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1150106143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,6 +1415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1150106145}
   - component: {fileID: 1150106144}
+  - component: {fileID: 1150106146}
   m_Layer: 0
   m_Name: card_back (6)
   m_TagString: Untagged
@@ -1307,6 +1487,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150106146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150106143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1163796506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1163796508}
   - component: {fileID: 1163796507}
+  - component: {fileID: 1163796509}
   m_Layer: 0
   m_Name: card_back (9)
   m_TagString: Untagged
@@ -1388,6 +1583,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1163796509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163796506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1176901017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,6 +1607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1176901019}
   - component: {fileID: 1176901018}
+  - component: {fileID: 1176901020}
   m_Layer: 0
   m_Name: card_back (4)
   m_TagString: Untagged
@@ -1469,6 +1679,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1176901020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176901017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1366055272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1366055274}
   - component: {fileID: 1366055273}
+  - component: {fileID: 1366055275}
   m_Layer: 0
   m_Name: moon (1)
   m_TagString: Untagged
@@ -1550,6 +1775,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1366055275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366055272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1445029815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,6 +1799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1445029817}
   - component: {fileID: 1445029816}
+  - component: {fileID: 1445029818}
   m_Layer: 0
   m_Name: banana (2)
   m_TagString: Untagged
@@ -1631,6 +1871,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1445029818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445029815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1466006234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466006236}
   - component: {fileID: 1466006235}
+  - component: {fileID: 1466006237}
   m_Layer: 0
   m_Name: satellite
   m_TagString: Untagged
@@ -1712,6 +1967,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1466006237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466006234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1678303035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,6 +1991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1678303037}
   - component: {fileID: 1678303036}
+  - component: {fileID: 1678303038}
   m_Layer: 0
   m_Name: satellite (1)
   m_TagString: Untagged
@@ -1793,6 +2063,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1678303038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678303035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1778432413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,6 +2168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1787748641}
   - component: {fileID: 1787748640}
+  - component: {fileID: 1787748642}
   m_Layer: 0
   m_Name: sun
   m_TagString: Untagged
@@ -1955,6 +2240,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787748642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787748639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1797882683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,6 +2264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1797882685}
   - component: {fileID: 1797882684}
+  - component: {fileID: 1797882686}
   m_Layer: 0
   m_Name: card_back (10)
   m_TagString: Untagged
@@ -2036,6 +2336,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1797882686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797882683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1799401858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,6 +2360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1799401860}
   - component: {fileID: 1799401859}
+  - component: {fileID: 1799401861}
   m_Layer: 0
   m_Name: card_back (7)
   m_TagString: Untagged
@@ -2117,6 +2432,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1799401861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799401858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1816607663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,6 +2456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1816607665}
   - component: {fileID: 1816607664}
+  - component: {fileID: 1816607666}
   m_Layer: 0
   m_Name: sun (1)
   m_TagString: Untagged
@@ -2198,6 +2528,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1816607666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816607663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &1965713387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,6 +2552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1965713389}
   - component: {fileID: 1965713388}
+  - component: {fileID: 1965713390}
   m_Layer: 0
   m_Name: asteroid
   m_TagString: Untagged
@@ -2279,3 +2624,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1965713390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965713387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
