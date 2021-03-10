@@ -8,7 +8,8 @@ public class Memory : MonoBehaviour
     Sprite carte;
     Sprite carte_dos;
     public int cp = 0;
-    public string carte_prec;
+    Sprite carte_prec;
+    public int nbCarte = 0;
     private string carte_Name;
     private int erreur = 2; //maximum 2
     private bool isUpsideDown = false;
@@ -41,7 +42,20 @@ public class Memory : MonoBehaviour
         if (!isUpsideDown && cp < erreur)
         {
             ChangeSide();
-            cp ++;
+            nbCarte++;
+            if(nbCarte == 2)
+            {
+                nbCarte = 0;
+                if(carte != carte_prec)
+                {
+                    cp++;
+                    // trouver comment retourner (ou reconstruit si détruit précédemment) les cartes
+                }
+            }
+        }
+        if(cp == erreur)
+        {
+            //faire le game over
         }
     }
 
