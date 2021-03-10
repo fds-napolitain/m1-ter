@@ -8,9 +8,11 @@ public class Memory : MonoBehaviour
     Sprite carte;
     Sprite carte_dos;
 
+    public static string carte_prec;
+
     private int cp = 0;
 
-    public string carte_prec;
+    private int nbCarte = 0;
 
     public string carte_Name;
 
@@ -47,7 +49,20 @@ public class Memory : MonoBehaviour
         if (!isUpsideDown && cp < erreur)
         {
             ChangeSide();
-            cp ++;
+            nbCarte++;
+            if(nbCarte == 2)
+            {
+                if(carte.name == carte_prec)
+                {
+                    cp++;
+                    //retourner les cartes
+                }
+                nbCarte = 0;
+            }
+            if(nbCarte == 1)
+            {
+                carte_prec = carte.name;
+            }
         }
     }
 
