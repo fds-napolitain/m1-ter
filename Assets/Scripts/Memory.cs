@@ -52,7 +52,7 @@ public class Memory : MonoBehaviour
             nbCarte++;
             if(nbCarte == 2)
             {
-                if(carte.name == carte_prec)
+                if(carte.Carte_Name == carte_prec)
                 {
                     cp++;
                     //retourner les cartes
@@ -61,7 +61,7 @@ public class Memory : MonoBehaviour
             }
             if(nbCarte == 1)
             {
-                carte_prec = carte.name;
+                carte_prec = carte.Carte_Name;
             }
         }
     }
