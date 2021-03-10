@@ -203,19 +203,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &81538531
-BoxCollider:
+--- !u!114 &81538531
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81538528}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.200003, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4519b0e44570049a200e7bf3addb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carte_prec: 
+  carte_Name: 
 --- !u!1 &142664283
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,7 +910,6 @@ GameObject:
   - component: {fileID: 876774238}
   - component: {fileID: 876774237}
   - component: {fileID: 876774239}
-  - component: {fileID: 876774240}
   m_Layer: 0
   m_Name: banana (1)
   m_TagString: Untagged
@@ -995,19 +995,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &876774240
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876774236}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.199999, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &888567705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1006,6 @@ GameObject:
   - component: {fileID: 888567707}
   - component: {fileID: 888567706}
   - component: {fileID: 888567708}
-  - component: {fileID: 888567709}
   m_Layer: 0
   m_Name: alien_ship_alt (1)
   m_TagString: Untagged
@@ -1105,19 +1091,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &888567709
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888567705}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.2, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &918569642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,7 +1102,6 @@ GameObject:
   - component: {fileID: 918569644}
   - component: {fileID: 918569643}
   - component: {fileID: 918569645}
-  - component: {fileID: 918569646}
   m_Layer: 0
   m_Name: asteroid (1)
   m_TagString: Untagged
@@ -1215,19 +1187,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &918569646
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918569642}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.199999, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &965415242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1198,6 @@ GameObject:
   - component: {fileID: 965415244}
   - component: {fileID: 965415243}
   - component: {fileID: 965415245}
-  - component: {fileID: 965415246}
   m_Layer: 0
   m_Name: alien_ship_alt
   m_TagString: Untagged
@@ -1325,19 +1283,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &965415246
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965415242}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.2, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &995878043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,7 +1844,6 @@ GameObject:
   - component: {fileID: 1366055274}
   - component: {fileID: 1366055273}
   - component: {fileID: 1366055275}
-  - component: {fileID: 1366055276}
   m_Layer: 0
   m_Name: moon (1)
   m_TagString: Untagged
@@ -1985,19 +1929,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &1366055276
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366055272}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.200003, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1445029815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,7 +1940,6 @@ GameObject:
   - component: {fileID: 1445029817}
   - component: {fileID: 1445029816}
   - component: {fileID: 1445029818}
-  - component: {fileID: 1445029819}
   m_Layer: 0
   m_Name: banana (2)
   m_TagString: Untagged
@@ -2095,19 +2025,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &1445029819
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445029815}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.199999, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1466006234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2119,7 +2036,6 @@ GameObject:
   - component: {fileID: 1466006236}
   - component: {fileID: 1466006235}
   - component: {fileID: 1466006237}
-  - component: {fileID: 1466006238}
   m_Layer: 0
   m_Name: satellite
   m_TagString: Untagged
@@ -2205,19 +2121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &1466006238
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466006234}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.199999, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1678303035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,7 +2132,6 @@ GameObject:
   - component: {fileID: 1678303037}
   - component: {fileID: 1678303036}
   - component: {fileID: 1678303038}
-  - component: {fileID: 1678303039}
   m_Layer: 0
   m_Name: satellite (1)
   m_TagString: Untagged
@@ -2315,19 +2217,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &1678303039
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678303035}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.199999, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1778432413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2420,7 +2309,6 @@ GameObject:
   - component: {fileID: 1787748641}
   - component: {fileID: 1787748640}
   - component: {fileID: 1787748642}
-  - component: {fileID: 1787748643}
   m_Layer: 0
   m_Name: sun
   m_TagString: Untagged
@@ -2506,19 +2394,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &1787748643
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1787748639}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.199999, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1797882683
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,7 +2625,6 @@ GameObject:
   - component: {fileID: 1816607665}
   - component: {fileID: 1816607664}
   - component: {fileID: 1816607666}
-  - component: {fileID: 1816607667}
   m_Layer: 0
   m_Name: sun (1)
   m_TagString: Untagged
@@ -2836,19 +2710,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &1816607667
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816607663}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.199999, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1965713387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,7 +2721,6 @@ GameObject:
   - component: {fileID: 1965713389}
   - component: {fileID: 1965713388}
   - component: {fileID: 1965713390}
-  - component: {fileID: 1965713391}
   m_Layer: 0
   m_Name: asteroid
   m_TagString: Untagged
@@ -2946,16 +2806,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carte_prec: 
   carte_Name: 
---- !u!65 &1965713391
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965713387}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 19.199999, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
