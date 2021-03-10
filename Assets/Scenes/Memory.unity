@@ -340,7 +340,7 @@ GameObject:
   - component: {fileID: 291595894}
   - component: {fileID: 291595895}
   m_Layer: 0
-  m_Name: card_back (11)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 311931107}
   - component: {fileID: 311931108}
   m_Layer: 0
-  m_Name: card_back (2)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,7 +643,7 @@ GameObject:
   - component: {fileID: 473355363}
   - component: {fileID: 473355364}
   m_Layer: 0
-  m_Name: card_back (1)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -802,7 +802,7 @@ GameObject:
   - component: {fileID: 623780912}
   - component: {fileID: 623780913}
   m_Layer: 0
-  m_Name: card_back (5)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 876774237}
   - component: {fileID: 876774239}
   m_Layer: 0
-  m_Name: banana (1)
+  m_Name: banana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1007,7 +1007,7 @@ GameObject:
   - component: {fileID: 888567706}
   - component: {fileID: 888567708}
   m_Layer: 0
-  m_Name: alien_ship_alt (1)
+  m_Name: alien_ship_alt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1103,7 +1103,7 @@ GameObject:
   - component: {fileID: 918569643}
   - component: {fileID: 918569645}
   m_Layer: 0
-  m_Name: asteroid (1)
+  m_Name: asteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1296,7 +1296,7 @@ GameObject:
   - component: {fileID: 995878046}
   - component: {fileID: 995878047}
   m_Layer: 0
-  m_Name: card_back (3)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1406,7 +1406,7 @@ GameObject:
   - component: {fileID: 1111637238}
   - component: {fileID: 1111637239}
   m_Layer: 0
-  m_Name: card_back (8)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1516,7 +1516,7 @@ GameObject:
   - component: {fileID: 1150106146}
   - component: {fileID: 1150106147}
   m_Layer: 0
-  m_Name: card_back (6)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1626,7 +1626,7 @@ GameObject:
   - component: {fileID: 1163796509}
   - component: {fileID: 1163796510}
   m_Layer: 0
-  m_Name: card_back (9)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1736,7 +1736,7 @@ GameObject:
   - component: {fileID: 1176901020}
   - component: {fileID: 1176901021}
   m_Layer: 0
-  m_Name: card_back (4)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1845,7 +1845,7 @@ GameObject:
   - component: {fileID: 1366055273}
   - component: {fileID: 1366055275}
   m_Layer: 0
-  m_Name: moon (1)
+  m_Name: moon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1941,7 +1941,7 @@ GameObject:
   - component: {fileID: 1445029816}
   - component: {fileID: 1445029818}
   m_Layer: 0
-  m_Name: banana (2)
+  m_Name: banana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2133,7 +2133,7 @@ GameObject:
   - component: {fileID: 1678303036}
   - component: {fileID: 1678303038}
   m_Layer: 0
-  m_Name: satellite (1)
+  m_Name: satellite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2407,7 +2407,7 @@ GameObject:
   - component: {fileID: 1797882686}
   - component: {fileID: 1797882687}
   m_Layer: 0
-  m_Name: card_back (10)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2517,7 +2517,7 @@ GameObject:
   - component: {fileID: 1799401861}
   - component: {fileID: 1799401862}
   m_Layer: 0
-  m_Name: card_back (7)
+  m_Name: card_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2626,7 +2626,7 @@ GameObject:
   - component: {fileID: 1816607664}
   - component: {fileID: 1816607666}
   m_Layer: 0
-  m_Name: sun (1)
+  m_Name: sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
