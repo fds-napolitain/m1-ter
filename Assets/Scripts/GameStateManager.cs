@@ -56,7 +56,7 @@ public class GameStateManager : MonoBehaviour
             if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0)
             {
 
-                LoadEnding();
+                LoadMemory();
             }
         }
 
