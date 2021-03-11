@@ -11,6 +11,8 @@ public class GameStateManager : MonoBehaviour
 
     public string intro;
     public string game;
+    public string corridor;
+    public string hangar;
     public string ending;
 
     public string memory;
@@ -38,37 +40,48 @@ public class GameStateManager : MonoBehaviour
     void Update()
     {
 
-        if (currentScene == intro) {
+        if (currentScene == intro)
+        {
 
-            if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0) {
+            if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0)
+            {
 
-                LoadMemory();
-                //LoadGame();
+                LoadGame();
             }
         }
 
-        /*if (currentScene == game) {
-
-            if (Input.GetKey(KeyCode.Space)) {
-
-                LoadMemory();
-            }
-        }*/
-
-        //Modification 08/03
-
-        /*
-            // Scene change on click (space/touch)
-        // https://docs.unity3d.com/ScriptReference/Input.GetKey.html
-        if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0)
+        else if (currentScene == game)
         {
-            // https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html
-            // https://gamedevbeginner.com/how-to-load-a-new-scene-in-unity-with-a-loading-screen/
-            // ici on incrémente betement pour tester les jeux, a changer une fois l'arbre fait
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }*/
 
-    }
+            if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0)
+            {
+
+                LoadEnding();
+            }
+        }
+
+            /*if (currentScene == game) {
+
+                if (Input.GetKey(KeyCode.Space)) {
+
+                    LoadMemory();
+                }
+            }*/
+
+            //Modification 08/03
+
+            /*
+                // Scene change on click (space/touch)
+            // https://docs.unity3d.com/ScriptReference/Input.GetKey.html
+            if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0)
+            {
+                // https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html
+                // https://gamedevbeginner.com/how-to-load-a-new-scene-in-unity-with-a-loading-screen/
+                // ici on incrémente betement pour tester les jeux, a changer une fois l'arbre fait
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }*/
+
+        }
 
     //To load a scene:
 
@@ -96,6 +109,18 @@ public class GameStateManager : MonoBehaviour
     {
 
         LoadScene(game);
+    }
+
+    public void LoadCorridor()
+    {
+
+        LoadScene(corridor);
+    }
+
+    public void LoadHangar()
+    {
+
+        LoadScene(hangar);
     }
 
     public void LoadEnding()
