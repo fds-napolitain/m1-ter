@@ -19,8 +19,8 @@ public class Memory : MonoBehaviour
 
     // game variables
     private static int ERRORS_MAX = 5;
-    private static List<CardID> carteTirees = new List<CardID>();
     private static int errors = 0;
+    private static List<Memory> carteTirees = new List<Memory>();
     private static List<CardID> spritesName = new List<CardID>();
     // card variables
     public Sprite sun, asteroid, banana, satellite, moon, alien_ship_alt, card_back;
@@ -97,40 +97,51 @@ public class Memory : MonoBehaviour
 
     private void ChangeSide(CardID cardID)
     {
-        carteTirees.Add(cardID);
         switch (cardID) {
             case CardID.SUN:
                 spriteRenderer.sprite = sun;
+                carteTirees.Add(this);
                 break;
             case CardID.ASTEROID:
                 spriteRenderer.sprite = asteroid;
+                carteTirees.Add(this);
                 break;
             case CardID.BANANA:
                 spriteRenderer.sprite = banana;
+                carteTirees.Add(this);
                 break;
             case CardID.SATELLITE:
                 spriteRenderer.sprite = satellite;
+                carteTirees.Add(this);
                 break;
             case CardID.MOON:
                 spriteRenderer.sprite = moon;
+                carteTirees.Add(this);
                 break;
             case CardID.ALIENSHIP:
                 spriteRenderer.sprite = alien_ship_alt;
+                carteTirees.Add(this);
                 break;
             case CardID.CARDBACK:
                 spriteRenderer.sprite = card_back;
                 break;
         }
-        if (carteTirees.Count == 2) {
-            if (carteTirees[0] == carteTirees[1]) {
+        Debug.Log(carteTirees.Count);
+        if (carteTirees.Count == 2) { // vérification
+            if (carteTirees[0].spriteRenderer.sprite.name == carteTirees[1].spriteRenderer.sprite.name) { // victoire
                 Debug.Log("Victoire");
                 SceneManager.LoadScene("Ending");
             } else {
                 errors++;
-                if (errors == ERRORS_MAX) {
+                if (errors == ERRORS_MAX) { // défaite
                     Debug.Log("Défaite");
                     SceneManager.LoadScene("Ending");
                 }
+                carteTirees[0].spriteRenderer.sprite = card_back;
+                carteTirees[0].isFacingCard = false;
+                carteTirees[1].spriteRenderer.sprite = card_back;
+                carteTirees[1].isFacingCard = false;
+                carteTirees.Clear();
             }
         }
     }
