@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -49,7 +50,7 @@ public class Memory : MonoBehaviour
 
     private void OnMouseDown() //This function is called each time player clicks on GameObject
     {
-        if (!isFacingCard) {
+        if (!isFacingCard && carteTirees.Count < 2) {
             isFacingCard = true;
             switch (name) {
                 case "card1":
@@ -89,9 +90,6 @@ public class Memory : MonoBehaviour
                     ChangeSide(spritesName[11]);
                     break;
             }
-        } else {
-            isFacingCard = false;
-            ChangeSide(CardID.CARDBACK);
         }
     }
 
@@ -137,12 +135,19 @@ public class Memory : MonoBehaviour
                     Debug.Log("Défaite");
                     SceneManager.LoadScene("Ending");
                 }
-                carteTirees[0].spriteRenderer.sprite = card_back;
-                carteTirees[0].isFacingCard = false;
-                carteTirees[1].spriteRenderer.sprite = card_back;
-                carteTirees[1].isFacingCard = false;
-                carteTirees.Clear();
+                StartCoroutine(Reset());
             }
         }
+    }
+
+    private IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(1);
+        carteTirees[0].spriteRenderer.sprite = card_back;
+        carteTirees[0].isFacingCard = false;
+        carteTirees[1].spriteRenderer.sprite = card_back;
+        carteTirees[1].isFacingCard = false;
+        carteTirees.Clear();
+        yield return null;
     }
 }
