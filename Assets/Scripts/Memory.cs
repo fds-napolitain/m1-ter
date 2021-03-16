@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Memory : MonoBehaviour
 {
@@ -17,14 +18,13 @@ public class Memory : MonoBehaviour
     }
 
     // game variables
-    private static CardID cartePrec;
+    private static int ERRORS_MAX = 5;
+    private static List<CardID> carteTirees = new List<CardID>();
     private static int errors = 0;
-    private static int nbCarte = 0;
-    private static int ERRORS_MAX = 2; // maximum 2
     private static List<CardID> spritesName = new List<CardID>();
     // card variables
     public Sprite sun, asteroid, banana, satellite, moon, alien_ship_alt, card_back;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     private bool isFacingCard = false;
 
 
@@ -97,6 +97,7 @@ public class Memory : MonoBehaviour
 
     private void ChangeSide(CardID cardID)
     {
+        carteTirees.Add(cardID);
         switch (cardID) {
             case CardID.SUN:
                 spriteRenderer.sprite = sun;
@@ -119,6 +120,18 @@ public class Memory : MonoBehaviour
             case CardID.CARDBACK:
                 spriteRenderer.sprite = card_back;
                 break;
+        }
+        if (carteTirees.Count == 2) {
+            if (carteTirees[0] == carteTirees[1]) {
+                Debug.Log("Victoire");
+                SceneManager.LoadScene("Ending");
+            } else {
+                errors++;
+                if (errors == ERRORS_MAX) {
+                    Debug.Log("Défaite");
+                    SceneManager.LoadScene("Ending");
+                }
+            }
         }
     }
 }

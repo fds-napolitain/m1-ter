@@ -223,6 +223,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &142664287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -338,6 +339,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &291595895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -453,6 +455,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &311931108
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -651,6 +654,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &473355364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -817,6 +821,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &623780913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -932,6 +937,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &995878047
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1047,6 +1053,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &1111637239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1162,6 +1169,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &1150106147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1277,6 +1285,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &1163796510
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1392,6 +1401,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &1176901021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1588,6 +1598,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &1797882687
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1703,6 +1714,7 @@ MonoBehaviour:
   moon: {fileID: 21300000, guid: 503770d689bc4314887e1febf1e3f956, type: 3}
   alien_ship_alt: {fileID: 21300000, guid: 6e65912fea8102242a47bb6549c466e9, type: 3}
   card_back: {fileID: 21300000, guid: bb9dd4c48fb5dc44dad83d1bede07308, type: 3}
+  spriteRenderer: {fileID: 0}
 --- !u!65 &1799401862
 BoxCollider:
   m_ObjectHideFlags: 0
