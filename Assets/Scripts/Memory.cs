@@ -133,12 +133,13 @@ public class Memory : MonoBehaviour
             if (carteTirees[carteTirees.Count - 2].spriteRenderer.sprite.name == carteTirees[carteTirees.Count - 1].spriteRenderer.sprite.name) { // victoire
                 if (carteTirees.Count == 12) {
                     Debug.Log("Victoire");
+                    SceneManager.LoadScene("Corridor_AA");
                 }
             } else {
                 errors++;
                 if (errors == ERRORS_MAX) { // défaite
                     Debug.Log("Défaite");
-                    SceneManager.LoadScene("Ending");
+                    SceneManager.LoadScene("Hangar_AB");
                 }
                 StartCoroutine(Reset());
             }
