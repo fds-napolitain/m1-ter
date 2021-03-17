@@ -140,6 +140,7 @@ public class Memory : MonoBehaviour
                 if (carteTirees.Count == 12)
                 {
                     Debug.Log("Victoire");
+                    SceneManager.LoadScene("Corridor_AA");
                 }
             }
             else
@@ -148,7 +149,7 @@ public class Memory : MonoBehaviour
                 if (errors == ERRORS_MAX)
                 { // défaite
                     Debug.Log("Défaite");
-                    SceneManager.LoadScene("Ending");
+                    SceneManager.LoadScene("Hangar_AA");
                 }
                 StartCoroutine(Reset());
             }
