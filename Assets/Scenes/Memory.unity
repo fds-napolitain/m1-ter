@@ -713,11 +713,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intro: Intro
   game: SampleScene
-  corridor: 
-  hangar: 
+  corridor: Corridor
+  hangar: Hangar
   ending: Ending
   memory: Memory
   simon: Simon
+  hanoi: 
+  quiz: 
   lastUpdate: 0
 --- !u!1 &623780909
 GameObject:

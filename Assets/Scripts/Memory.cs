@@ -34,7 +34,8 @@ public class Memory : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        if (!flag) {
+        if (!flag)
+        {
             spritesName.Add(CardID.SUN);
             spritesName.Add(CardID.SUN);
             spritesName.Add(CardID.ASTEROID);
@@ -54,9 +55,11 @@ public class Memory : MonoBehaviour
 
     private void OnMouseDown() //This function is called each time player clicks on GameObject
     {
-        if (!isFacingCard && CompareLastTwoCards()) {
+        if (!isFacingCard && CompareLastTwoCards())
+        {
             isFacingCard = true;
-            switch (name) {
+            switch (name)
+            {
                 case "card1":
                     ChangeSide(spritesName[0]);
                     break;
@@ -99,7 +102,8 @@ public class Memory : MonoBehaviour
 
     private void ChangeSide(CardID cardID)
     {
-        switch (cardID) {
+        switch (cardID)
+        {
             case CardID.SUN:
                 spriteRenderer.sprite = sun;
                 carteTirees.Add(this);
@@ -129,17 +133,22 @@ public class Memory : MonoBehaviour
                 break;
         }
         Debug.Log(carteTirees.Count);
-        if (carteTirees.Count % 2 == 0 && carteTirees.Count != 0) { // vérification
-            if (carteTirees[carteTirees.Count - 2].spriteRenderer.sprite.name == carteTirees[carteTirees.Count - 1].spriteRenderer.sprite.name) { // victoire
-                if (carteTirees.Count == 12) {
+        if (carteTirees.Count % 2 == 0 && carteTirees.Count != 0)
+        { // vérification
+            if (carteTirees[carteTirees.Count - 2].spriteRenderer.sprite.name == carteTirees[carteTirees.Count - 1].spriteRenderer.sprite.name)
+            { // victoire
+                if (carteTirees.Count == 12)
+                {
                     Debug.Log("Victoire");
-                    SceneManager.LoadScene("Corridor_AA");
                 }
-            } else {
+            }
+            else
+            {
                 errors++;
-                if (errors == ERRORS_MAX) { // défaite
+                if (errors == ERRORS_MAX)
+                { // défaite
                     Debug.Log("Défaite");
-                    SceneManager.LoadScene("Hangar_AB");
+                    SceneManager.LoadScene("Ending");
                 }
                 StartCoroutine(Reset());
             }
@@ -153,7 +162,7 @@ public class Memory : MonoBehaviour
         carteTirees[carteTirees.Count - 2].isFacingCard = false;
         carteTirees[carteTirees.Count - 1].spriteRenderer.sprite = card_back;
         carteTirees[carteTirees.Count - 1].isFacingCard = false;
-        carteTirees.RemoveAt(carteTirees.Count-1);
+        carteTirees.RemoveAt(carteTirees.Count - 1);
         carteTirees.RemoveAt(carteTirees.Count - 1);
         yield return null;
     }
@@ -164,9 +173,12 @@ public class Memory : MonoBehaviour
     /// <returns></returns>
     private bool CompareLastTwoCards()
     {
-        if (carteTirees.Count >= 2 && carteTirees.Count % 2 == 0) {
+        if (carteTirees.Count >= 2 && carteTirees.Count % 2 == 0)
+        {
             return carteTirees[carteTirees.Count - 2].spriteRenderer.sprite.name == carteTirees[carteTirees.Count - 1].spriteRenderer.sprite.name;
-        } else {
+        }
+        else
+        {
             return true;
         }
     }
