@@ -50,7 +50,7 @@ public class Memory : MonoBehaviour
 
     private void OnMouseDown() //This function is called each time player clicks on GameObject
     {
-        if (!isFacingCard && carteTirees.Count < 2) {
+        if (!isFacingCard) {
             isFacingCard = true;
             switch (name) {
                 case "card1":
@@ -125,10 +125,11 @@ public class Memory : MonoBehaviour
                 break;
         }
         Debug.Log(carteTirees.Count);
-        if (carteTirees.Count == 2) { // vérification
-            if (carteTirees[0].spriteRenderer.sprite.name == carteTirees[1].spriteRenderer.sprite.name) { // victoire
-                Debug.Log("Victoire");
-                SceneManager.LoadScene("Ending");
+        if (carteTirees.Count % 2 == 0 && carteTirees.Count != 0) { // vérification
+            if (carteTirees[carteTirees.Count - 2].spriteRenderer.sprite.name == carteTirees[carteTirees.Count - 1].spriteRenderer.sprite.name) { // victoire
+                if (carteTirees.Count == 12) {
+                    Debug.Log("Victoire");
+                }
             } else {
                 errors++;
                 if (errors == ERRORS_MAX) { // défaite
@@ -143,11 +144,21 @@ public class Memory : MonoBehaviour
     private IEnumerator Reset()
     {
         yield return new WaitForSeconds(1);
-        carteTirees[0].spriteRenderer.sprite = card_back;
-        carteTirees[0].isFacingCard = false;
-        carteTirees[1].spriteRenderer.sprite = card_back;
-        carteTirees[1].isFacingCard = false;
-        carteTirees.Clear();
+        carteTirees[carteTirees.Count - 2].spriteRenderer.sprite = card_back;
+        carteTirees[carteTirees.Count - 2].isFacingCard = false;
+        carteTirees[carteTirees.Count - 1].spriteRenderer.sprite = card_back;
+        carteTirees[carteTirees.Count - 1].isFacingCard = false;
+        carteTirees.RemoveAt(carteTirees.Count-1);
+        carteTirees.RemoveAt(carteTirees.Count - 1);
         yield return null;
+    }
+
+    private bool CompareLastTwoCards()
+    {
+        if (carteTirees >= 2) {
+            return carteTirees[carteTirees.Count - 2] == carteTirees[carteTirees.Count - 1];
+        } else {
+            return false;
+        }
     }
 }
