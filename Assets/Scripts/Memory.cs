@@ -21,6 +21,7 @@ public class Memory : MonoBehaviour
     // game variables
     private static int ERRORS_MAX = 5;
     private static int errors = 0;
+    private static bool flag = false;
     private static List<Memory> carteTirees = new List<Memory>();
     private static List<CardID> spritesName = new List<CardID>();
     // card variables
@@ -33,19 +34,22 @@ public class Memory : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spritesName.Add(CardID.SUN);
-        spritesName.Add(CardID.SUN);
-        spritesName.Add(CardID.ASTEROID);
-        spritesName.Add(CardID.ASTEROID);
-        spritesName.Add(CardID.BANANA);
-        spritesName.Add(CardID.BANANA);
-        spritesName.Add(CardID.SATELLITE);
-        spritesName.Add(CardID.SATELLITE);
-        spritesName.Add(CardID.MOON);
-        spritesName.Add(CardID.MOON);
-        spritesName.Add(CardID.ALIENSHIP);
-        spritesName.Add(CardID.ALIENSHIP);
-        spritesName = spritesName.OrderBy(card => Guid.NewGuid()).ToList(); // aleatoire
+        if (!flag) {
+            spritesName.Add(CardID.SUN);
+            spritesName.Add(CardID.SUN);
+            spritesName.Add(CardID.ASTEROID);
+            spritesName.Add(CardID.ASTEROID);
+            spritesName.Add(CardID.BANANA);
+            spritesName.Add(CardID.BANANA);
+            spritesName.Add(CardID.SATELLITE);
+            spritesName.Add(CardID.SATELLITE);
+            spritesName.Add(CardID.MOON);
+            spritesName.Add(CardID.MOON);
+            spritesName.Add(CardID.ALIENSHIP);
+            spritesName.Add(CardID.ALIENSHIP);
+            spritesName = spritesName.OrderBy(card => Guid.NewGuid()).ToList(); // aleatoire
+            flag = true;
+        }
     }
 
     private void OnMouseDown() //This function is called each time player clicks on GameObject
