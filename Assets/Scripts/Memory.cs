@@ -50,7 +50,7 @@ public class Memory : MonoBehaviour
 
     private void OnMouseDown() //This function is called each time player clicks on GameObject
     {
-        if (!isFacingCard) {
+        if (!isFacingCard && CompareLastTwoCards()) {
             isFacingCard = true;
             switch (name) {
                 case "card1":
@@ -153,12 +153,16 @@ public class Memory : MonoBehaviour
         yield return null;
     }
 
+    /// <summary>
+    /// Retourne vrai si les 2 dernieres cartes sont == ou si il n'y a pas 2 cartes.
+    /// </summary>
+    /// <returns></returns>
     private bool CompareLastTwoCards()
     {
-        if (carteTirees >= 2) {
-            return carteTirees[carteTirees.Count - 2] == carteTirees[carteTirees.Count - 1];
+        if (carteTirees.Count >= 2 && carteTirees.Count % 2 == 0) {
+            return carteTirees[carteTirees.Count - 2].spriteRenderer.sprite.name == carteTirees[carteTirees.Count - 1].spriteRenderer.sprite.name;
         } else {
-            return false;
+            return true;
         }
     }
 }
