@@ -259,7 +259,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -296,9 +296,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d601ca867dc0848ab7e1e50c62bd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleur: {fileID: 0}
-  black: {fileID: 0}
-  error: {fileID: 0}
+  couleur: {fileID: 21300000, guid: c067aa60cc2404941bddbf0273b1d251, type: 3}
+  black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
   spriteRenderer: {fileID: 0}
 --- !u!1 &517058889
 GameObject:
@@ -357,7 +357,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -394,9 +394,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d601ca867dc0848ab7e1e50c62bd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleur: {fileID: 0}
-  black: {fileID: 0}
-  error: {fileID: 0}
+  couleur: {fileID: 21300000, guid: c067aa60cc2404941bddbf0273b1d251, type: 3}
+  black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
   spriteRenderer: {fileID: 0}
 --- !u!1 &733267595
 GameObject:
@@ -455,7 +455,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -492,9 +492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d601ca867dc0848ab7e1e50c62bd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleur: {fileID: 0}
-  black: {fileID: 0}
-  error: {fileID: 0}
+  couleur: {fileID: 21300000, guid: c067aa60cc2404941bddbf0273b1d251, type: 3}
+  black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
   spriteRenderer: {fileID: 0}
 --- !u!1 &759234262
 GameObject:
@@ -553,7 +553,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -590,9 +590,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d601ca867dc0848ab7e1e50c62bd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleur: {fileID: 0}
-  black: {fileID: 0}
-  error: {fileID: 0}
+  couleur: {fileID: 21300000, guid: c067aa60cc2404941bddbf0273b1d251, type: 3}
+  black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
   spriteRenderer: {fileID: 0}
 --- !u!1 &959093671
 GameObject:
@@ -651,7 +651,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -688,9 +688,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d601ca867dc0848ab7e1e50c62bd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleur: {fileID: 0}
-  black: {fileID: 0}
-  error: {fileID: 0}
+  couleur: {fileID: 21300000, guid: c067aa60cc2404941bddbf0273b1d251, type: 3}
+  black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
   spriteRenderer: {fileID: 0}
 --- !u!1 &1106698392
 GameObject:
@@ -966,7 +966,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1003,9 +1003,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d601ca867dc0848ab7e1e50c62bd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleur: {fileID: 0}
-  black: {fileID: 0}
-  error: {fileID: 0}
+  couleur: {fileID: 21300000, guid: c067aa60cc2404941bddbf0273b1d251, type: 3}
+  black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
   spriteRenderer: {fileID: 0}
 --- !u!1 &1458690118
 GameObject:
@@ -1064,7 +1064,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1101,9 +1101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d601ca867dc0848ab7e1e50c62bd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleur: {fileID: 0}
-  black: {fileID: 0}
-  error: {fileID: 0}
+  couleur: {fileID: 21300000, guid: c067aa60cc2404941bddbf0273b1d251, type: 3}
+  black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
   spriteRenderer: {fileID: 0}
 --- !u!1 &1474732175
 GameObject:
@@ -1162,7 +1162,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1199,9 +1199,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d601ca867dc0848ab7e1e50c62bd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleur: {fileID: 0}
-  black: {fileID: 0}
-  error: {fileID: 0}
+  couleur: {fileID: 21300000, guid: c067aa60cc2404941bddbf0273b1d251, type: 3}
+  black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
   spriteRenderer: {fileID: 0}
 --- !u!1 &1911545056
 GameObject:
@@ -1260,7 +1260,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1297,9 +1297,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d601ca867dc0848ab7e1e50c62bd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleur: {fileID: 0}
-  black: {fileID: 0}
-  error: {fileID: 0}
+  couleur: {fileID: 21300000, guid: c067aa60cc2404941bddbf0273b1d251, type: 3}
+  black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
   spriteRenderer: {fileID: 0}
 --- !u!1 &1950508066
 GameObject:
@@ -1358,7 +1358,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1395,7 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d601ca867dc0848ab7e1e50c62bd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleur: {fileID: 21300000, guid: ca7a6282d1aab5d448e8a69facb919fe, type: 3}
-  black: {fileID: 21300000, guid: cc760073ea3050144a4d086fb14db678, type: 3}
-  error: {fileID: 0}
+  couleur: {fileID: 21300000, guid: c067aa60cc2404941bddbf0273b1d251, type: 3}
+  black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
   spriteRenderer: {fileID: 0}
