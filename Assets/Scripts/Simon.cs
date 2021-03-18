@@ -7,16 +7,15 @@ public class Simon : MonoBehaviour
 {
 
     static List<int> ordre = new List<int>();
-
     static List<Simon> list_sprite = new List<Simon>();
     static List<string> ordreBouton = new List<string>();
 
     private static int cp = 0;
     private static int nbreCouleur = 4;
     private static bool flag = false;
-    private SpriteRenderer spriteRenderer;
-    int n;
-    private Sprite couleur, black, error;
+    private int n;
+    public Sprite couleur, black, error;
+    public SpriteRenderer spriteRenderer;
 
 
     // Start is called before the first frame update
