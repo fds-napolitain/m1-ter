@@ -24,23 +24,25 @@ public class Simon : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (!flag)
-        {
+            {
             System.Random aleatoire = new System.Random();
             for (int i = 0; i < 6; i++)
             {
                 ordre.Add(aleatoire.Next(1, 10));
-                ordreBouton.Add("bouton" + ordre[ordre.Count -1]);
+                ordreBouton.Add("bouton" + ordre[ordre.Count - 1]);
             }
             flag = true;
             n = 0;
         }
         list_sprite.Add(this);
         n++;
-        if (n == 9)
+        if (n == 9) 
+        { 
             AfficheOrdre(4);
+        }
     }
 
-    
+
 
     // Update is called once per frame
     void Update()
@@ -50,30 +52,25 @@ public class Simon : MonoBehaviour
 
 
 
-    void AfficheOrdre(int n) { 
+    IEnumerator AfficheOrdre(int n)
+    {
         //dans une boucle remplacer les sprites correspondant par un sprite couleur puis les remettre noirs
-        for(int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             list_sprite[ordre[i]].spriteRenderer.sprite = couleur;
             yield return new WaitForSeconds(1);
             list_sprite[ordre[i]].spriteRenderer.sprite = black;
-            yield return null;
         }
+        yield return null;
     }
 
 
     private void OnMouseDown() //This function is called each time player clicks on GameObject
     {
-        if (ordreBouton[cp] == name)
-        {
-            yield return new WaitForSeconds(1);
+        if (ordreBouton[cp] == name) {
             spriteRenderer.sprite = couleur;
             cp++;
-            yield return null;
-            if (cp == nbreCouleur)
-            {
-                if(nbreCouleur == 6)
-                {
+            if (cp == nbreCouleur) {
+                if (nbreCouleur == 6) {
                     SceneManager.LoadScene("Corridor_AA");
                 }
                 nbreCouleur++;
@@ -82,9 +79,7 @@ public class Simon : MonoBehaviour
             }
             spriteRenderer.sprite = black;
         }
-        yield return new WaitForSeconds(1);
         spriteRenderer.sprite = error;
-        yield return null;
         SceneManager.LoadScene("Hangar_AB");
     }
 
