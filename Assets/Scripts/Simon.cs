@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 using UnityEngine.SceneManagement;
 
 public class Simon : MonoBehaviour
@@ -55,9 +54,9 @@ public class Simon : MonoBehaviour
         //dans une boucle remplacer les sprites correspondant par un sprite couleur puis les remettre noirs
         for(int i = 0; i < n; i++)
         {
-            list_sprite[ordre[i]].spriteRender.sprite = couleur;
+            list_sprite[ordre[i]].spriteRenderer.sprite = couleur;
             yield return new WaitForSeconds(1);
-            list_sprite[ordre[i]].spriteRender.sprite = black;
+            list_sprite[ordre[i]].spriteRenderer.sprite = black;
             yield return null;
         }
     }
