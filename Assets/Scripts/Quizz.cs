@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Quizz : MonoBehaviour
 {
-    static string Quizz[];
+    static string[] quizz;
     // Start is called before the first frame update
     void Start()
     {
