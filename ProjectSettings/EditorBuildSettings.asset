@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: cbb92203853b79f45ac6c00315493ed8
+  - enabled: 1
+    path: Assets/Scenes/Corridor_AA.unity
+    guid: 68a50ac4deb593e418c768313d698470
+  - enabled: 1
+    path: Assets/Scenes/Hangar_AB.unity
+    guid: bfbc3d507246ed24391e3403ff7f5e9f
   m_configObjects: {}
