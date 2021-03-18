@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using UnityEngine.SceneManagement;
 
 public class Simon : MonoBehaviour
 {
@@ -24,7 +26,7 @@ public class Simon : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (!flag)
         {
-            Random aleatoire = new Random();
+            System.Random aleatoire = new System.Random();
             for (int i = 0; i < 6; i++)
             {
                 ordre.Add(aleatoire.Next(1, 10));
