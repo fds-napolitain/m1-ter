@@ -230,12 +230,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  pic1: {fileID: 0}
-  pic2: {fileID: 0}
-  pic3: {fileID: 0}
-  fil1: {fileID: 0}
-  fil2: {fileID: 0}
-  fil3: {fileID: 0}
 --- !u!1 &659309056
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,12 +339,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  pic1: {fileID: 0}
-  pic2: {fileID: 0}
-  pic3: {fileID: 0}
-  fil1: {fileID: 0}
-  fil2: {fileID: 0}
-  fil3: {fileID: 0}
 --- !u!1 &1058200536
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,12 +448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  pic1: {fileID: 0}
-  pic2: {fileID: 0}
-  pic3: {fileID: 0}
-  fil1: {fileID: 0}
-  fil2: {fileID: 0}
-  fil3: {fileID: 0}
 --- !u!1 &1120978870
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,12 +640,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  pic1: {fileID: 0}
-  pic2: {fileID: 0}
-  pic3: {fileID: 0}
-  fil1: {fileID: 0}
-  fil2: {fileID: 0}
-  fil3: {fileID: 0}
 --- !u!1 &1763891003
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,12 +749,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  pic1: {fileID: 0}
-  pic2: {fileID: 0}
-  pic3: {fileID: 0}
-  fil1: {fileID: 0}
-  fil2: {fileID: 0}
-  fil3: {fileID: 0}
 --- !u!1 &2085503506
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,9 +858,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  pic1: {fileID: 0}
-  pic2: {fileID: 0}
-  pic3: {fileID: 0}
-  fil1: {fileID: 0}
-  fil2: {fileID: 0}
-  fil3: {fileID: 0}
