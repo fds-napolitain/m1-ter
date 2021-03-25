@@ -53,6 +53,9 @@ public class Memory : MonoBehaviour
         }
     }
 
+    /// <summary>
+    ///  Appelé sur chaque gameobject avec le script ET boxcollider
+    /// </summary>
     private void OnMouseDown() //This function is called each time player clicks on GameObject
     {
         if (!isFacingCard && CompareLastTwoCards())
