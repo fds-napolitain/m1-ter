@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 public class Simon : MonoBehaviour
 {
 
-    static List<int> ordre = new List<int>();
-    static List<Simon> list_sprite = new List<Simon>();
-    static List<string> ordreBouton = new List<string>();
-
+    private static List<int> ordre = new List<int>();
+    private static List<Simon> list_sprite = new List<Simon>();
+    private static List<string> ordreBouton = new List<string>();
     private static int cp = 0;
     private static int nbreCouleur = 4;
     private static bool flag = false;
-    private int n;
+    private static bool flag2 = false;
+    
+    private static int n = 0;
     public Sprite couleur, black, error;
     public SpriteRenderer spriteRenderer;
 
@@ -23,64 +24,87 @@ public class Simon : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (!flag)
-            {
-            System.Random aleatoire = new System.Random();
-            for (int i = 0; i < 6; i++)
-            {
-                ordre.Add(aleatoire.Next(1, 10));
-                ordreBouton.Add("bouton" + ordre[ordre.Count - 1]);
-            }
+        {
+
             flag = true;
             n = 0;
         }
         list_sprite.Add(this);
         n++;
-        if (n == 9) 
-        { 
-            AfficheOrdre(4);
+        if (n == 10)
+        {
+            System.Random aleatoire = new System.Random();
+            for (int i = 0; i < 6; i++)
+            {
+                ordre.Add(aleatoire.Next(1, 11));
+                Debug.Log(ordre[i] + "=" + list_sprite[ordre[i]-1].name);
+                ordreBouton.Add(list_sprite[ordre[ordre.Count - 1] - 1].name);
+            }
+            StartCoroutine(AfficheOrdre(4));
         }
     }
 
-
-
-    // Update is called once per frame
-    void Update()
+    private IEnumerator AfficheOrdre(int n)
     {
-
-    }
-
-
-
-    IEnumerator AfficheOrdre(int n)
-    {
+        flag2 = true;
+        yield return new WaitForSeconds(1);
         //dans une boucle remplacer les sprites correspondant par un sprite couleur puis les remettre noirs
-        for (int i = 0; i < n; i++) {
-            list_sprite[ordre[i]].spriteRenderer.sprite = couleur;
+        for (int i = 0; i < n; i++)
+        {
+            list_sprite[ordre[i]-1].spriteRenderer.sprite = couleur;
             yield return new WaitForSeconds(1);
-            list_sprite[ordre[i]].spriteRenderer.sprite = black;
+            list_sprite[ordre[i]-1].spriteRenderer.sprite = black;
+            yield return new WaitForSeconds(1);
         }
-        yield return null;
+        yield return new WaitForSeconds(1);
+        flag2 = false;
     }
 
+    private IEnumerator AfficheCouleur()
+    {
+        spriteRenderer.sprite = couleur;
+        yield return new WaitForSeconds(1);
+        spriteRenderer.sprite = black;
+    }
+
+    private IEnumerator AfficheErreur()
+    {
+        spriteRenderer.sprite = error;
+        yield return new WaitForSeconds(1);
+        spriteRenderer.sprite = black;
+    }
 
     private void OnMouseDown() //This function is called each time player clicks on GameObject
     {
-        if (ordreBouton[cp] == name) {
-            spriteRenderer.sprite = couleur;
-            cp++;
-            if (cp == nbreCouleur) {
-                if (nbreCouleur == 6) {
-                    SceneManager.LoadScene("Corridor_AA");
+        Debug.Log(name + " " + ordreBouton[cp]);
+        if (!flag2)
+        {
+            if (ordreBouton[cp] == name) // c'est bon
+            {
+                StartCoroutine(AfficheCouleur());
+                cp++;
+                if (cp == nbreCouleur) // victoire partielle
+                {
+                    if (nbreCouleur == 6) // victoire
+                    {
+                        SceneManager.LoadScene("Corridor_AA");
+                    }
+                    nbreCouleur++;
+                    cp = 0;
+                    StartCoroutine(AfficheOrdre(nbreCouleur));
                 }
-                nbreCouleur++;
-                cp = 0;
-                AfficheOrdre(nbreCouleur);
             }
-            spriteRenderer.sprite = black;
+            else // erreur
+            {
+                StartCoroutine(AfficheErreur());
+                SceneManager.LoadScene("Hangar_AB");
+            }
         }
-        spriteRenderer.sprite = error;
-        SceneManager.LoadScene("Hangar_AB");
     }
 
+    private void Update()
+    {
+        // a faire avec time.time
+    }
 }
 
