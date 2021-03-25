@@ -7,7 +7,7 @@ public class Simon : MonoBehaviour
 {
 
     private static List<int> ordre = new List<int>();
-    private static List<Simon> list_sprite = new List<Simon>();
+    private static List<Simon> listSprite = new List<Simon>();
     private static List<string> ordreBouton = new List<string>();
     private static int cp = 0;
     private static int nbreCouleur = 4;
@@ -29,7 +29,7 @@ public class Simon : MonoBehaviour
             flag = true;
             n = 0;
         }
-        list_sprite.Add(this);
+        listSprite.Add(this);
         n++;
         if (n == 10)
         {
@@ -37,8 +37,8 @@ public class Simon : MonoBehaviour
             for (int i = 0; i < 6; i++)
             {
                 ordre.Add(aleatoire.Next(1, 11));
-                Debug.Log(ordre[i] + "=" + list_sprite[ordre[i]-1].name);
-                ordreBouton.Add(list_sprite[ordre[ordre.Count - 1] - 1].name);
+                Debug.Log(ordre[i] + "=" + listSprite[ordre[i]-1].name);
+                ordreBouton.Add(listSprite[ordre[ordre.Count - 1] - 1].name);
             }
             StartCoroutine(AfficheOrdre(4));
         }
@@ -51,9 +51,9 @@ public class Simon : MonoBehaviour
         //dans une boucle remplacer les sprites correspondant par un sprite couleur puis les remettre noirs
         for (int i = 0; i < n; i++)
         {
-            list_sprite[ordre[i]-1].spriteRenderer.sprite = couleur;
+            listSprite[ordre[i]-1].spriteRenderer.sprite = couleur;
             yield return new WaitForSeconds(1);
-            list_sprite[ordre[i]-1].spriteRenderer.sprite = black;
+            listSprite[ordre[i]-1].spriteRenderer.sprite = black;
             yield return new WaitForSeconds(1);
         }
         yield return new WaitForSeconds(1);
@@ -74,7 +74,10 @@ public class Simon : MonoBehaviour
         spriteRenderer.sprite = black;
     }
 
-    private void OnMouseDown() //This function is called each time player clicks on GameObject
+    /// <summary>
+    ///  Appelé sur chaque gameobject avec le script ET boxcollider
+    /// </summary>
+    private void OnMouseDown() 
     {
         Debug.Log(name + " " + ordreBouton[cp]);
         if (!flag2)
