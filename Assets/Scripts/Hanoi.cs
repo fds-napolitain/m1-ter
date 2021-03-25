@@ -15,7 +15,6 @@ public class Hanoi : MonoBehaviour
     private int indice; // indice des tours
     private int value; // valeurs du fil
     public SpriteRenderer spriteRenderer;
-    public Sprite pic1, pic2, pic3, fil1, fil2, fil3;
 
     // Start is called before the first frame update
     void Start()
@@ -95,7 +94,7 @@ public class Hanoi : MonoBehaviour
                 {
                     tours[indiceTour].Add(value);
                     tours[indice].RemoveAt(tours[indice].Count - 1);
-                    // mouvement
+                    Debug.Log("l'anneau " + value + " sur la tour " + indice + " se déplace sur la tour " + indiceTour); // mouvement
                     indice = indiceTour;
                     cp++;
                     if (tours[2].Count == 3) // victoire
