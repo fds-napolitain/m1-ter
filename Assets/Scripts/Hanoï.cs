@@ -91,23 +91,20 @@ public class Hanoi : MonoBehaviour
                         indiceTour = -1;
                         break;
                 }
-                if (indice != indiceTour)
+                if (indice != indiceTour && (tours[indiceTour].Count == 0 || GetLastTourElement(indiceTour) > value))
                 {
-                    if (tours[indiceTour].Count == 0 || GetLastTourElement(indiceTour) > value)
+                    tours[indiceTour].Add(value);
+                    tours[indice].RemoveAt(tours[indice].Count - 1);
+                    // mouvement
+                    indice = indiceTour;
+                    cp++;
+                    if (tours[2].Count == 3) // victoire
                     {
-                        tours[indiceTour].Add(value);
-                        tours[indice].RemoveAt(tours[indice].Count-1);
-                        // mouvement
-                        indice = indiceTour;
-                        cp++;
-                        if (tours[2].Count == 3) // victoire
-                        {
-                            SceneManager.LoadScene("Corridor_AA");
-                        }
-                        if (CP_MAX == cp) // défaite
-                        {
-                            SceneManager.LoadScene("Hangar_AB");
-                        }
+                        SceneManager.LoadScene("Corridor_AA");
+                    }
+                    if (CP_MAX == cp) // défaite
+                    {
+                        SceneManager.LoadScene("Hangar_AB");
                     }
                 }
             }
