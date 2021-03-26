@@ -12,7 +12,7 @@ public class Hanoi : MonoBehaviour
     private static bool flag = false;
     private static List<Stack<int>> tours = new List<Stack<int>>();
     private static Hanoi pointeurFil;
-    private int indice; // indice des tours
+    private int indice; // indice (par rapport aux tours)
     private int value; // valeurs du fil
     public SpriteRenderer spriteRenderer;
 
@@ -59,19 +59,22 @@ public class Hanoi : MonoBehaviour
 
     private void MoveTo(int indiceTour)
     {
-        Debug.Log("l'anneau " + value + " sur la tour " + indice + " se déplace sur la tour " + indiceTour); // mouvement
-        transform.Translate((indiceTour - indice) * Vector3.right * 6, Space.Self);
+        Debug.Log("Le fil " + value + " sur la tour " + pointeurFil.indice + " se déplace sur la tour " + indiceTour); // mouvement
+        transform.Translate((indiceTour - pointeurFil.indice) * Vector2.right * 6, Space.Self);
     }
 
     private void OnMouseDown()
     {
         if (name.StartsWith("fil"))
         {
+            Debug.Log(tours[indice].Peek() + " " + value);
             if (tours[indice].Peek() == value)
             {
                 pointeurFil = this;
+                Debug.Log("Sélection fil: " + pointeurFil.indice);
             }
-        } else
+        }
+        else
         {
             if (pointeurFil != null)
             {
@@ -91,12 +94,12 @@ public class Hanoi : MonoBehaviour
                         indiceTour = -1;
                         break;
                 }
-                if (indice != indiceTour && (tours[indiceTour].Count == 0 || tours[indiceTour].Peek() > value))
+                if (pointeurFil.indice != indiceTour && (tours[indiceTour].Count == 0 || tours[indiceTour].Peek() > value))
                 {
-                    tours[indiceTour].Push(value);
-                    tours[indice].Pop();
+                    tours[indiceTour].Push(pointeurFil.value);
+                    tours[pointeurFil.indice].Pop();
                     pointeurFil.MoveTo(indiceTour);
-                    indice = indiceTour;
+                    pointeurFil.indice = indiceTour;
                     cp++;
                     if (tours[2].Count == 3) // victoire
                     {
