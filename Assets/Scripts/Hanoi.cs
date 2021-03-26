@@ -14,6 +14,7 @@ public class Hanoi : MonoBehaviour
     private static Hanoi pointeurFil;
     private int indice; // indice (par rapport aux tours)
     private int value; // valeurs du fil
+    private float[] coords = { 0f, 0f }; // coordonées a bouger
     public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
@@ -54,13 +55,36 @@ public class Hanoi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    private void MoveTo(int indiceTour)
-    {
-        Debug.Log("Le fil " + value + " sur la tour " + pointeurFil.indice + " se déplace sur la tour " + indiceTour); // mouvement
-        transform.Translate((indiceTour - pointeurFil.indice) * Vector2.right * 6, Space.Self);
+        if (pointeurFil != null)
+        {
+            // move x
+            if (pointeurFil.coords[0] > 0.1 || pointeurFil.coords[0] < -0.1)
+            {
+                Debug.Log(pointeurFil.coords[0]);
+                Vector2 value = pointeurFil.coords[0] * Vector2.right * Time.deltaTime;
+                pointeurFil.transform.Translate(value, Space.Self);
+                pointeurFil.coords[0] -= value[0];
+            }
+            else
+            {
+                if (pointeurFil.coords[0] != 0)
+                {
+                    pointeurFil.GetComponent<Rigidbody2D>().gravityScale = 1f;
+                    pointeurFil.coords[0] = 0;
+                } 
+            }
+            // move y
+            if (pointeurFil.coords[1] > 0)
+            {
+                Vector2 value = pointeurFil.coords[1] * Vector2.up * Time.deltaTime;
+                pointeurFil.transform.Translate(value, Space.Self);
+                pointeurFil.coords[1] -= value[1];
+            }
+            else
+            {
+                pointeurFil.coords[1] = 0f;
+            }
+        }
     }
 
     private void OnMouseDown()
@@ -70,11 +94,20 @@ public class Hanoi : MonoBehaviour
             Debug.Log(tours[indice].Peek() + " " + value);
             if (tours[indice].Peek() == value)
             {
+                if (pointeurFil != null && pointeurFil != this) // ancien pointeur
+                {
+                    pointeurFil.GetComponent<Rigidbody2D>().gravityScale = 1f;
+                }
+                if (pointeurFil != this) // nouveau pointeur
+                {
+                    GetComponent<Rigidbody2D>().gravityScale = 0f;
+                    coords[1] += 6f;
+                    Debug.Log("Sélection fil: " + indice);
+                }
                 pointeurFil = this;
-                Debug.Log("Sélection fil: " + pointeurFil.indice);
             }
         }
-        else
+        if (name.StartsWith("pic"))
         {
             if (pointeurFil != null)
             {
@@ -94,11 +127,11 @@ public class Hanoi : MonoBehaviour
                         indiceTour = -1;
                         break;
                 }
-                if (pointeurFil.indice != indiceTour && (tours[indiceTour].Count == 0 || tours[indiceTour].Peek() > value))
+                if (pointeurFil.indice != indiceTour && (tours[indiceTour].Count == 0 || tours[indiceTour].Peek() > pointeurFil.value))
                 {
                     tours[indiceTour].Push(pointeurFil.value);
                     tours[pointeurFil.indice].Pop();
-                    pointeurFil.MoveTo(indiceTour);
+                    pointeurFil.coords[0] += (indiceTour - pointeurFil.indice) * 6f; // mouvement
                     pointeurFil.indice = indiceTour;
                     cp++;
                     if (tours[2].Count == 3) // victoire
