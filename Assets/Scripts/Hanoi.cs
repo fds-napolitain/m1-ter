@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Hanoi : MonoBehaviour
 {
     private static int cp = 0;
-    private static int CP_MAX = 5;
+    private static int CP_MAX = 10;
     private static bool flag = false;
     private static List<Stack<int>> tours = new List<Stack<int>>();
     private static Hanoi pointeurFil;
