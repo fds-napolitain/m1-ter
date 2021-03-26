@@ -14,7 +14,7 @@ public class Hanoi : MonoBehaviour
     private static Hanoi pointeurFil;
     private int indice; // indice (par rapport aux tours)
     private int value; // valeurs du fil
-    private float[] coords = { 0f, 0f }; // coordonées a bouger
+    private float[] coords = { 0f, 0f }; // coordonnées a bouger
     public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
@@ -57,34 +57,43 @@ public class Hanoi : MonoBehaviour
     {
         if (pointeurFil != null)
         {
-            // move x
+            // bouge x
             if (pointeurFil.coords[0] > 0.1 || pointeurFil.coords[0] < -0.1)
             {
-                Debug.Log(pointeurFil.coords[0]);
-                Vector2 value = pointeurFil.coords[0] * Vector2.right * Time.deltaTime;
-                pointeurFil.transform.Translate(value, Space.Self);
-                pointeurFil.coords[0] -= value[0];
+                MoveByVector2(Vector2.right * pointeurFil.coords[0] * Time.deltaTime);
             }
-            else
+            else // arrondi x a la valeur qu'il faut
             {
                 if (pointeurFil.coords[0] != 0)
                 {
                     pointeurFil.GetComponent<Rigidbody2D>().gravityScale = 1f;
-                    pointeurFil.coords[0] = 0;
+                    MoveByVector2(Vector2.right * pointeurFil.coords[0]);
                 } 
             }
-            // move y
+            // bouge y
             if (pointeurFil.coords[1] > 0)
             {
-                Vector2 value = pointeurFil.coords[1] * Vector2.up * Time.deltaTime;
-                pointeurFil.transform.Translate(value, Space.Self);
-                pointeurFil.coords[1] -= value[1];
+                MoveByVector2(Vector2.up * pointeurFil.coords[1] * Time.deltaTime);
             }
-            else
+            else // arrondi y a la valeur qu'il faut
             {
-                pointeurFil.coords[1] = 0f;
+                if (pointeurFil.coords[1] != 0)
+                {
+                    MoveByVector2(Vector2.up * pointeurFil.coords[1]);
+                }
             }
         }
+    }
+
+    /// <summary>
+    /// Move by Vector2(x, y)
+    /// </summary>
+    /// <param name="vector"></param>
+    private void MoveByVector2(Vector2 vector)
+    {
+        pointeurFil.transform.Translate(vector, Space.Self);
+        pointeurFil.coords[0] -= vector[0];
+        pointeurFil.coords[1] -= vector[1];
     }
 
     private void OnMouseDown()
