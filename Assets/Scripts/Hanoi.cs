@@ -10,7 +10,7 @@ public class Hanoi : MonoBehaviour
     private static int cp = 0;
     private static int CP_MAX = 5;
     private static bool flag = false;
-    private static List<List<int>> tours = new List<List<int>>();
+    private static List<Stack<int>> tours = new List<Stack<int>>();
     private static Hanoi pointeurFil;
     private int indice; // indice des tours
     private int value; // valeurs du fil
@@ -21,17 +21,17 @@ public class Hanoi : MonoBehaviour
     {
         if (!flag)
         {
-            tours.Add(new List<int>());
-            tours.Add(new List<int>());
-            tours.Add(new List<int>());
+            tours.Add(new Stack<int>());
+            tours.Add(new Stack<int>());
+            tours.Add(new Stack<int>());
             flag = true;
         }
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (name == "pic1")
         {
-            tours[0].Add(3);
-            tours[0].Add(2);
-            tours[0].Add(1);
+            tours[0].Push(3);
+            tours[0].Push(2);
+            tours[0].Push(1);
         }
         if (name.StartsWith("fil")) // initialisation fil tour 1
         {
@@ -54,19 +54,20 @@ public class Hanoi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // ici je veux faire mes transform.Translate!!!!!!!!!!!!!!!!!!!!!!
+
     }
 
-    private int GetLastTourElement(int indice)
+    private void MoveTo(int indiceTour)
     {
-        return tours[indice][tours[indice].Count - 1];
+        Debug.Log("l'anneau " + value + " sur la tour " + indice + " se déplace sur la tour " + indiceTour); // mouvement
+        transform.Translate((indiceTour - indice) * Vector3.right * 6, Space.Self);
     }
 
     private void OnMouseDown()
     {
         if (name.StartsWith("fil"))
         {
-            if (GetLastTourElement(indice) == value)
+            if (tours[indice].Peek() == value)
             {
                 pointeurFil = this;
             }
@@ -90,11 +91,11 @@ public class Hanoi : MonoBehaviour
                         indiceTour = -1;
                         break;
                 }
-                if (indice != indiceTour && (tours[indiceTour].Count == 0 || GetLastTourElement(indiceTour) > value))
+                if (indice != indiceTour && (tours[indiceTour].Count == 0 || tours[indiceTour].Peek() > value))
                 {
-                    tours[indiceTour].Add(value);
-                    tours[indice].RemoveAt(tours[indice].Count - 1);
-                    Debug.Log("l'anneau " + value + " sur la tour " + indice + " se déplace sur la tour " + indiceTour); // mouvement
+                    tours[indiceTour].Push(value);
+                    tours[indice].Pop();
+                    pointeurFil.MoveTo(indiceTour);
                     indice = indiceTour;
                     cp++;
                     if (tours[2].Count == 3) // victoire
