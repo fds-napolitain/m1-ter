@@ -7,17 +7,23 @@ using UnityEngine.SceneManagement;
 
 public class Hanoi : MonoBehaviour
 {
-    private static int cp = 0;
+    // global const
     private static int CP_MAX = 10;
+    private static int SPEED = 15;
+    // global variables
+    private static int cp = 0;
     private static bool flag = false;
     private static List<Stack<int>> tours = new List<Stack<int>>();
     private static Hanoi pointeurFil;
+    private static bool locked = false; // true si mouvement en cours qui n'est pas une sélection
+    // variables
     private int indice; // indice (par rapport aux tours)
     private int value; // valeurs du fil
     private float[] coords = { 0f, 0f }; // coordonnées a bouger
-    public SpriteRenderer spriteRenderer;
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// Initialisation pour chaque objet
+    /// </summary>
     void Start()
     {
         if (!flag)
@@ -27,7 +33,6 @@ public class Hanoi : MonoBehaviour
             tours.Add(new Stack<int>());
             flag = true;
         }
-        spriteRenderer = GetComponent<SpriteRenderer>();
         if (name == "pic1")
         {
             tours[0].Push(3);
@@ -52,104 +57,136 @@ public class Hanoi : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Logique pour chaque frame, pour chaque objet.
+    /// </summary>
     void Update()
     {
-        if (pointeurFil != null)
+        if (coords[0] != 0 || coords[1] != 0)
         {
             // bouge x
-            if (pointeurFil.coords[0] > 0.1 || pointeurFil.coords[0] < -0.1)
+            if (coords[0] > 0.1 || coords[0] < -0.1)
             {
-                MoveByVector2(Vector2.right * pointeurFil.coords[0] * Time.deltaTime);
+                MoveByVector2(Vector2.right * Math.Sign(coords[0]) * SPEED * Time.deltaTime);
             }
             else // arrondi x a la valeur qu'il faut
             {
-                if (pointeurFil.coords[0] != 0)
+                if (coords[0] != 0)
                 {
-                    pointeurFil.GetComponent<Rigidbody2D>().gravityScale = 1f;
-                    MoveByVector2(Vector2.right * pointeurFil.coords[0]);
-                } 
+                    MoveByVector2(Vector2.right * coords[0], true);
+                    GetComponent<Rigidbody2D>().gravityScale = 1f;
+                }
             }
             // bouge y
-            if (pointeurFil.coords[1] > 0)
+            if (coords[1] > 0.1)
             {
-                MoveByVector2(Vector2.up * pointeurFil.coords[1] * Time.deltaTime);
+                MoveByVector2(Vector2.up * Math.Sign(coords[1]) * SPEED * Time.deltaTime);
             }
             else // arrondi y a la valeur qu'il faut
             {
-                if (pointeurFil.coords[1] != 0)
+                if (coords[1] != 0)
                 {
-                    MoveByVector2(Vector2.up * pointeurFil.coords[1]);
+                    MoveByVector2(Vector2.up * coords[1], true);
+                    locked = false; // fin mouvement (haut) => déblocage
                 }
             }
         }
     }
 
     /// <summary>
-    /// Move by Vector2(x, y)
+    /// Move by Vector2(x, y) with optional parameter round
     /// </summary>
     /// <param name="vector"></param>
-    private void MoveByVector2(Vector2 vector)
+    /// <param name="round"></param>
+    private void MoveByVector2(Vector2 vector, bool round = false)
     {
-        pointeurFil.transform.Translate(vector, Space.Self);
-        pointeurFil.coords[0] -= vector[0];
-        pointeurFil.coords[1] -= vector[1];
+        transform.Translate(vector, Space.Self);
+        if (!round)
+        {
+            coords[0] -= vector[0];
+            coords[1] -= vector[1];
+        }
+        else
+        {
+            coords[0] = (float)Math.Round(coords[0], 0);
+            coords[1] = (float)Math.Round(coords[1], 0);
+        }
     }
 
+    /// <summary>
+    /// Détection de collision (Rigidbody2D)
+    /// Ici, quand l'object tombe sur le sol, reset du pointeurFil (pour avoir à le resélectionner).
+    /// </summary>
+    /// <param name="collision"></param>
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (pointeurFil != null && pointeurFil.GetComponent<Rigidbody2D>().gravityScale == 1f)
+        {
+            locked = false; // fin mouvement (bas / gravité) => déblocage
+            pointeurFil = null;
+            if (tours[2].Count == 3) // victoire
+            {
+                SceneManager.LoadScene("Corridor_AA");
+            }
+        }
+    }
+
+    /// <summary>
+    /// Détection de clics (BoxCollider2D)
+    /// Grosse partie de la logique...
+    /// </summary>
     private void OnMouseDown()
     {
-        if (name.StartsWith("fil"))
+        if (!locked) // blocage si mouvement en cours
         {
-            Debug.Log(tours[indice].Peek() + " " + value);
-            if (tours[indice].Peek() == value)
+            if (name.StartsWith("fil"))
             {
-                if (pointeurFil != null && pointeurFil != this) // ancien pointeur
-                {
-                    pointeurFil.GetComponent<Rigidbody2D>().gravityScale = 1f;
-                }
-                if (pointeurFil != this) // nouveau pointeur
+                Debug.Log(tours[indice].Peek() + " " + value);
+                if (tours[indice].Peek() == value && pointeurFil != this) // nv pointeur
                 {
                     GetComponent<Rigidbody2D>().gravityScale = 0f;
                     coords[1] += 6f;
-                    Debug.Log("Sélection fil: " + indice);
-                }
-                pointeurFil = this;
-            }
-        }
-        if (name.StartsWith("pic"))
-        {
-            if (pointeurFil != null)
-            {
-                int indiceTour;
-                switch (name)
-                {
-                    case "pic1":
-                        indiceTour = 0;
-                        break;
-                    case "pic2":
-                        indiceTour = 1;
-                        break;
-                    case "pic3":
-                        indiceTour = 2;
-                        break;
-                    default:
-                        indiceTour = -1;
-                        break;
-                }
-                if (pointeurFil.indice != indiceTour && (tours[indiceTour].Count == 0 || tours[indiceTour].Peek() > pointeurFil.value))
-                {
-                    tours[indiceTour].Push(pointeurFil.value);
-                    tours[pointeurFil.indice].Pop();
-                    pointeurFil.coords[0] += (indiceTour - pointeurFil.indice) * 6f; // mouvement
-                    pointeurFil.indice = indiceTour;
-                    cp++;
-                    if (tours[2].Count == 3) // victoire
+                    locked = true; // sélection fil => blocage
+                    Debug.Log(pointeurFil == null);
+                    if (pointeurFil != null) // ancien pointeur
                     {
-                        SceneManager.LoadScene("Corridor_AA");
+                        pointeurFil.GetComponent<Rigidbody2D>().gravityScale = 1f;
                     }
-                    if (CP_MAX == cp) // défaite
+                    pointeurFil = this;
+                }
+            }
+            if (name.StartsWith("pic"))
+            {
+                if (pointeurFil != null)
+                {
+                    int indiceTour;
+                    switch (name)
                     {
-                        SceneManager.LoadScene("Hangar_AB");
+                        case "pic1":
+                            indiceTour = 0;
+                            break;
+                        case "pic2":
+                            indiceTour = 1;
+                            break;
+                        case "pic3":
+                            indiceTour = 2;
+                            break;
+                        default:
+                            indiceTour = -1;
+                            break;
+                    }
+                    if (pointeurFil.indice != indiceTour && (tours[indiceTour].Count == 0 || tours[indiceTour].Peek() > pointeurFil.value))
+                    {
+                        tours[indiceTour].Push(pointeurFil.value);
+                        tours[pointeurFil.indice].Pop();
+                        pointeurFil.coords[0] += (indiceTour - pointeurFil.indice) * 6f; // mouvement
+                        pointeurFil.indice = indiceTour;
+                        locked = true; // sélection tour => blocage
+                        cp++;
+                        if (CP_MAX == cp) // défaite
+                        {
+                            SceneManager.LoadScene("Hangar_AB");
+                        }
                     }
                 }
             }
