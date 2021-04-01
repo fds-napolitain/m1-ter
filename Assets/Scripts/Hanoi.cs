@@ -19,7 +19,7 @@ public class Hanoi : MonoBehaviour
     // variables
     private int indice; // indice (par rapport aux tours)
     private int value; // valeurs du fil
-    private float[] coords = { 0f, 0f }; // coordonnées a bouger
+    private float[] coords = { 0f, 0f }; // coordonnées a bouger, à 0 plus rien ne bouge
 
     /// <summary>
     /// Initialisation pour chaque objet
