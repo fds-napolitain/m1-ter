@@ -247,15 +247,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d700a09b6599c33479281c901353341e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intro: Intro
-  game: SampleScene
-  corridor: 
-  hangar: 
-  ending: Ending
-  memory: Memory
-  simon: Simon
-  hanoi: 
-  quiz: 
+  introScene: Intro
+  gameScene: SampleScene
+  corridorScene: Corridor_AA
+  hangarScene: Hanfar_AB
+  endingScene: Ending
+  memoryScene: Memory
+  simonScene: Simon
+  hanoiScene: Hanoi
+  snakeScene: Snake
+  quizScene: Quiz
   lastUpdate: 0
 --- !u!1 &1011286836
 GameObject:
