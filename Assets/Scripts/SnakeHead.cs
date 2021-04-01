@@ -1,60 +1,103 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class SnakeHead : SnakeBody
 {
+    private float[] oldHeadDirection = new float[] { 0, 0 };
+
     /// <summary>
     /// Inputs de rotation pour la tête.
     /// </summary>
     void Update()
     {
-        // inputs
+        // inputs 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            Debug.Log("Snake move right.");
-            snakeDirection[0] = 1;
-            snakeDirection[1] = 0;
-        }      
+            Debug.Log("Snake bouge vers la droite.");
+            ChangeDirections(1, 0);
+        }
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            Debug.Log("Snake move left.");
-            snakeDirection[0] = -1;
-            snakeDirection[1] = 0;
+            Debug.Log("Snake bouge vers la gauche.");
+            ChangeDirections(-1, 0);
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            Debug.Log("Snake move down.");
-            snakeDirection[0] = 0;
-            snakeDirection[1] = -1;
+            Debug.Log("Snake bouge vers le bas.");
+            ChangeDirections(0, -1);
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Debug.Log("Snake move up.");
-            snakeDirection[0] = 0;
-            snakeDirection[1] = 1;
+            Debug.Log("Snake bouge vers le haut.");
+            ChangeDirections(0, 1);
         }
 
-        // transformations de mouvements
-        SnakeBody body = this;
-        do
+        MoveHead();
+        MoveBody();
+    }
+
+    /// <summary>
+    /// Change la direction de SnakeHead.
+    /// </summary>
+    /// <param name="x"></param>
+    /// <param name="y"></param>
+    private void ChangeDirections(float x, float y)
+    {
+        oldHeadDirection[0] = snakeDirection[0];
+        oldHeadDirection[1] = snakeDirection[1];
+        snakeDirection[0] = x;
+        snakeDirection[1] = y;
+    }
+
+    /// <summary>
+    /// Bouge la SnakeHead.
+    /// </summary>
+    private void MoveHead()
+    {
+        // rotations
+        float rotation = Math.Max(
+            Math.Abs(oldHeadDirection[0] - snakeDirection[0]),
+            Math.Abs(oldHeadDirection[1] - snakeDirection[1])
+        );
+        // translations
+        transform.Rotate(0, 0, rotation * 90, Space.Self);
+        transform.Translate(new Vector2(
+            snakeDirection[0] * SNAKE_SPEED * Time.deltaTime,
+            snakeDirection[1] * SNAKE_SPEED * Time.deltaTime
+        ));
+    }
+
+    /// <summary>
+    /// Bouge tous les SnakeBody.
+    /// </summary>
+    private void MoveBody()
+    {
+        SnakeBody body = this.next;
+        while (body != null)
         {
+            // rotations
+            if (body.previous != null)
+            {
+                if (body.previous is SnakeHead)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
             // translations
             body.transform.Translate(new Vector2(
                 body.snakeDirection[0] * SNAKE_SPEED * Time.deltaTime,
                 body.snakeDirection[1] * SNAKE_SPEED * Time.deltaTime
             ));
-            // rotations
-            if (body.previous != null)
-            {
-
-            }
             body = body.next;
-        } while (body != null);
+        } ;
     }
 
     /// <summary>
-    /// Collision entre snake et les autres objets
+    /// Collision entre SnakeHead et les autres objets
     /// TODO: améliorer la détection en suivant les bonnes pratiques
     /// https://gamedev.stackexchange.com/questions/154901/dynamic-vs-kinematic-do-either-of-these-cause-a-collision-before-oncollisionent
     /// (difference entre statique, dynamique et kinématique)
@@ -78,7 +121,6 @@ public class SnakeHead : SnakeBody
                 {
                     body = body.next;
                 }
-                body.next = new SnakeBody();
             }
             else // TODO: à verifier la condition pour que snake collide avec snake
             {
