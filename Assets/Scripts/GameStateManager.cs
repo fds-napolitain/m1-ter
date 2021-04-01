@@ -18,6 +18,7 @@ public class GameStateManager : MonoBehaviour
     public string memoryScene;
     public string simonScene;
     public string hanoiScene;
+    public string snakeScene;
     public string quizScene;
 
     private string currentScene;
@@ -147,6 +148,12 @@ public class GameStateManager : MonoBehaviour
     {
 
         LoadScene(hanoiScene);
+    }
+
+    public void LoadSnake()
+    {
+
+        LoadScene(snakeScene);
     }
 
     public void LoadQuiz()
