@@ -33,7 +33,7 @@ public class GameStateManager : MonoBehaviour
         //isFinished = false;
         DontDestroyOnLoad(this.gameObject);
         //projectPath = Application.dataPath;
-        currentScene = intro;
+        currentScene = introScene;
         SceneManager.sceneLoaded += OnSceneLoaded;
 
     }
