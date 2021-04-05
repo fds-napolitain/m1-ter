@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SnakeHead : SnakeBody
 {
-    // [(nextPosition), Head, Body1, Body2, ..., (oldPosition)]
+    // [Head, Body1, Body2, ...]
     private static LinkedList<float[]> snakePosition = new LinkedList<float[]>();
 
     /// <summary>
@@ -65,6 +65,8 @@ public class SnakeHead : SnakeBody
                 snakePosition.First.Value[0] * SNAKE_SPEED * Time.deltaTime,
                 snakePosition.First.Value[0] * SNAKE_SPEED * Time.deltaTime
             ));
+            // next
+            body = next;
         }
     }
 
@@ -82,17 +84,12 @@ public class SnakeHead : SnakeBody
             if (collision.gameObject.name.StartsWith("mur"))
             {
                 Debug.Log("Snake se prend un mur !");
-                snakeDirection[0] = 0;
-                snakeDirection[1] = 0;
+                snakePosition.First.Value[0] = 0;
+                snakePosition.First.Value[1] = 0;
             }
             else if (collision.gameObject.name.StartsWith("pomme"))
             {
                 Debug.Log("Snake mange une pomme et grandit !");
-                SnakeBody body = this;
-                while (body.next != null)
-                {
-                    body = body.next;
-                }
             }
             else // TODO: à verifier la condition pour que snake collide avec snake
             {
