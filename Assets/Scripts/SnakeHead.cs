@@ -1,14 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SnakeHead : SnakeBody
 {
-    private float[] oldHeadDirection = new float[] { 0, 0 };
+    // [(nextPosition), Head, Body1, Body2, ..., (oldPosition)]
+    private static LinkedList<float[]> snakePosition = new LinkedList<float[]>();
 
     /// <summary>
     /// Inputs de rotation pour la tête.
     /// </summary>
-    void Update()
+    private void Update()
     {
         // inputs 
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -31,9 +33,7 @@ public class SnakeHead : SnakeBody
             Debug.Log("Snake bouge vers le haut.");
             ChangeDirections(0, 1);
         }
-
-        MoveHead();
-        MoveBody();
+        MoveSnake();
     }
 
     /// <summary>
@@ -43,57 +43,29 @@ public class SnakeHead : SnakeBody
     /// <param name="y"></param>
     private void ChangeDirections(float x, float y)
     {
-        oldHeadDirection[0] = snakeDirection[0];
-        oldHeadDirection[1] = snakeDirection[1];
-        snakeDirection[0] = x;
-        snakeDirection[1] = y;
+        snakePosition.AddFirst(new float[] { x, y });
     }
 
     /// <summary>
-    /// Bouge la SnakeHead.
+    /// Bouge snake (1 frame).
     /// </summary>
-    private void MoveHead()
+    private void MoveSnake()
     {
-        // rotations
-        float rotation = Math.Max(
-            Math.Abs(oldHeadDirection[0] - snakeDirection[0]),
-            Math.Abs(oldHeadDirection[1] - snakeDirection[1])
-        );
-        // translations
-        transform.Rotate(0, 0, rotation * 90, Space.Self);
-        transform.Translate(new Vector2(
-            snakeDirection[0] * SNAKE_SPEED * Time.deltaTime,
-            snakeDirection[1] * SNAKE_SPEED * Time.deltaTime
-        ));
-    }
-
-    /// <summary>
-    /// Bouge tous les SnakeBody.
-    /// </summary>
-    private void MoveBody()
-    {
-        SnakeBody body = this.next;
+        SnakeBody body = this;
         while (body != null)
         {
-            // rotations
-            if (body.previous != null)
-            {
-                if (body.previous is SnakeHead)
-                {
-
-                }
-                else
-                {
-
-                }
-            }
-            // translations
-            body.transform.Translate(new Vector2(
-                body.snakeDirection[0] * SNAKE_SPEED * Time.deltaTime,
-                body.snakeDirection[1] * SNAKE_SPEED * Time.deltaTime
+            // rotation
+            float rotation = Math.Max(
+                Math.Abs(snakePosition.First.Next.Value[0] - snakePosition.First.Value[0]),
+                Math.Abs(snakePosition.First.Next.Value[1] - snakePosition.First.Value[1])
+            );
+            transform.Rotate(0, 0, rotation * 90, Space.Self);
+            // translation
+            transform.Translate(new Vector2(
+                snakePosition.First.Value[0] * SNAKE_SPEED * Time.deltaTime,
+                snakePosition.First.Value[0] * SNAKE_SPEED * Time.deltaTime
             ));
-            body = body.next;
-        } ;
+        }
     }
 
     /// <summary>
