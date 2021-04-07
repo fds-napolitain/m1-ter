@@ -9,16 +9,17 @@ public class GameStateManager : MonoBehaviour
 
     //public bool isFinished;
 
-    public string intro;
-    public string game;
-    public string corridor;
-    public string hangar;
-    public string ending;
+    public string introScene;
+    public string gameScene;
+    public string corridorScene;
+    public string hangarScene;
+    public string endingScene;
 
-    public string memory;
-    public string simon;
-    public string hanoi;
-    public string quiz;
+    public string memoryScene;
+    public string simonScene;
+    public string hanoiScene;
+    public string snakeScene;
+    public string quizScene;
 
     private string currentScene;
 
@@ -33,7 +34,7 @@ public class GameStateManager : MonoBehaviour
         //isFinished = false;
         DontDestroyOnLoad(this.gameObject);
         //projectPath = Application.dataPath;
-        currentScene = intro;
+        currentScene = introScene;
         SceneManager.sceneLoaded += OnSceneLoaded;
 
     }
@@ -43,7 +44,7 @@ public class GameStateManager : MonoBehaviour
     {
 
         //Espace
-        if (currentScene == intro)
+        if (currentScene == introScene)
         {
 
             if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0)
@@ -54,7 +55,7 @@ public class GameStateManager : MonoBehaviour
         }
 
         //Entrée
-        else if (currentScene == game)
+        else if (currentScene == gameScene)
         {
 
             if (Input.GetKey(KeyCode.Return) || Input.touchCount > 0)
@@ -64,7 +65,7 @@ public class GameStateManager : MonoBehaviour
             }
         }
 
-        else if (currentScene == corridor)
+        else if (currentScene == corridorScene)
         {
 
             if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0)
@@ -97,6 +98,70 @@ public class GameStateManager : MonoBehaviour
 
     }
 
+    //Classic scenes loaders
+
+    public void LoadIntro()
+    {
+
+        LoadScene(introScene);
+    }
+
+    public void LoadGame()
+    {
+
+        LoadScene(gameScene);
+    }
+
+    public void LoadCorridor()
+    {
+
+        LoadScene(corridorScene);
+    }
+
+    public void LoadHangar()
+    {
+
+        LoadScene(hangarScene);
+    }
+
+    public void LoadEnding()
+    {
+
+        LoadScene(endingScene);
+    }
+
+    //Mini games scenes loaders
+
+    public void LoadMemory()
+    {
+
+        LoadScene(memoryScene);
+    }
+
+    public void LoadSimon()
+    {
+
+        LoadScene(simonScene);
+    }
+
+    public void LoadHanoi()
+    {
+
+        LoadScene(hanoiScene);
+    }
+
+    public void LoadSnake()
+    {
+
+        LoadScene(snakeScene);
+    }
+
+    public void LoadQuiz()
+    {
+
+        LoadScene(quizScene);
+    }
+
     //To load a scene:
 
     private void LoadScene(string scene)
@@ -109,51 +174,5 @@ public class GameStateManager : MonoBehaviour
     {
 
         currentScene = scene.name;
-    }
-
-    //Classic scenes loaders
-
-    public void LoadIntro()
-    {
-
-        LoadScene(intro);
-    }
-
-    public void LoadGame()
-    {
-
-        LoadScene(game);
-    }
-
-    public void LoadCorridor()
-    {
-
-        LoadScene(corridor);
-    }
-
-    public void LoadHangar()
-    {
-
-        LoadScene(hangar);
-    }
-
-    public void LoadEnding()
-    {
-
-        LoadScene(ending);
-    }
-
-    //Mini games scenes loaders
-
-    public void LoadMemory()
-    {
-
-        LoadScene(memory);
-    }
-
-    public void LoadSimon()
-    {
-
-        LoadScene(simon);
     }
 }
