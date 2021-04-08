@@ -15,6 +15,35 @@ using UnityEngine;
 public class Scenario : MonoBehaviour
 {
     public static List<string[]> scenario = new List<string[]>();
+    public static int i = 0;
+
+    /// <summary>
+    /// Type du texte
+    /// - Phrase déclarative
+    /// - Phrase interrogative
+    /// - Suivi de réponses
+    /// </summary>
+    public enum Texte
+    {
+        Declaratif,
+        Interrogatif,
+        Reponse,
+    }
+
+    /// <summary>
+    /// Structure de données représentant une phrase et son type.
+    /// </summary>
+    public struct Phrase
+    {
+        public readonly Texte type;
+        public readonly string contenu;
+
+        public Phrase(Texte type, string contenu)
+        {
+            this.type = type;
+            this.contenu = contenu;
+        }
+    }
 
     private void Start()
     {
@@ -25,6 +54,37 @@ public class Scenario : MonoBehaviour
         }
         stream.Close();
         DebugScenario();
+    }
+
+    /// <summary>
+    /// Retourne la prochaine phrase du scénario.
+    /// </summary>
+    /// <returns></returns>
+    public Phrase? Next()
+    {
+        if (i < scenario.Count)
+        {
+            if (scenario[i].Length == 1)
+            {
+                return new Phrase(Texte.Declaratif, scenario[i][0]);
+            }
+            else
+            {
+                for (int j = 0; j < scenario[i].Length; j++)
+                {
+                    if (j == 0)
+                    {
+                        return new Phrase(Texte.Interrogatif, scenario[i][0]);
+                    }
+                    else
+                    {
+                        return new Phrase(Texte.Reponse, scenario[i][j]);
+                    }
+                }
+            }
+            i++;
+        }
+        return null;
     }
 
     /// <summary>
