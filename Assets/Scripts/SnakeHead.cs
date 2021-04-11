@@ -5,7 +5,23 @@ using UnityEngine;
 public class SnakeHead : SnakeBody
 {
     // [Head, Body1, Body2, ...]
-    private static LinkedList<float[]> snakePosition = new LinkedList<float[]>();
+    private static LinkedList<Direction> snakePosition = new LinkedList<Direction>();
+    private enum Direction
+    {
+        LEFT,
+        UP,
+        RIGHT,
+        DOWN,
+        STOP,
+    }
+
+    /// <summary>
+    /// Démarrage
+    /// </summary>
+    private void Start()
+    {
+        snakePosition.AddFirst(Direction.STOP);
+    }
 
     /// <summary>
     /// Inputs de rotation pour la tête.
@@ -13,37 +29,67 @@ public class SnakeHead : SnakeBody
     private void Update()
     {
         // inputs 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            Debug.Log("Snake bouge vers la droite.");
-            ChangeDirections(1, 0);
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            Debug.Log("Snake bouge vers la gauche.");
-            ChangeDirections(-1, 0);
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            Debug.Log("Snake bouge vers le bas.");
-            ChangeDirections(0, -1);
-        }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            Debug.Log("Snake bouge vers le haut.");
-            ChangeDirections(0, 1);
-        }
+        if (Input.GetKeyDown(KeyCode.RightArrow)) ChangeDirections(Direction.RIGHT);
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) ChangeDirections(Direction.LEFT);
+        if (Input.GetKeyDown(KeyCode.DownArrow)) ChangeDirections(Direction.DOWN);
+        if (Input.GetKeyDown(KeyCode.UpArrow)) ChangeDirections(Direction.UP);
+        DebugSnakePosition();
         MoveSnake();
+        if (HasChangedDirection(snakePosition.First))
+        {
+            snakePosition.RemoveLast();
+        }
     }
 
     /// <summary>
     /// Change la direction de SnakeHead.
     /// </summary>
-    /// <param name="x"></param>
-    /// <param name="y"></param>
-    private void ChangeDirections(float x, float y)
+    /// <param name="direction"></param>
+    private void ChangeDirections(Direction direction)
     {
-        snakePosition.AddFirst(new float[] { x, y });
+        if (snakePosition.First.Value == Direction.STOP || CanChangeDirection(direction)) {
+            snakePosition.AddFirst(direction);
+            Debug.Log("Snake move to " + direction.ToString());
+        }
+        Debug.Log("Snake can't move to " + direction.ToString());
+    }
+
+    /// <summary>
+    /// Indique si SnakeHead peut rotate.
+    /// </summary>
+    /// <param name="direction"></param>
+    /// <returns></returns>
+    private bool CanChangeDirection(Direction direction)
+    {
+        return Math.Abs(snakePosition.First.Value - direction) % 2 != 0;
+    }
+
+    /// <summary>
+    /// Indique par un booléan si snake a rotate.
+    /// </summary>
+    /// <param name="direction"></param>
+    /// <returns></returns>
+    private bool HasChangedDirection(LinkedListNode<Direction> direction)
+    {
+        if (direction.Next != null && Math.Abs(direction.Next.Value - direction.Value) % 2 != 0)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    /// <summary>
+    /// Retourne l'angle de rotation pour changer de direction.
+    /// </summary>
+    /// <param name="direction"></param>
+    /// <returns></returns>
+    private float RotateBy(LinkedListNode<Direction> direction)
+    {
+        if (direction.Value - direction.Next.Value == 1)
+        {
+            return 90;
+        }
+        return -90;
     }
 
     /// <summary>
@@ -52,22 +98,50 @@ public class SnakeHead : SnakeBody
     private void MoveSnake()
     {
         SnakeBody body = this;
+        LinkedListNode<Direction> direction = snakePosition.First;
         while (body != null)
         {
             // rotation
-            float rotation = Math.Max(
-                Math.Abs(snakePosition.First.Next.Value[0] - snakePosition.First.Value[0]),
-                Math.Abs(snakePosition.First.Next.Value[1] - snakePosition.First.Value[1])
-            );
-            transform.Rotate(0, 0, rotation * 90, Space.Self);
+            if (HasChangedDirection(direction))
+            {
+                transform.Rotate(0, 0, RotateBy(direction), Space.Self);
+            }
             // translation
+            float x = 0;
+            switch (direction.Value)
+            {
+                case Direction.LEFT:
+                case Direction.UP:
+                    x = -1;
+                    break;
+                case Direction.DOWN:
+                case Direction.RIGHT:
+                    x = 1;
+                    break;
+            }
             transform.Translate(new Vector2(
-                snakePosition.First.Value[0] * SNAKE_SPEED * Time.deltaTime,
-                snakePosition.First.Value[0] * SNAKE_SPEED * Time.deltaTime
+                x * SNAKE_SPEED * Time.deltaTime,
+                0
             ));
             // next
             body = next;
+            direction = direction.Next;
         }
+    }
+
+    /// <summary>
+    /// Affiche l'état du snake.
+    /// </summary>
+    private void DebugSnakePosition()
+    {
+        LinkedListNode<Direction> snakePos = snakePosition.First;
+        string snake = "";
+        while (snakePos != null)
+        {
+            snake += snakePos.Value + " ";
+            snakePos = snakePos.Next;
+        }
+        Debug.Log(snake);
     }
 
     /// <summary>
@@ -84,16 +158,17 @@ public class SnakeHead : SnakeBody
             if (collision.gameObject.name.StartsWith("mur"))
             {
                 Debug.Log("Snake se prend un mur !");
-                snakePosition.First.Value[0] = 0;
-                snakePosition.First.Value[1] = 0;
+                ChangeDirections(Direction.STOP);
             }
             else if (collision.gameObject.name.StartsWith("pomme"))
             {
                 Debug.Log("Snake mange une pomme et grandit !");
+                snakePosition.AddLast(snakePosition.First.Value);
             }
             else // TODO: à verifier la condition pour que snake collide avec snake
             {
                 Debug.Log("Snake se mord la queue !");
+                ChangeDirections(Direction.STOP);
             }
         }
     }
