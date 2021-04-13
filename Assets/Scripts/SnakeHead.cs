@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Point d'entrée et tête du snake + logique.
+/// </summary>
 public class SnakeHead : SnakeBody
 {
     // [Head, Body1, Body2, ...]
     private static LinkedList<Direction> snakePosition = new LinkedList<Direction>();
+    public Sprite snakehead, snakebody;
     private enum Direction
     {
         LEFT,
@@ -16,7 +20,7 @@ public class SnakeHead : SnakeBody
     }
 
     /// <summary>
-    /// Démarrage
+    /// Démarrage du mini jeu.
     /// </summary>
     private void Start()
     {
@@ -71,7 +75,7 @@ public class SnakeHead : SnakeBody
     /// <returns></returns>
     private bool HasChangedDirection(LinkedListNode<Direction> direction)
     {
-        if (direction.Next != null && Math.Abs(direction.Next.Value - direction.Value) % 2 != 0)
+        if (direction.Next != null && (Math.Abs(direction.Next.Value - direction.Value) % 2 != 0 || direction.Next.Value == Direction.STOP))
         {
             return true;
         }
@@ -80,16 +84,26 @@ public class SnakeHead : SnakeBody
 
     /// <summary>
     /// Retourne l'angle de rotation pour changer de direction.
+    /// Appelé si HasChangedDirection est vrai.
+    /// Direction.STOP => 0
+    /// 1 ou -3 => va a gauche (-90)
+    /// -1 ou 3 => va a droite (90)
     /// </summary>
     /// <param name="direction"></param>
     /// <returns></returns>
     private float RotateBy(LinkedListNode<Direction> direction)
     {
-        if (direction.Value - direction.Next.Value == 1)
+        if (direction.Next.Value == Direction.STOP) {
+            return 0;
+        }
+        else if (direction.Value - direction.Next.Value == 1 || direction.Value - direction.Next.Value == -3)
+        {
+            return -90;
+        }
+        else
         {
             return 90;
         }
-        return -90;
     }
 
     /// <summary>
@@ -104,25 +118,31 @@ public class SnakeHead : SnakeBody
             // rotation
             if (HasChangedDirection(direction))
             {
-                transform.Rotate(0, 0, RotateBy(direction), Space.Self);
+                transform.Rotate(0, 0, RotateBy(direction));
             }
             // translation
             float x = 0;
+            float y = 0;
             switch (direction.Value)
             {
                 case Direction.LEFT:
-                case Direction.UP:
                     x = -1;
                     break;
+                case Direction.UP:
+                    y = 1;
+                    break;
                 case Direction.DOWN:
+                    y = -1;
+                    break;
                 case Direction.RIGHT:
                     x = 1;
                     break;
             }
-            transform.Translate(new Vector2(
+            transform.position += new Vector3(
                 x * SNAKE_SPEED * Time.deltaTime,
+                y * SNAKE_SPEED * Time.deltaTime,
                 0
-            ));
+            );
             // next
             body = next;
             direction = direction.Next;
@@ -164,6 +184,10 @@ public class SnakeHead : SnakeBody
             {
                 Debug.Log("Snake mange une pomme et grandit !");
                 snakePosition.AddLast(snakePosition.First.Value);
+                GameObject body = new GameObject("body", typeof(SnakeBody), typeof(BoxCollider2D));
+                SpriteRenderer renderer = body.AddComponent<SpriteRenderer>();
+                renderer.sprite = snakebody;
+                next = body.GetComponent<SnakeBody>();
             }
             else // TODO: à verifier la condition pour que snake collide avec snake
             {
