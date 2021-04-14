@@ -802,7 +802,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.5214024
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1031,3 +1031,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   snakehead: {fileID: 21300000, guid: 97cd9c3e93a2a4e41a9795291b79c210, type: 3}
   snakebody: {fileID: 21300000, guid: 97cd9c3e93a2a4e41a9795291b79c210, type: 3}
+  pomme: {fileID: 359489442}

@@ -10,6 +10,7 @@ public class SnakeHead : SnakeBody
     // [Head, Body1, Body2, ...]
     private static LinkedList<Direction> snakePosition = new LinkedList<Direction>();
     public Sprite snakehead, snakebody;
+    public GameObject pomme;
     private enum Direction
     {
         LEFT,
@@ -184,10 +185,18 @@ public class SnakeHead : SnakeBody
             {
                 Debug.Log("Snake mange une pomme et grandit !");
                 snakePosition.AddLast(snakePosition.First.Value);
+                // queue
                 GameObject body = new GameObject("body", typeof(SnakeBody), typeof(BoxCollider2D));
                 SpriteRenderer renderer = body.AddComponent<SpriteRenderer>();
                 renderer.sprite = snakebody;
                 next = body.GetComponent<SnakeBody>();
+                // pomme
+                System.Random r = new System.Random();
+                pomme.transform.position += new Vector3(
+                    (float)r.NextDouble() * 8 - 4, // -4 => 4
+                    (float)r.NextDouble() * 8 - 4,
+                    0
+                );
             }
             else // TODO: à verifier la condition pour que snake collide avec snake
             {
