@@ -35,9 +35,10 @@ public class SnakeHead : SnakeBody
     {
         // inputs 
         if (Input.GetKeyDown(KeyCode.RightArrow)) ChangeDirections(Direction.RIGHT);
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) ChangeDirections(Direction.LEFT);
-        if (Input.GetKeyDown(KeyCode.DownArrow)) ChangeDirections(Direction.DOWN);
-        if (Input.GetKeyDown(KeyCode.UpArrow)) ChangeDirections(Direction.UP);
+        else if (Input.GetKeyDown(KeyCode.LeftArrow)) ChangeDirections(Direction.LEFT);
+        else if (Input.GetKeyDown(KeyCode.DownArrow)) ChangeDirections(Direction.DOWN);
+        else if (Input.GetKeyDown(KeyCode.UpArrow)) ChangeDirections(Direction.UP);
+        else ChangeDirections(snakePosition.First.Value);
         DebugSnakePosition();
         MoveSnake();
         if (HasChangedDirection(snakePosition.First))
@@ -70,7 +71,7 @@ public class SnakeHead : SnakeBody
     }
 
     /// <summary>
-    /// Indique par un booléan si snake a rotate.
+    /// Indique par un booléen si snake a rotate.
     /// </summary>
     /// <param name="direction"></param>
     /// <returns></returns>
@@ -119,7 +120,7 @@ public class SnakeHead : SnakeBody
             // rotation
             if (HasChangedDirection(direction))
             {
-                transform.Rotate(0, 0, RotateBy(direction));
+                body.transform.Rotate(0, 0, RotateBy(direction));
             }
             // translation
             float x = 0;
@@ -139,7 +140,7 @@ public class SnakeHead : SnakeBody
                     x = 1;
                     break;
             }
-            transform.position += new Vector3(
+            body.transform.position += new Vector3(
                 x * SNAKE_SPEED * Time.deltaTime,
                 y * SNAKE_SPEED * Time.deltaTime,
                 0
