@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Charge un scénario au format tsv (csv avec tab) écrit dans Google Sheets.
