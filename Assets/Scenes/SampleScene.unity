@@ -166,14 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introScene: Intro
   gameScene: SampleScene
-  corridorScene: Corridor_AA
-  hangarScene: Hangar_AB
   endingScene: Ending
-  memoryScene: Memory
-  simonScene: Simon
-  hanoiScene: Hanoi
-  snakeScene: Snake
-  quizScene: Quiz
   lastUpdate: 0
 --- !u!1 &519420028
 GameObject:
@@ -517,7 +510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417c81c6b7115f246bea8525815de077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScenarioText: {fileID: 1963518986}
 --- !u!1 &889203515
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,10 +638,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1963518983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 417c81c6b7115f246bea8525815de077, type: 3}
+  m_Script: {fileID: 11500000, guid: e2000ed2a1eba524c98cc432b997b915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScenarioText: {fileID: 0}
+  scenarioText: {fileID: 1963518986}
 --- !u!114 &1963518986
 MonoBehaviour:
   m_ObjectHideFlags: 0
