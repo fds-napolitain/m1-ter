@@ -18,8 +18,6 @@ public class Scenario : MonoBehaviour
     public static List<string[]> scenario = new List<string[]>();
     public static int i = 0;
 
-    public Text ScenarioText;
-
     /// <summary>
     /// Type du texte
     /// - Phrase déclarative
@@ -50,6 +48,8 @@ public class Scenario : MonoBehaviour
 
     private void Start()
     {
+        //
+
         StreamReader stream = new StreamReader("Assets/Scenario/scenario.tsv");
         while (!stream.EndOfStream)
         {
