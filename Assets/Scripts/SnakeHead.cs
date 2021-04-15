@@ -167,6 +167,51 @@ public class SnakeHead : SnakeBody
     }
 
     /// <summary>
+    /// Append body to last body
+    /// </summary>
+    private void SpawnSnakeBody()
+    {
+        SnakeBody b = this;
+        while (b.next != null)
+        {
+            b = next;
+        }
+        Vector3 p = new Vector3(0, 0, 0);
+        p += b.transform.position;
+        int r = 0;
+        switch (snakePosition.Last.Value)
+        {
+            case Direction.LEFT:
+                p.x += b.GetComponent<SpriteRenderer>().sprite.bounds.size.x * 0.2f;
+                break;
+            case Direction.UP:
+                p.y -= b.GetComponent<SpriteRenderer>().sprite.bounds.size.y * 0.2f;
+                r = 90;
+                break;
+            case Direction.RIGHT:
+                p.x -= b.GetComponent<SpriteRenderer>().sprite.bounds.size.x * 0.2f;
+                r = 180;
+                break;
+            case Direction.DOWN:
+                p.y += b.GetComponent<SpriteRenderer>().sprite.bounds.size.y * 0.2f;
+                r = -90;
+                break;
+            case Direction.STOP:
+                break;
+            default:
+                break;
+        }
+        GameObject body = new GameObject("body", typeof(SnakeBody), typeof(BoxCollider2D));
+        SpriteRenderer renderer = body.AddComponent<SpriteRenderer>();
+        renderer.sprite = snakebody;
+        next = body.GetComponent<SnakeBody>();
+        next.transform.position += p;
+        next.transform.Rotate(0, 0, r);
+        next.transform.localScale *= 0.2f;
+        snakePosition.AddLast(snakePosition.Last.Value);
+    }
+
+    /// <summary>
     /// Collision entre SnakeHead et les autres objets
     /// TODO: améliorer la détection en suivant les bonnes pratiques
     /// https://gamedev.stackexchange.com/questions/154901/dynamic-vs-kinematic-do-either-of-these-cause-a-collision-before-oncollisionent
@@ -185,12 +230,8 @@ public class SnakeHead : SnakeBody
             else if (collision.gameObject.name.StartsWith("pomme"))
             {
                 Debug.Log("Snake mange une pomme et grandit !");
-                snakePosition.AddLast(snakePosition.First.Value);
                 // queue
-                GameObject body = new GameObject("body", typeof(SnakeBody), typeof(BoxCollider2D));
-                SpriteRenderer renderer = body.AddComponent<SpriteRenderer>();
-                renderer.sprite = snakebody;
-                next = body.GetComponent<SnakeBody>();
+                SpawnSnakeBody();
                 // pomme
                 System.Random r = new System.Random();
                 pomme.transform.position += new Vector3(
