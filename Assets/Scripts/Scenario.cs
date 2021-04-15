@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Charge un scénario au format tsv (csv avec tab) écrit dans Google Sheets.
@@ -16,6 +17,8 @@ public class Scenario : MonoBehaviour
 {
     public static List<string[]> scenario = new List<string[]>();
     public static int i = 0;
+
+    public Text ScenarioText;
 
     /// <summary>
     /// Type du texte
