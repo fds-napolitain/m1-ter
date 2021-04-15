@@ -166,14 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introScene: Intro
   gameScene: SampleScene
-  corridorScene: Corridor_AA
-  hangarScene: Hangar_AB
   endingScene: Ending
-  memoryScene: Memory
-  simonScene: Simon
-  hanoiScene: Hanoi
-  snakeScene: Snake
-  quizScene: Quiz
   lastUpdate: 0
 --- !u!1 &519420028
 GameObject:
@@ -401,7 +394,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &760242103
 RectTransform:
@@ -479,7 +472,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e5e3fda53ff84e64c8b2d2d50cbb243f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -517,7 +510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417c81c6b7115f246bea8525815de077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScenarioText: {fileID: 1963518986}
 --- !u!1 &889203515
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,10 +638,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1963518983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 417c81c6b7115f246bea8525815de077, type: 3}
+  m_Script: {fileID: 11500000, guid: e2000ed2a1eba524c98cc432b997b915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScenarioText: {fileID: 0}
+  scenarioText: {fileID: 1963518986}
 --- !u!114 &1963518986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,7 +655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -677,7 +669,7 @@ MonoBehaviour:
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
