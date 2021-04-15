@@ -54,7 +54,7 @@ public class GameStateManager : MonoBehaviour
             }
         }
 
-        if (currentScene == gameOverScene)
+        if (currentScene == endingScene)
         {
             if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0)
             {
