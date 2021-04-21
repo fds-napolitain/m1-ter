@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 395264308}
   - component: {fileID: 395264309}
+  - component: {fileID: 395264310}
   m_Layer: 0
   m_Name: GameState
   m_TagString: Untagged
@@ -168,6 +169,19 @@ MonoBehaviour:
   gameScene: SampleScene
   endingScene: Ending
   lastUpdate: 0
+--- !u!114 &395264310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395264307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2000ed2a1eba524c98cc432b997b915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenarioText: {fileID: 1963518986}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +441,7 @@ GameObject:
   - component: {fileID: 881008107}
   - component: {fileID: 881008106}
   - component: {fileID: 881008108}
+  - component: {fileID: 881008109}
   m_Layer: 0
   m_Name: Copie de spn-imagines-nation (1)
   m_TagString: Untagged
@@ -510,6 +525,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417c81c6b7115f246bea8525815de077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &881008109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881008105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2000ed2a1eba524c98cc432b997b915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenarioText: {fileID: 1963518986}
 --- !u!1 &889203515
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,7 +685,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -668,13 +696,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 1
+    m_Alignment: 3
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1963518987
 CanvasRenderer:
   m_ObjectHideFlags: 0
