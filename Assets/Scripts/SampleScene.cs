@@ -1,41 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using static Scenario;
 
 public class SampleScene : MonoBehaviour
 {
     public Text scenarioText;
+    public Text questionText;
+    public Text reponsesText;
 
     void Start()
     {
-        Phrase? phrase = Next();
-        if (phrase.HasValue)
-        {
-            if (phrase.Value.type == Texte.Interrogatif)
-            {
-
-            }
-            Debug.Log(phrase.Value.contenu);
-            scenarioText.text = phrase.Value.contenu;
-        }
+        Next();
+        Debug.Log("Next()" + GameStateManager.text_indice);
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0)
+        if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
         {
-            Phrase? phrase = Next();
-            if (phrase.HasValue)
-            {
-                if (phrase.Value.type == Texte.Interrogatif)
-                {
-
-                }
-                Debug.Log(phrase.Value.contenu);
-                scenarioText.text = phrase.Value.contenu;
-            }
+            Next();
         }
     }
 
@@ -43,31 +25,33 @@ public class SampleScene : MonoBehaviour
     /// Retourne la prochaine phrase du scénario.
     /// </summary>
     /// <returns></returns>
-    public static Phrase? Next()
+    public void Next()
     {
-        if (GameStateManager.i < GameStateManager.scenario.Count)
+        if (GameStateManager.text_indice < GameStateManager.scenario.Count)
         {
-            if (GameStateManager.scenario[GameStateManager.i].Length == 1)
+            if (GameStateManager.scenario[GameStateManager.text_indice].Length == 1)
             {
-                return new Phrase(Texte.Declaratif, GameStateManager.scenario[GameStateManager.i][0]);
+                scenarioText.text = GameStateManager.scenario[GameStateManager.text_indice][0];
+                questionText.text = "";
+                reponsesText.text = "";
             }
             else
             {
-                for (int j = 0; j < GameStateManager.scenario[GameStateManager.i].Length; j++)
+                for (int j = 0; j < GameStateManager.scenario[GameStateManager.text_indice].Length; j++)
                 {
                     if (j == 0)
                     {
-                        return new Phrase(Texte.Interrogatif, GameStateManager.scenario[GameStateManager.i][0]);
+                        scenarioText.text = "";
+                        questionText.text = GameStateManager.scenario[GameStateManager.text_indice][0];
                     }
                     else
                     {
-                        return new Phrase(Texte.Reponse, GameStateManager.scenario[GameStateManager.i][j]);
+                        reponsesText.text += GameStateManager.scenario[GameStateManager.text_indice][j] + "\n";
                     }
                 }
             }
-            GameStateManager.i++;
+            GameStateManager.text_indice++;
         }
-        return null;
     }
 
 }

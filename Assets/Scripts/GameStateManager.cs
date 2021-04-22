@@ -27,26 +27,32 @@ public class GameStateManager : MonoBehaviour
     public float lastUpdate;
 
     public static List<string[]> scenario = new List<string[]>();
-    public static int i = 0;
+    public static int text_indice = 0;
+    public static bool flag = false;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //isFinished = false;
-        DontDestroyOnLoad(this.gameObject);
-        //projectPath = Application.dataPath;
-        currentScene = introScene;
-        SceneManager.sceneLoaded += OnSceneLoaded;
-
-        // scenario load
-        StreamReader stream = new StreamReader("Assets/Scenario/scenario.tsv");
-        while (!stream.EndOfStream)
+        if (!flag)
         {
-            scenario.Add(stream.ReadLine().Replace("\t\t", "").Split('\t'));
+            Debug.Log("Loading GameManager");
+            //isFinished = false;
+            DontDestroyOnLoad(this.gameObject);
+            //projectPath = Application.dataPath;
+            currentScene = introScene;
+            SceneManager.sceneLoaded += OnSceneLoaded;
+
+            // scenario load
+            StreamReader stream = new StreamReader("Assets/Scenario/scenario.tsv");
+            while (!stream.EndOfStream)
+            {
+                scenario.Add(stream.ReadLine().Replace("\t\t", "").Split('\t'));
+            }
+            stream.Close();
+            flag = true;
         }
-        stream.Close();
     }
 
     // Update is called once per frame
