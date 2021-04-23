@@ -41,7 +41,7 @@ public class SnakeHead : SnakeBody
         next.transform.position += p;
         next.transform.Rotate(0, 0, r);
         next.transform.localScale *= 0.2f;
-        snakes.Add(body);
+        snakes.Add(body.GetComponent<SnakeHead>);
 
     }
 
@@ -65,12 +65,17 @@ public class SnakeHead : SnakeBody
             Boolean test = false;
             if (hasChangedDirection)
             {
-                int r;
-                if (body.direction - body.precDirection == 1|| body.direction.Value - body.precDirection.Value == -3)
+                int r = -1 ;
+                Debug.Log("nombre " + Enum.ToObject(body.direction.GetType(), body.direction));
+                if (body.direction - body.precDirection == 1|| body.direction - body.precDirection == -3)
                 {
+                    Debug.Log("blabla");
                     r = -90;
                 }
-                if(body.direction)
+                if (body.direction == Direction.DOWN)
+                {
+
+                }
                 else
                 {
                     r = 90;
@@ -81,7 +86,7 @@ public class SnakeHead : SnakeBody
                 test = true;
             }
             // translation
-            switch (body.direction.Value)
+            switch (body.direction)
             {
                 case Direction.LEFT:
                     x = -1;
@@ -115,7 +120,7 @@ public class SnakeHead : SnakeBody
         Move(0);
     }
 
-    private void OnMouseDown()
+    private void OnClick()
     {
         if (this.spriteRenderer.sprite.Equals("button_on"))
         {
