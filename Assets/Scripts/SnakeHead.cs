@@ -5,8 +5,10 @@ using UnityEngine;
 /// <summary>
 /// Point d'entrée et tête du snake + logique.
 /// </summary>
+///
+
 public class SnakeHead : SnakeBody
-{
+{/*
     // [Head, Body1, Body2, ...]
     private static LinkedList<Direction> snakePosition = new LinkedList<Direction>();
     public Sprite snakehead, snakebody;

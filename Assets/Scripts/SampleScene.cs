@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class SampleScene : MonoBehaviour
@@ -36,11 +37,10 @@ public class SampleScene : MonoBehaviour
                     {
                         Debug.Log("Réponse 3 cliqué.");
                     }
-                    Debug.Log("Fail.");
                 }
             }
-            Debug.Log("Clic.");
             Next();
+            Debug.Log("Clic.");
         }
     }
 
