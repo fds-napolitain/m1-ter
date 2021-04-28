@@ -1,29 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Point d'entrée et tête du snake + logique.
 /// </summary>
-public class SnakeHead : SnakeBody
+public class SnakeHead : MonoBehaviour
 {
     // [Head, Body1, Body2, ...]
     private static LinkedList<Direction> snakePosition = new LinkedList<Direction>();
     public Sprite snakehead, snakebody;
     public GameObject pomme;
+    protected const float SNAKE_SPEED = 0.25f;
 
 
 
-    private static List<SnakeHead> snakes;
+    private static List<SnakeHead> snakes = new List<SnakeHead>();
     public List<GameObject> pommes;
-    private int x;
-    private int y;
+    private float x;
+    private float y;
     public static int MAX_X = 8;
     public static int MAX_Y = 8;
     public Direction direction;
     public Direction precDirection;
     public Boolean hasChangedDirection;
     SpriteRenderer spriteRenderer;
+    GameObject boutton_up;
+    GameObject boutton_down;
+    GameObject boutton_right;
+    GameObject boutton_left;
+
     public enum Direction
     {
         LEFT,
@@ -37,35 +44,41 @@ public class SnakeHead : SnakeBody
         GameObject body = new GameObject("body", typeof(SnakeHead), typeof(BoxCollider2D));
         SpriteRenderer renderer = body.AddComponent<SpriteRenderer>();
         renderer.sprite = snakebody;
-        next = body.GetComponent<SnakeBody>();
+        SnakeHead next = body.GetComponent<SnakeHead>();
         next.transform.position += p;
         next.transform.Rotate(0, 0, r);
         next.transform.localScale *= 0.2f;
-        snakes.Add(body.GetComponent<SnakeHead>);
+        snakes.Add(next);
 
     }
 
     private void Start()
     {
-        if (!this.spriteRenderer.sprite.Equals("button_on"))
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (name =="snake_head")
         {
             snakes.Add(this);
             direction = Direction.RIGHT;
-            directionPrec = Direction.RIGHT;
+            precDirection = Direction.RIGHT;
             hasChangedDirection = false;
-            Move(0);
+            
+            Move();
         }
     }
 
-    private void Move(int index)
+    private void Move()
     {
-        if (index < snakes.Count )
+        for ( int index = 0; index < snakes.Count; index ++ )
         {
             SnakeHead body = snakes[index];
+            Debug.Log("body " + body);
             Boolean test = false;
             if (hasChangedDirection)
             {
                 int r = -1 ;
+                /**
+                 * a finir !!
+                 * */
                 Debug.Log("nombre " + Enum.ToObject(body.direction.GetType(), body.direction));
                 if (body.direction - body.precDirection == 1|| body.direction - body.precDirection == -3)
                 {
@@ -85,6 +98,8 @@ public class SnakeHead : SnakeBody
                 precDirection = direction;
                 test = true;
             }
+            x = 0;
+            y = 0;
             // translation
             switch (body.direction)
             {
@@ -106,8 +121,8 @@ public class SnakeHead : SnakeBody
                 y * SNAKE_SPEED * Time.deltaTime,
                 0
             );
-            Move(index++);
-            if(index-1 < snakes.Count - 1 && test)
+           // Move(index++);
+            if(index < snakes.Count - 1 && test)
             {
                 snakes[index].hasChangedDirection = true;
                 snakes[index].direction = snakes[index - 1].direction;
@@ -117,13 +132,12 @@ public class SnakeHead : SnakeBody
 
     private void Update()
     {
-        Move(0);
+        Move();
     }
 
-    private void OnClick()
+    private void OnMouseDown()
     {
-        if (this.spriteRenderer.sprite.Equals("button_on"))
-        {
+        
             switch (this.name)
             {
                 case "Button up":
@@ -141,11 +155,61 @@ public class SnakeHead : SnakeBody
                     break;
             }
             snakes[0].hasChangedDirection = true;
-        }
+        Debug.Log("change direction");
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (name.StartsWith("snake"))
+        {
+            if (collision.gameObject.name.StartsWith("mur"))
+            {
+                Debug.Log("Snake se prend un mur !");
+                Debug.Log("Défaite");
+                SceneManager.LoadScene("Hangar_AB");
+            }
+            else if (collision.gameObject.name.StartsWith("pomme"))
+            {
+                Debug.Log("Snake mange une pomme et grandit !");
+                // queue
+                Vector3 p = new Vector3(0, 0, 0);
+                p += this.transform.position;
+                int r = 0;
+                switch (precDirection)
+                {
+                    case Direction.LEFT:
+                        p.x += this.GetComponent<SpriteRenderer>().sprite.bounds.size.x * 0.2f;
+                        break;
+                    case Direction.UP:
+                        p.y -= this.GetComponent<SpriteRenderer>().sprite.bounds.size.y * 0.2f;
+                        r = 90;
+                        break;
+                    case Direction.RIGHT:
+                        p.x -= this.GetComponent<SpriteRenderer>().sprite.bounds.size.x * 0.2f;
+                        r = 180;
+                        break;
+                    case Direction.DOWN:
+                        p.y += this.GetComponent<SpriteRenderer>().sprite.bounds.size.y * 0.2f;
+                        r = -90;
+                        break;
+                    default:
+                        break;
+                }
+                addBodySnake(p, r);
+                // pomme
+                System.Random ra = new System.Random();
+                pomme.transform.position += new Vector3(
+                    (float)ra.NextDouble() * 8 - 4, // -4 => 4
+                    (float)ra.NextDouble() * 8 - 4,
+                    0
+                );
+            }
+            else // TODO: à verifier la condition pour que snake collide avec snake
+            {
+                Debug.Log("Snake se mord la queue !");
+            }
+        }
     }
         /*
         /// <summary>
