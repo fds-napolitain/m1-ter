@@ -9,8 +9,7 @@ using UnityEngine.SceneManagement;
 namespace Assets.Scripts
 {
     /// <summary>
-    /// Structure de données utilisé pour le scénario.
-    /// Arbre souple.
+    /// TreeNode utilisé pour Tree (comme LinkedListNode pour LinkedList).
     /// </summary>
     public class TreeNode
     {

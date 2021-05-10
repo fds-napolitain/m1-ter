@@ -8,12 +8,17 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts
 {
+    /// <summary>
+    /// Structure de données utilisé pour le scénario.
+    /// Arbre souple.
+    /// </summary>
     public class Tree
     {
-        public TreeNode node = new TreeNode("Cliquer pour commencer");
+        public TreeNode node = new TreeNode("Cliquer pour commencer"); // point d'entrée
 
         public Tree()
         {
+            // lecture du fichier importé sous format txt (google docs)
             StreamReader stream = new StreamReader("Assets/Scenario/scenario.txt");
             List<string> tmp = new List<string>();
             while (!stream.EndOfStream)
@@ -21,20 +26,21 @@ namespace Assets.Scripts
                 string line = stream.ReadLine();
                 if (!line.StartsWith("--") && line.Length > 0)
                 {
-
+                    // rajoute les lignes seulement pleines et sans les lignes "---------------"
                     tmp.Add(line);
                 }
             }
+            // pour chaque ligne
             for (int i = 0; i < tmp.Count; i++)
             {
                 if (i < tmp.Count - 1 && tmp[i + 1].StartsWith("CHOIX")) // question, réponses (suivi de texte)
                 {
-                    if (tmp[i + 4].StartsWith("ROUTE"))
+                    if (tmp[i + 4].StartsWith("ROUTE")) // 3 réponses
                     {
                         node.AddChild(new TreeNode(tmp[i], tmp[i + 2], tmp[i + 3], tmp[i + 4]));
                         i += 4;
                     }
-                    else
+                    else // 2 réponses
                     {
                         node.AddChild(new TreeNode(tmp[i], tmp[i + 2], tmp[i + 3]));
                         i += 3;
@@ -44,7 +50,7 @@ namespace Assets.Scripts
                 {
                     TreeNode treeNode = node;
                     string path = Regex.Split(tmp[i-1], " ")[1];
-                    while (path.Length > 1)
+                    while (path.Length > 1) // parcours de l'arbre pour ajouter 
                     {
                         if (path.StartsWith("A"))
                         {
