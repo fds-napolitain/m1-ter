@@ -63,7 +63,7 @@ namespace Assets.Scripts
                     tmp[i + 1].Contains("TOUR") ||
                     tmp[i + 1].Contains("SNAKE")))
                 {
-                    current.AddChild(new TreeNode(tmp[i]));
+                    current.AddChild(new TreeNode(tmp[i], tmp[i + 2], tmp[i + 3]));
                     current = current.children[0];
                     i += 3;
                 }
@@ -72,15 +72,16 @@ namespace Assets.Scripts
                 {
                     current = node;
                     // parcourir a chaque fois les phrases qui se suivent sans branches
-                    while (current.children.Count == 1)
+                    while (current.children.Count == 1 && !String.IsNullOrEmpty(current.phrase))
                     {
+                        Debug.LogError(current.phrase + " " + i);
                         current = current.children[0];
                     }
                     string path = Regex.Split(tmp[i-1], " ")[1];
                     // parcours de l'arbre pour ajouter
-                    Debug.LogError(current.phrase);
                     while (path.Length >= 3)
                     {
+                        Debug.LogError(current.phrase + " " + i);
                         if (path.StartsWith("A"))
                         {
                             current = current.children[0];
@@ -95,8 +96,9 @@ namespace Assets.Scripts
                         }
                         path = path.Substring(2, path.Length-2);
                         // parcourir a chaque fois les phrases qui se suivent sans branches
-                        while (current.children.Count == 1)
+                        while (current.children.Count == 1 && !String.IsNullOrEmpty(current.phrase))
                         {
+                            Debug.LogError(current.phrase + " " + i);
                             current = current.children[0];
                         }
                     }
