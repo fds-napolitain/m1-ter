@@ -49,7 +49,7 @@ public class SampleScene : MonoBehaviour
     /// </summary>
     /// <returns></returns>
     public void Next()
-    {
+    {/*
         if (GameStateManager.text_indice < GameStateManager.scenario.Count)
         {
             if (GameStateManager.scenario[GameStateManager.text_indice].Length == 1)
@@ -84,7 +84,7 @@ public class SampleScene : MonoBehaviour
                 }
             }
             GameStateManager.text_indice++;
-        }
+        }*/
     }
 
 }

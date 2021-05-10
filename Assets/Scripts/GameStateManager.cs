@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.IO;
+using Assets.Scripts;
+using System.Text.RegularExpressions;
+
 
 public class GameStateManager : MonoBehaviour
 {
@@ -25,8 +28,8 @@ public class GameStateManager : MonoBehaviour
     private string currentScene;
 
     public float lastUpdate;
+    public Assets.Scripts.Tree scenario;
 
-    public static List<string[]> scenario = new List<string[]>();
     public static int text_indice = 0;
     public static bool flag = false;
 
@@ -45,12 +48,10 @@ public class GameStateManager : MonoBehaviour
             SceneManager.sceneLoaded += OnSceneLoaded;
 
             // scenario load
-            StreamReader stream = new StreamReader("Assets/Scenario/scenario.tsv");
-            while (!stream.EndOfStream)
-            {
-                scenario.Add(stream.ReadLine().Replace("\t\t", "").Split('\t'));
-            }
-            stream.Close();
+            scenario = new Assets.Scripts.Tree();
+            TreeNode tree = scenario.node;
+            tree.Print();
+
             flag = true;
         }
     }
