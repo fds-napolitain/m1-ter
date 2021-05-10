@@ -1384,9 +1384,9 @@ Certes, pas un chat à l’horizon, mais au moins, vous n’êtes pas plongez da
 
 
 CHOIX 2
-“La table de cartes avec un robot croupier chat” → Memory
-“Les montagnes russes” → Snake
-“L’espèce de Twister” → Simon 
+B.A.A “La table de cartes avec un robot croupier chat” → Memory
+B.A.B “Les montagnes russes” → Snake
+B.A.C “L’espèce de Twister” → Simon 
 
 
 ________________

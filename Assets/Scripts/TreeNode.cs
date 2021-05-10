@@ -80,22 +80,22 @@ namespace Assets.Scripts
         /// <summary>
         /// Affiche récursivement le TreeNode depuis lui même vers tous ses fils.
         /// </summary>
-        public void Print()
+        public void Print(int i = 0)
         {
             if (phrase.Length > 0)
             {
-                Debug.Log(phrase);
+                Debug.Log(new String('-', i) + " " + phrase);
             }
             else
             {
-                Debug.Log(question);
-                Debug.Log(reponse1);
-                Debug.Log(reponse2);
-                Debug.Log(reponse3);
+                Debug.Log(new String('-', i) + " " + question);
+                Debug.Log(new String('-', i) + " " + reponse1);
+                Debug.Log(new String('-', i) + " " + reponse2);
+                Debug.Log(new String('-', i) + " " + reponse3);
             }
             foreach (TreeNode item in children)
             {
-                item.Print();
+                item.Print(i + 1);
             }
         }
     }

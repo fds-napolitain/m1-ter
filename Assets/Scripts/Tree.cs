@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Assets.Scripts
 {
@@ -15,6 +16,7 @@ namespace Assets.Scripts
     public class Tree
     {
         public TreeNode node = new TreeNode("Cliquer pour commencer"); // point d'entrée
+        private TreeNode current; // utilisé pour le parseur
 
         public Tree()
         {
@@ -24,72 +26,90 @@ namespace Assets.Scripts
             while (!stream.EndOfStream)
             {
                 string line = stream.ReadLine();
-                if (!line.StartsWith("--") && line.Length > 0)
+                if (line.Length > 0 && !line.StartsWith("--") && !line.StartsWith("__"))
                 {
                     // rajoute les lignes seulement pleines et sans les lignes "---------------"
                     tmp.Add(line);
                 }
             }
             // pour chaque ligne
-            for (int i = 0; i < tmp.Count; i++)
+            current = node;
+            int i = 0;
+            while (i < tmp.Count)
             {
-                if (i < tmp.Count - 1 && tmp[i + 1].StartsWith("CHOIX")) // question, réponses (suivi de texte)
+                // question, réponses (suivi de texte)
+                if (i < tmp.Count - 1 && tmp[i + 1].Contains("CHOIX")) 
                 {
-                    if (tmp[i + 4].StartsWith("ROUTE")) // 3 réponses
+                    // 3 réponses
+                    if (!tmp[i + 4].Contains("ROUTE")) 
                     {
-                        node.AddChild(new TreeNode(tmp[i], tmp[i + 2], tmp[i + 3], tmp[i + 4]));
+                        current.AddChild(new TreeNode(tmp[i], tmp[i + 2], tmp[i + 3], tmp[i + 4]));
                         i += 4;
                     }
-                    else // 2 réponses
+                    // 2 réponses
+                    else
                     {
-                        node.AddChild(new TreeNode(tmp[i], tmp[i + 2], tmp[i + 3]));
+                        current.AddChild(new TreeNode(tmp[i], tmp[i + 2], tmp[i + 3]));
                         i += 3;
                     }
+                    current = current.children[0];
+                    Debug.LogError(current.phrase);
                 }
-                else if (i > 0 && i < tmp.Count-1 && tmp[i-1].StartsWith("ROUTE")) // après un choix (q, r)
+                // après un choix (q, r)
+                else if (i > 0 && i < tmp.Count-1 && tmp[i-1].Contains("ROUTE")) 
                 {
-                    TreeNode treeNode = node;
+                    current = node;
                     string path = Regex.Split(tmp[i-1], " ")[1];
-                    while (path.Length > 1) // parcours de l'arbre pour ajouter 
+                    // parcours de l'arbre pour ajouter
+                    while (path.Length >= 3)  
                     {
                         if (path.StartsWith("A"))
                         {
-                            treeNode = treeNode.children[0];
+                            current = current.children[0];
                         }
                         else if (path.StartsWith("B"))
                         {
-                            treeNode = treeNode.children[1];
+                            current = current.children[1];
                         }
                         else
                         {
-                            treeNode = treeNode.children[2];
+                            current = current.children[2];
                         }
-                        path = path.Substring(2, path.Length);
+                        path = path.Substring(2, path.Length-2);
                     }
-                    if (tmp[i].StartsWith("//")) // changement de scène
+                    // changement de scène
+                    if (tmp[i].Contains("//")) 
                     {
                         if (tmp[i].Contains("couloir"))
                         {
-                            treeNode.AddChild(new TreeNode(tmp[i + 1], "Corridor_AA"));
+                            current.AddChild(new TreeNode(tmp[i + 1], "Corridor_AA"));
                         }
                         if (tmp[i].Contains("repos"))
                         {
-                            treeNode.AddChild(new TreeNode(tmp[i + 1], "Hangar_AA"));
+                            current.AddChild(new TreeNode(tmp[i + 1], "Hangar_AA"));
                         }
                         if (tmp[i].Contains("sortie"))
                         {
-                            treeNode.AddChild(new TreeNode(tmp[i + 1], "Ending"));
+                            current.AddChild(new TreeNode(tmp[i + 1], "Ending"));
+                        }
+                        else
+                        {
+                            current.AddChild(new TreeNode(tmp[i]));
                         }
                     }
                     else
                     {
-                        treeNode.AddChild(new TreeNode(tmp[i]));
+                        current.AddChild(new TreeNode(tmp[i]));
                     }
+                    current = current.children[0];
                 }
-                else // texte classique
+                // texte classique
+                else
                 {
-                    node.AddChild(new TreeNode(tmp[i]));
+                    current.AddChild(new TreeNode(tmp[i]));
+                    current = current.children[0];
                 }
+                i++;
             }
         }
     }
