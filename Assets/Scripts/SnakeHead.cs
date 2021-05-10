@@ -17,7 +17,7 @@ public class SnakeHead : MonoBehaviour
 
 
     private static List<SnakeHead> snakes = new List<SnakeHead>();
-    public List<GameObject> pommes;
+    //public List<GameObject> pommes;
     private float x;
     private float y;
     public static int MAX_X = 8;
@@ -30,6 +30,8 @@ public class SnakeHead : MonoBehaviour
     GameObject boutton_down;
     GameObject boutton_right;
     GameObject boutton_left;
+    public static int maxPommes = 10;
+    public static int nbPommes;
 
     public enum Direction
     {
@@ -48,6 +50,7 @@ public class SnakeHead : MonoBehaviour
         next.transform.position += p;
         next.transform.Rotate(0, 0, r);
         next.transform.localScale *= 0.2f;
+        next.direction = snakes[snakes.Count - 1].direction;
         snakes.Add(next);
 
     }
@@ -72,31 +75,45 @@ public class SnakeHead : MonoBehaviour
         {
             SnakeHead body = snakes[index];
             Debug.Log("body " + body);
-            Boolean test = false;
             if (hasChangedDirection)
             {
-                int r = -1 ;
-                /**
-                 * a finir !!
-                 * */
+                int r = 0;
                 Debug.Log("nombre " + Enum.ToObject(body.direction.GetType(), body.direction));
-                if (body.direction - body.precDirection == 1|| body.direction - body.precDirection == -3)
-                {
-                    Debug.Log("blabla");
-                    r = -90;
-                }
-                if (body.direction == Direction.DOWN)
-                {
-
-                }
-                else
+                if (body.precDirection == Direction.RIGHT && body.direction == Direction.UP)
                 {
                     r = 90;
                 }
+                if (body.precDirection == Direction.RIGHT && body.direction == Direction.DOWN)
+                {
+                    r = -90;
+                }
+                if (body.precDirection == Direction.UP && body.direction == Direction.RIGHT)
+                {
+                    r = -90;
+                }
+                if (body.precDirection == Direction.UP && body.direction == Direction.LEFT)
+                {
+                    r = 90;
+                }
+                if (body.precDirection == Direction.LEFT && body.direction == Direction.UP)
+                {
+                    r = -90;
+                }
+                if (body.precDirection == Direction.LEFT && body.direction == Direction.DOWN)
+                {
+                    r = 90;
+                }
+                if (body.precDirection == Direction.DOWN && body.direction == Direction.RIGHT)
+                {
+                    r = 90;
+                }
+                if (body.precDirection == Direction.DOWN && body.direction == Direction.LEFT)
+                {
+                    r = -90;
+                }
                 body.transform.Rotate(0, 0, r);
-                hasChangedDirection = false;
-                precDirection = direction;
-                test = true;
+                body.hasChangedDirection = false;
+                body.precDirection = body.direction;
             }
             x = 0;
             y = 0;
@@ -121,11 +138,11 @@ public class SnakeHead : MonoBehaviour
                 y * SNAKE_SPEED * Time.deltaTime,
                 0
             );
-           // Move(index++);
-            if(index < snakes.Count - 1 && test)
+
+            if(index != 0 && snakes[index-1].direction != body.direction)
             {
-                snakes[index].hasChangedDirection = true;
-                snakes[index].direction = snakes[index - 1].direction;
+                body.hasChangedDirection = true;
+                body.direction = snakes[index-1].direction;
             }
         }
     }
@@ -138,23 +155,42 @@ public class SnakeHead : MonoBehaviour
     private void OnMouseDown()
     {
         
-            switch (this.name)
-            {
-                case "Button up":
-                    snakes[0].direction = Direction.UP;
-             
+        switch (this.name)
+        {
+            case "Button up":
+                    if(snakes[0].direction != Direction.DOWN)
+                        snakes[0].direction = Direction.UP;
+                    else
+                    {
+                        SceneManager.LoadScene("Hangar_AB");
+                    }
                     break;
-                case "Button down":
-                    snakes[0].direction = Direction.DOWN;
+                case "Button down" :
+                    if(snakes[0].direction != Direction.UP)
+                        snakes[0].direction = Direction.DOWN;
+                    else
+                    {
+                        SceneManager.LoadScene("Hangar_AB");
+                    }
                     break;
                 case "Button left":
-                    snakes[0].direction = Direction.LEFT;
+                    if(snakes[0].direction != Direction.RIGHT)
+                        snakes[0].direction = Direction.LEFT;
+                    else
+                    {
+                        SceneManager.LoadScene("Hangar_AB");
+                    }
                     break;
                 case "Button right":
-                    snakes[0].direction = Direction.RIGHT;
+                    if(snakes[0].direction != Direction.LEFT)
+                        snakes[0].direction = Direction.RIGHT;
+                    else
+                    {
+                        SceneManager.LoadScene("Hangar_AB");
+                    }
                     break;
             }
-            snakes[0].hasChangedDirection = true;
+        snakes[0].hasChangedDirection = true;
         Debug.Log("change direction");
 
     }
@@ -171,21 +207,28 @@ public class SnakeHead : MonoBehaviour
             }
             else if (collision.gameObject.name.StartsWith("pomme"))
             {
+                nbPommes++;
+                if(nbPommes == maxPommes)
+                {
+                    Debug.Log("Victoire");
+                    SceneManager.LoadScene("Corridor_AA");
+                }
+
                 Debug.Log("Snake mange une pomme et grandit !");
                 // queue
                 Vector3 p = new Vector3(0, 0, 0);
                 p += this.transform.position;
                 int r = 0;
-                switch (precDirection)
+                switch (snakes[snakes.Count-1].direction)
                 {
-                    case Direction.LEFT:
+                    case Direction.RIGHT:
                         p.x += this.GetComponent<SpriteRenderer>().sprite.bounds.size.x * 0.2f;
                         break;
                     case Direction.UP:
                         p.y -= this.GetComponent<SpriteRenderer>().sprite.bounds.size.y * 0.2f;
                         r = 90;
                         break;
-                    case Direction.RIGHT:
+                    case Direction.LEFT:
                         p.x -= this.GetComponent<SpriteRenderer>().sprite.bounds.size.x * 0.2f;
                         r = 180;
                         break;
@@ -198,10 +241,9 @@ public class SnakeHead : MonoBehaviour
                 }
                 addBodySnake(p, r);
                 // pomme
-                System.Random ra = new System.Random();
-                pomme.transform.position += new Vector3(
-                    (float)ra.NextDouble() * 8 - 4, // -4 => 4
-                    (float)ra.NextDouble() * 8 - 4,
+                pomme.transform.position = new Vector3(
+                    UnityEngine.Random.Range(-3.25f, 3.25f), // -4 => 4
+                    UnityEngine.Random.Range(-3.25f, 3.25f),
                     0
                 );
             }
