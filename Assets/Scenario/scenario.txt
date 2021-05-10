@@ -151,7 +151,7 @@ A.A.C“A droite”
 ________________
 
 
-ROUTE A.A.A-> FINI
+ROUTE A.A.A -> FINI
 
 
 Vous avez visiblement plus confiance en Loulou qu’en les autres membres de votre équipage. C’est un choix étonnant.
@@ -387,7 +387,7 @@ Abandonner votre ami était un choix lâche qui vient de se retourner contre vou
 ________________
 
 
-ROUTE A.A.A.B-> FINI
+ROUTE A.A.A.B -> FINI
 
 
 //changement de fond -> ???????
@@ -435,7 +435,7 @@ A.A.A.B.B Défaite
 ________________
 
 
-ROUTE A.A.A.B.A-> FINI
+ROUTE A.A.A.B.A -> FINI
 
 
 //changement de fond -> cuisine

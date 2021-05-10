@@ -16,8 +16,10 @@ namespace Assets.Scripts
     public class Tree
     {
         public TreeNode node = new TreeNode("Cliquer pour commencer"); // point d'entrée
-        private TreeNode current; // utilisé pour le parseur
 
+        /// <summary>
+        /// Parseur du fichier importé de google docs.
+        /// </summary>
         public Tree()
         {
             // lecture du fichier importé sous format txt (google docs)
@@ -26,18 +28,18 @@ namespace Assets.Scripts
             while (!stream.EndOfStream)
             {
                 string line = stream.ReadLine();
-                if (line.Length > 0 && !line.StartsWith("--") && !line.StartsWith("__"))
+                if (!String.IsNullOrWhiteSpace(line) && !String.IsNullOrEmpty(line) &&!line.StartsWith("__"))
                 {
                     // rajoute les lignes seulement pleines et sans les lignes "---------------"
                     tmp.Add(line);
                 }
             }
             // pour chaque ligne
-            current = node;
+            TreeNode current = node;
             int i = 0;
             while (i < tmp.Count)
             {
-                // question, réponses (suivi de texte)
+                // question, réponses (suivi de texte): CHOIX
                 if (i < tmp.Count - 1 && tmp[i + 1].Contains("CHOIX")) 
                 {
                     // 3 réponses
@@ -53,15 +55,31 @@ namespace Assets.Scripts
                         i += 3;
                     }
                     current = current.children[0];
-                    Debug.LogError(current.phrase);
                 }
-                // après un choix (q, r)
+                // mini jeu: MINIJEU
+                else if (i < tmp.Count - 1 && (
+                    tmp[i + 1].Contains("MEMORY") || 
+                    tmp[i + 1].Contains("SIMON") ||
+                    tmp[i + 1].Contains("TOUR") ||
+                    tmp[i + 1].Contains("SNAKE")))
+                {
+                    current.AddChild(new TreeNode(tmp[i]));
+                    current = current.children[0];
+                    i += 3;
+                }
+                // après un choix (q, r): NOUVELLE ROUTE
                 else if (i > 0 && i < tmp.Count-1 && tmp[i-1].Contains("ROUTE")) 
                 {
                     current = node;
+                    // parcourir a chaque fois les phrases qui se suivent sans branches
+                    while (current.children.Count == 1)
+                    {
+                        current = current.children[0];
+                    }
                     string path = Regex.Split(tmp[i-1], " ")[1];
                     // parcours de l'arbre pour ajouter
-                    while (path.Length >= 3)  
+                    Debug.LogError(current.phrase);
+                    while (path.Length >= 3)
                     {
                         if (path.StartsWith("A"))
                         {
@@ -71,11 +89,16 @@ namespace Assets.Scripts
                         {
                             current = current.children[1];
                         }
-                        else
+                        else if (path.StartsWith("C"))
                         {
                             current = current.children[2];
                         }
                         path = path.Substring(2, path.Length-2);
+                        // parcourir a chaque fois les phrases qui se suivent sans branches
+                        while (current.children.Count == 1)
+                        {
+                            current = current.children[0];
+                        }
                     }
                     // changement de scène
                     if (tmp[i].Contains("//")) 
@@ -94,17 +117,17 @@ namespace Assets.Scripts
                         }
                         else
                         {
-                            current.AddChild(new TreeNode(tmp[i]));
+                            current.AddChild(new TreeNode(tmp[i + 1]));
                         }
                     }
                     else
                     {
                         current.AddChild(new TreeNode(tmp[i]));
                     }
-                    current = current.children[0];
+                    current = current.children[current.children.Count-1];
                 }
-                // texte classique
-                else
+                // texte classique: PROCHAINE PHRASE
+                else if (!tmp[i].Contains("ROUTE") && !tmp[i].StartsWith("//"))
                 {
                     current.AddChild(new TreeNode(tmp[i]));
                     current = current.children[0];

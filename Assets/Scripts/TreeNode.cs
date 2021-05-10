@@ -82,16 +82,16 @@ namespace Assets.Scripts
         /// </summary>
         public void Print(int i = 0)
         {
-            if (phrase.Length > 0)
+            if (!String.IsNullOrEmpty(phrase))
             {
                 Debug.Log(new String('-', i) + " " + phrase);
             }
-            else
+            else if (!String.IsNullOrEmpty(question))
             {
                 Debug.Log(new String('-', i) + " " + question);
                 Debug.Log(new String('-', i) + " " + reponse1);
                 Debug.Log(new String('-', i) + " " + reponse2);
-                Debug.Log(new String('-', i) + " " + reponse3);
+                if (!String.IsNullOrEmpty(reponse3)) Debug.Log(new String('-', i) + " " + reponse3);
             }
             foreach (TreeNode item in children)
             {
