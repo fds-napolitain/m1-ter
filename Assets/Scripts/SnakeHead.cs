@@ -12,7 +12,7 @@ public class SnakeHead : MonoBehaviour
     private static LinkedList<Direction> snakePosition = new LinkedList<Direction>();
     public Sprite snakehead, snakebody;
     public GameObject pomme;
-    protected const float SNAKE_SPEED = 0.003f;
+    protected const float SNAKE_SPEED = 0.002f;
 
     //public List<GameObject> pommes;
     public static SnakeHead body;
@@ -192,12 +192,19 @@ public class SnakeHead : MonoBehaviour
                     Debug.Log("Victoire");
                     SceneManager.LoadScene("Corridor_AA");
                 }
-
                 pomme.transform.position = new Vector3(
-                    UnityEngine.Random.Range(-3.25f, 3.25f), // -4 => 4
+                    UnityEngine.Random.Range(-3.25f, 3.25f),
                     UnityEngine.Random.Range(-3.25f, 3.25f),
                     0
                 );
+                while ((x > 0 && x < 1 && y > 0.8) || (x > -3.3 && x < -0.9 && y > -0.5 && y < 0.5) || (x > -1.6 && x < 2.9 && y > -3 && y < -1.8))
+                {
+                    pomme.transform.position = new Vector3(
+                        UnityEngine.Random.Range(-3.25f, 3.25f),
+                        UnityEngine.Random.Range(-3.25f, 3.25f),
+                        0
+                    );
+                }
             }
         }
     }
