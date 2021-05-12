@@ -8,7 +8,7 @@ public class Collect2 : MonoBehaviour
     // [Head, Body1, Body2, ...]
     private static LinkedList<Direction> snakePosition = new LinkedList<Direction>();
     public GameObject pomme;
-    protected const float SNAKE_SPEED = 0.5f;
+    protected const float SNAKE_SPEED = 0.3f;
 
     //public List<GameObject> pommes;
     public static Collect2 body;
@@ -224,6 +224,7 @@ public class Collect2 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("collision");
         if (name.StartsWith("snake"))
         {
             if (collision.gameObject.name.StartsWith("mur"))

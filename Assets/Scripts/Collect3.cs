@@ -24,7 +24,7 @@ public class Collect3 : MonoBehaviour
     GameObject boutton_down;
     GameObject boutton_right;
     GameObject boutton_left;
-    public static int maxPommes = 7;
+    public static int maxPommes = 10;
     public static int nbPommes;
 
     public enum Direction

@@ -361,11 +361,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 203252831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
+  m_Script: {fileID: 11500000, guid: 8157609888da25841aba22b7b73924f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snakehead: {fileID: 21300000, guid: 97cd9c3e93a2a4e41a9795291b79c210, type: 3}
-  pomme: {fileID: 1227581182}
+  pomme: {fileID: 0}
   direction: 0
   precDirection: 0
   hasChangedDirection: 0
@@ -474,7 +473,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203252831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0006995201, y: -0.008100048, z: 0}
+  m_LocalPosition: {x: -2.01, y: -1.41, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -571,8 +570,8 @@ GameObject:
   m_Component:
   - component: {fileID: 264037717}
   - component: {fileID: 264037716}
-  - component: {fileID: 264037715}
   - component: {fileID: 264037714}
+  - component: {fileID: 264037715}
   m_Layer: 0
   m_Name: Button left
   m_TagString: Untagged
@@ -615,10 +614,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 264037713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
+  m_Script: {fileID: 11500000, guid: 8157609888da25841aba22b7b73924f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snakehead: {fileID: 0}
   pomme: {fileID: 0}
   direction: 0
   precDirection: 0
@@ -715,13 +713,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 267151052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
+  m_Script: {fileID: 11500000, guid: 8157609888da25841aba22b7b73924f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snakehead: {fileID: 0}
   pomme: {fileID: 0}
-  direction: 3
-  precDirection: 3
+  direction: 0
+  precDirection: 0
   hasChangedDirection: 0
 --- !u!61 &267151054
 BoxCollider2D:
@@ -823,8 +820,8 @@ GameObject:
   m_Component:
   - component: {fileID: 421050356}
   - component: {fileID: 421050355}
-  - component: {fileID: 421050354}
   - component: {fileID: 421050353}
+  - component: {fileID: 421050354}
   m_Layer: 0
   m_Name: Button right
   m_TagString: Untagged
@@ -867,13 +864,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 421050352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
+  m_Script: {fileID: 11500000, guid: 8157609888da25841aba22b7b73924f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snakehead: {fileID: 0}
   pomme: {fileID: 0}
-  direction: 2
-  precDirection: 2
+  direction: 0
+  precDirection: 0
   hasChangedDirection: 0
 --- !u!212 &421050355
 SpriteRenderer:
@@ -1855,7 +1851,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227581182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3099992, y: 2.34, z: 0}
+  m_LocalPosition: {x: 1.56, y: -1.42, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1872,8 +1868,8 @@ GameObject:
   - component: {fileID: 1233512303}
   - component: {fileID: 1233512302}
   - component: {fileID: 1233512301}
-  - component: {fileID: 1233512300}
   - component: {fileID: 1233512299}
+  - component: {fileID: 1233512300}
   m_Layer: 0
   m_Name: Button up
   m_TagString: Untagged
@@ -1911,13 +1907,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1233512298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
+  m_Script: {fileID: 11500000, guid: 8157609888da25841aba22b7b73924f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snakehead: {fileID: 0}
   pomme: {fileID: 0}
-  direction: 1
-  precDirection: 1
+  direction: 0
+  precDirection: 0
   hasChangedDirection: 0
 --- !u!61 &1233512301
 BoxCollider2D:

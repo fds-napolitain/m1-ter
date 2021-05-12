@@ -628,8 +628,8 @@ GameObject:
   - component: {fileID: 351313501}
   - component: {fileID: 351313500}
   - component: {fileID: 351313499}
-  - component: {fileID: 351313498}
   - component: {fileID: 351313497}
+  - component: {fileID: 351313498}
   m_Layer: 0
   m_Name: Button up
   m_TagString: Untagged
@@ -667,12 +667,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 351313496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
+  m_Script: {fileID: 11500000, guid: f3ae58588d585d04394764a2a8fb7db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pomme: {fileID: 0}
-  direction: 1
-  precDirection: 1
+  direction: 0
+  precDirection: 0
   hasChangedDirection: 0
 --- !u!61 &351313499
 BoxCollider2D:
@@ -906,6 +906,7 @@ GameObject:
   - component: {fileID: 464546188}
   - component: {fileID: 464546187}
   - component: {fileID: 464546186}
+  - component: {fileID: 464546185}
   m_Layer: 0
   m_Name: snake_head
   m_TagString: Untagged
@@ -913,6 +914,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &464546185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464546184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ae58588d585d04394764a2a8fb7db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pomme: {fileID: 0}
+  direction: 0
+  precDirection: 0
+  hasChangedDirection: 0
 --- !u!50 &464546186
 Rigidbody2D:
   serializedVersion: 4
@@ -1133,12 +1150,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 657982554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
+  m_Script: {fileID: 11500000, guid: f3ae58588d585d04394764a2a8fb7db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pomme: {fileID: 0}
-  direction: 3
-  precDirection: 3
+  direction: 0
+  precDirection: 0
   hasChangedDirection: 0
 --- !u!61 &657982556
 BoxCollider2D:
@@ -1581,8 +1598,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1475778870}
   - component: {fileID: 1475778869}
-  - component: {fileID: 1475778868}
   - component: {fileID: 1475778867}
+  - component: {fileID: 1475778868}
   m_Layer: 0
   m_Name: Button left
   m_TagString: Untagged
@@ -1625,7 +1642,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1475778866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
+  m_Script: {fileID: 11500000, guid: f3ae58588d585d04394764a2a8fb7db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pomme: {fileID: 0}
@@ -1706,8 +1723,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1881524258}
   - component: {fileID: 1881524257}
-  - component: {fileID: 1881524256}
   - component: {fileID: 1881524255}
+  - component: {fileID: 1881524256}
   m_Layer: 0
   m_Name: Button right
   m_TagString: Untagged
@@ -1750,12 +1767,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1881524254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
+  m_Script: {fileID: 11500000, guid: f3ae58588d585d04394764a2a8fb7db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pomme: {fileID: 0}
-  direction: 2
-  precDirection: 2
+  direction: 0
+  precDirection: 0
   hasChangedDirection: 0
 --- !u!212 &1881524257
 SpriteRenderer:
