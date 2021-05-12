@@ -65,6 +65,42 @@ public class Hanoi : MonoBehaviour
     /// </summary>
     void Update()
     {
+        if (name.StartsWith("coup"))
+        {
+            switch (cp)
+            {
+                case 1:
+                    spriteRenderer.sprite = coup1;
+                    break;
+                case 2:
+                    spriteRenderer.sprite = coup2;
+                    break;
+                case 3:
+                    spriteRenderer.sprite = coup3;
+                    break;
+                case 4:
+                    spriteRenderer.sprite = coup4;
+                    break;
+                case 5:
+                    spriteRenderer.sprite = coup5;
+                    break;
+                case 6:
+                    spriteRenderer.sprite = coup6;
+                    break;
+                case 7:
+                    spriteRenderer.sprite = coup7;
+                    break;
+                case 8:
+                    spriteRenderer.sprite = coup8;
+                    break;
+                case 9:
+                    spriteRenderer.sprite = coup9;
+                    break;
+                case 10:
+                    spriteRenderer.sprite = coup10;
+                    break;
+            }
+        }
         if (coords[0] != 0 || coords[1] != 0)
         {
             // bouge x
@@ -186,39 +222,7 @@ public class Hanoi : MonoBehaviour
                         pointeurFil.indice = indiceTour;
                         locked = true; // sélection tour => blocage
                         cp++;
-                        switch (cp)
-                        {
-                            case 1:
-                                spriteRenderer.sprite = coup1;
-                                break;
-                            case 2:
-                                spriteRenderer.sprite = coup2;
-                                break;
-                            case 3:
-                                spriteRenderer.sprite = coup3;
-                                break;
-                            case 4:
-                                spriteRenderer.sprite = coup4;
-                                break;
-                            case 5:
-                                spriteRenderer.sprite = coup5;
-                                break;
-                            case 6:
-                                spriteRenderer.sprite = coup6;
-                                break;
-                            case 7:
-                                spriteRenderer.sprite = coup7;
-                                break;
-                            case 8:
-                                spriteRenderer.sprite = coup8;
-                                break;
-                            case 9:
-                                spriteRenderer.sprite = coup9;
-                                break;
-                            case 10:
-                                spriteRenderer.sprite = coup10;
-                                break;
-                        }
+                        
                         if (CP_MAX == cp) // défaite
                         {
                             SceneManager.LoadScene("Hangar_AB");
