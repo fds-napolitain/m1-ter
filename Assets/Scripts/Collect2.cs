@@ -26,6 +26,7 @@ public class Collect2 : MonoBehaviour
     GameObject boutton_left;
     public static int maxPommes = 7;
     public static int nbPommes;
+    public Sprite pomme1, pomme2, pomme3, pomme4, pomme5, pomme6, pomme7;
 
     public enum Direction
     {
@@ -122,6 +123,33 @@ public class Collect2 : MonoBehaviour
 
     private void Update()
     {
+        if (name.StartsWith("apple"))
+        {
+            switch (nbPommes)
+            {
+                case 1:
+                    spriteRenderer.sprite = pomme1;
+                    break;
+                case 2:
+                    spriteRenderer.sprite = pomme2;
+                    break;
+                case 3:
+                    spriteRenderer.sprite = pomme3;
+                    break;
+                case 4:
+                    spriteRenderer.sprite = pomme4;
+                    break;
+                case 5:
+                    spriteRenderer.sprite = pomme5;
+                    break;
+                case 6:
+                    spriteRenderer.sprite = pomme6;
+                    break;
+                case 7:
+                    spriteRenderer.sprite = pomme7;
+                    break;
+            }
+        }
         Move();
         if (Input.GetKey(KeyCode.UpArrow))
         {
