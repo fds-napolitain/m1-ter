@@ -16,6 +16,8 @@ public class Hanoi2 : MonoBehaviour
     private static List<Stack<int>> tours = new List<Stack<int>>();
     private static Hanoi2 pointeurFil;
     private static bool locked = false; // true si mouvement en cours qui n'est pas une sélection
+    public Sprite coup0, coup1, coup2, coup3, coup4, coup5, coup6, coup7, coup8, coup9, coup10, coup11, coup12, coup13, coup14, coup15, coup16, coup17, coup18, coup19;
+    public SpriteRenderer spriteRenderer;
     // variables
     private int indice; // indice (par rapport aux tours)
     private int value; // valeurs du fil
@@ -26,6 +28,7 @@ public class Hanoi2 : MonoBehaviour
     /// </summary>
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         if (!flag)
         {
             tours.Add(new Stack<int>());
@@ -66,6 +69,72 @@ public class Hanoi2 : MonoBehaviour
     /// </summary>
     void Update()
     {
+        if (name.StartsWith("coup"))
+        {
+            switch (cp)
+            {
+                case 1:
+                    spriteRenderer.sprite = coup19;
+                    break;
+                case 2:
+                    spriteRenderer.sprite = coup18;
+                    break;
+                case 3:
+                    spriteRenderer.sprite = coup17;
+                    break;
+                case 4:
+                    spriteRenderer.sprite = coup16;
+                    break;
+                case 5:
+                    spriteRenderer.sprite = coup15;
+                    break;
+                case 6:
+                    spriteRenderer.sprite = coup14;
+                    break;
+                case 7:
+                    spriteRenderer.sprite = coup13;
+                    break;
+                case 8:
+                    spriteRenderer.sprite = coup12;
+                    break;
+                case 9:
+                    spriteRenderer.sprite = coup11;
+                    break;
+                case 10:
+                    spriteRenderer.sprite = coup0;
+                    break;
+                case 11:
+                    spriteRenderer.sprite = coup1;
+                    break;
+                case 12:
+                    spriteRenderer.sprite = coup2;
+                    break;
+                case 13:
+                    spriteRenderer.sprite = coup3;
+                    break;
+                case 14:
+                    spriteRenderer.sprite = coup4;
+                    break;
+                case 15:
+                    spriteRenderer.sprite = coup5;
+                    break;
+                case 16:
+                    spriteRenderer.sprite = coup6;
+                    break;
+                case 17:
+                    spriteRenderer.sprite = coup7;
+                    break;
+                case 18:
+                    spriteRenderer.sprite = coup8;
+                    break;
+                case 19:
+                    spriteRenderer.sprite = coup9;
+                    break;
+                case 20:
+                    spriteRenderer.sprite = coup10;
+                    break;
+            }
+        }
         if (coords[0] != 0 || coords[1] != 0)
         {
             // bouge x
