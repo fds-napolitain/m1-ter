@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Collect3 : MonoBehaviour
+public class Collect4 : MonoBehaviour
 {
     // [Head, Body1, Body2, ...]
     private static LinkedList<Direction> snakePosition = new LinkedList<Direction>();
@@ -11,7 +11,7 @@ public class Collect3 : MonoBehaviour
     protected const float SNAKE_SPEED = 0.4f;
 
     //public List<GameObject> pommes;
-    public static Collect3 body;
+    public static Collect4 body;
     private double x;
     private double y;
     public static int MAX_X = 8;
@@ -215,7 +215,7 @@ public class Collect3 : MonoBehaviour
                 );
                 double x = pomme.transform.position.x;
                 double y = pomme.transform.position.y;
-                while ((x > -0.5 && x < 0.5 && y > 1.8) || (x < -1.8 && y > -0.5 && y < 0.5) || (x > -0.5 && x < 0.5 && y < -1.8) || (x > -1.6 && y > -0.5 && y < 0.5))
+                while ((x > -2.6 && x < -1.6 && y > 1.6 &&  y > 2.6) || (x > -2.6 && x < -1.6 && y > -2.6 && y < -1.6) || (x > 1.6 && x < 2.6 && y > 1.6 && y < 2.6) || (x > 1.6 && x < 2.6 && y > -2.6 && y < -1.6))
                 {
                     pomme.transform.position = new Vector3(
                         UnityEngine.Random.Range(-3.25f, 3.25f),

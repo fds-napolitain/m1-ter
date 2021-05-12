@@ -11,7 +11,7 @@ public class Collect : MonoBehaviour
     // [Head, Body1, Body2, ...]
     private static LinkedList<Direction> snakePosition = new LinkedList<Direction>();
     public GameObject pomme;
-    protected const float SNAKE_SPEED = 0.5f;
+    protected const float SNAKE_SPEED = 0.4f;
 
     //public List<GameObject> pommes;
     public static Collect body;
@@ -134,10 +134,6 @@ public class Collect : MonoBehaviour
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
             }
-            else
-            {
-                SceneManager.LoadScene("Hangar_AB");
-            }
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
@@ -146,10 +142,6 @@ public class Collect : MonoBehaviour
                 body.direction = Direction.DOWN;
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
-            }
-            else
-            {
-                SceneManager.LoadScene("Hangar_AB");
             }
         }
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -160,10 +152,6 @@ public class Collect : MonoBehaviour
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
             }
-            else
-            {
-                SceneManager.LoadScene("Hangar_AB");
-            }
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -172,10 +160,6 @@ public class Collect : MonoBehaviour
                 body.direction = Direction.RIGHT;
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
-            }
-            else
-            {
-                SceneManager.LoadScene("Hangar_AB");
             }
         }
     }
@@ -190,34 +174,18 @@ public class Collect : MonoBehaviour
             case "Button up":
                 if (body.direction != Direction.DOWN)
                     body.direction = Direction.UP;
-                else
-                {
-                    SceneManager.LoadScene("Hangar_AB");
-                }
                 break;
             case "Button down":
                 if (body.direction != Direction.UP)
                     body.direction = Direction.DOWN;
-                else
-                {
-                    SceneManager.LoadScene("Hangar_AB");
-                }
                 break;
             case "Button left":
                 if (body.direction != Direction.RIGHT)
                     body.direction = Direction.LEFT;
-                else
-                {
-                    SceneManager.LoadScene("Hangar_AB");
-                }
                 break;
             case "Button right":
                 if (body.direction != Direction.LEFT)
                     body.direction = Direction.RIGHT;
-                else
-                {
-                    SceneManager.LoadScene("Hangar_AB");
-                }
                 break;
         }
         body.hasChangedDirection = true;
