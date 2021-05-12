@@ -42,6 +42,7 @@ namespace Assets.Scripts
                 // question, réponses (suivi de texte): CHOIX
                 if (i < tmp.Count - 1 && tmp[i + 1].Contains("CHOIX")) 
                 {
+                    Debug.LogError("choix" + current.phrase);
                     // 3 réponses
                     if (!tmp[i + 4].Contains("ROUTE")) 
                     {
@@ -63,6 +64,7 @@ namespace Assets.Scripts
                     tmp[i + 1].Contains("TOUR") ||
                     tmp[i + 1].Contains("SNAKE")))
                 {
+                    Debug.LogError("minijeu" + current.phrase);
                     current.AddChild(new TreeNode(tmp[i], tmp[i + 2], tmp[i + 3]));
                     current = current.children[0];
                     i += 3;
@@ -70,18 +72,17 @@ namespace Assets.Scripts
                 // après un choix (q, r): NOUVELLE ROUTE
                 else if (i > 0 && i < tmp.Count-1 && tmp[i-1].Contains("ROUTE")) 
                 {
+                    Debug.LogError("route" + current.phrase);
                     current = node;
                     // parcourir a chaque fois les phrases qui se suivent sans branches
                     while (current.children.Count == 1 && !String.IsNullOrEmpty(current.phrase))
                     {
-                        Debug.LogError(current.phrase + " " + i);
                         current = current.children[0];
                     }
                     string path = Regex.Split(tmp[i-1], " ")[1];
                     // parcours de l'arbre pour ajouter
                     while (path.Length >= 3)
                     {
-                        Debug.LogError(current.phrase + " " + i);
                         if (path.StartsWith("A"))
                         {
                             current = current.children[0];
@@ -98,7 +99,6 @@ namespace Assets.Scripts
                         // parcourir a chaque fois les phrases qui se suivent sans branches
                         while (current.children.Count == 1 && !String.IsNullOrEmpty(current.phrase))
                         {
-                            Debug.LogError(current.phrase + " " + i);
                             current = current.children[0];
                         }
                     }
@@ -119,7 +119,7 @@ namespace Assets.Scripts
                         }
                         else
                         {
-                            current.AddChild(new TreeNode(tmp[i + 1]));
+                            current.AddChild(new TreeNode(tmp[i + 1], "qzdqzdd"));
                         }
                     }
                     else
@@ -131,6 +131,7 @@ namespace Assets.Scripts
                 // texte classique: PROCHAINE PHRASE
                 else if (!tmp[i].Contains("ROUTE") && !tmp[i].StartsWith("//"))
                 {
+                    Debug.LogError("narmol" + current.phrase);
                     current.AddChild(new TreeNode(tmp[i]));
                     current = current.children[0];
                 }

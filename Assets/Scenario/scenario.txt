@@ -28,7 +28,7 @@ Le capitaine se dirige vers le centre de commandement, au centre du vaisseau. Au
 “Je suppose que c’est à nous de le découvrir. Après tout, nous sommes une équipe de reconnaissance.”
 
 
-“Reconnaissance, reconnaissance… Je pense surtout qu’ils nous ont envoyé sur une mission bidon absurde ! Il n’y a rien ici !”
+“Reconnaissance, reconnaissance… Je pense surtout qu’ils nous ont envoyé sur une mission absurde ! Il n’y a rien ici !”
 
 
 Un long soupir s’échappe de la bouche du capitaine. Bien sûr qu’Innoth se montrait impatiente. Et ce serait mentir que de dire que le capitaine n’était pas lui aussi frustré de ne rien trouver. Soudain, Loulou crève le silence pesant, en commençant à gesticuler violemment en criant tel un enfant sur les épaules du capitaine. 
@@ -41,12 +41,6 @@ Le petit singe pointe frénétiquement le radar de la table de commande. Les yeu
 
 
 “Mais c’est un vaisseau de signature inconnue !”
-
-
-________________
-
-
-ROUTE A -> FINI
 
 
 Innoth sursaute de joie en entendant les mots du capitaine.
@@ -108,7 +102,7 @@ A.B Défaite
 ________________
 
 
-ROUTE A.A -> FINI
+ROUTE A -> FINI
 
 
 //changement fond du jeu -> couloir
@@ -136,15 +130,15 @@ Le choix vous revient donc. Vous choisissez d’aller :
 
 
 CHOIX 2
-A.A.A“En face”
-A.A.B“A gauche”
-A.A.C“A droite”
+A.A“En face”
+A.B“A gauche”
+A.C“A droite”
 
 
 ________________
 
 
-ROUTE A.A.A -> FINI
+ROUTE A.A -> FINI
 
 
 Vous avez visiblement plus confiance en Loulou qu’en les autres membres de votre équipage. C’est un choix étonnant.
@@ -175,17 +169,18 @@ Vous faites alors demi-tour en courant et prenez le chemin qu’elle a suivi. Ma
 
 
 SIMON1
-A.A.A.A Victoire
-A.A.A.B Défaite
+A.A.A Victoire
+A.A.B Défaite
 
 
 ________________
 
 
-ROUTE A.A.A.A -> FINI
+ROUTE A.A.A -> FINI
 
 
 //changement de fond -> salle de repos vaisseau
+
 La porte s’ouvre devant vous sur une salle de repos.
 
 
@@ -195,18 +190,21 @@ Au centre de la salle sur une table à manger se trouve Innoth en train de se fa
 Vous reculez en essayant de rester discret et appuyez frénétiquement sur le bouton de la porte pour la refermer. Mais vous savez, vous savez qu’il vous a vu. Vous avez croisé son regard.
 
 
-Vous ne vous attardez pas et partez en courant dans le sens inverse. Cinq secondes plus tard, la porte se rouvre sur le monstre. Vous savez que le timing est serré et que vous devez vous échapper, malheureusement, le capitaine glisse sur le sang et tombe. Vous pouvez alors choisir de l’aider ou de l’abandonner à son sort :
+Vous ne vous attardez pas et partez en courant dans le sens inverse. Cinq secondes plus tard, la porte se rouvre sur le monstre. Vous savez que le timing est serré et que vous devez vous échapper, malheureusement, le capitaine glisse sur le sang et tombe.
+
+
+Vous pouvez alors choisir de l’aider ou de l’abandonner à son sort :
 
 
 CHOIX 3
-A.A.A.A.A“Aider le capitaine”
-A.A.A.A.B“Partir sans te retourner”
+A.A.A.A“Aider le capitaine”
+A.A.A.B“Partir sans te retourner”
 
 
 ________________
 
 
-ROUTE A.A.A.A.A -> FINI
+ROUTE A.A.A.A -> FINI
 
 
 Vous ne pouvez pas vous résoudre à abandonner votre ami alors vous faites demi-tour pour l’aider. Comme vous vous en doutiez malheureusement, ce temps perdu a suffi pour que l’alien vous rattrape.
@@ -243,8 +241,8 @@ Vous cherchez autour de vous la porte et finissait par la trouver. Malheureuseme
 
 
 TOUR DE HANOÏ1
-A.A.A.A.A.A Victoire
-A.A.A.A.A.B Défaite
+A.A.A.A.A Victoire
+A.A.A.A.B Défaite
 
 
 
@@ -252,7 +250,7 @@ A.A.A.A.A.B Défaite
 ________________
 
 
-ROUTE A.A.A.A.A.A -> FINI
+ROUTE A.A.A.A.A -> FINI
 
 
 //changement de fond -> porte de sortie
@@ -274,14 +272,14 @@ Vous vous lancez donc en jurant que plus jamais vous ne ferez de mini-jeux de vo
 
 
 COLLECT1
-A.A.A.A.A.A.A Victoire
-A.A.A.A.A.A.B Défaite
+A.A.A.A.A.A Victoire
+A.A.A.A.A.B Défaite
 
 
 ________________
 
 
-ROUTE A.A.A.A.A.A.A -> FINI
+ROUTE A.A.A.A.A.A -> FINI
 
 
 //changement de fond -> archive
@@ -309,7 +307,7 @@ Bravo, vous avez survécu à un piège mortel ! Vous êtes traumatisé à vie et
 ________________
 
 
-ROUTE A.A.A.A.A.A.B -> FINI
+ROUTE A.A.A.A.A.B -> FINI
 
 
 //changement de fond -> vaisseau qui explose
@@ -333,7 +331,7 @@ Quand le destin vous en veut, vous ne pouvez rien faire pour y échapper. Ce n�
 ________________
 
 
-ROUTE A.A.A.A.A.B -> FINI
+ROUTE A.A.A.A.B -> FINI
 
 
 //changement de fond -> couteau ou guillotine
@@ -358,7 +356,7 @@ Une seule petite erreur peut vous coûter la vie… Souvenez-vous en.
 ________________
 
 
-ROUTE A.A.A.A.B -> FINI
+ROUTE A.A.A.B -> FINI
 
 
 Vous suivez votre instinct de survie et partez en courant en laissant le capitaine derrière. Vous slalomez dans les couloirs sans savoir où vous allez, cherchant juste à vous éloigner le plus loin possible en espérant secrètement que dévorer le capitaine le retiendra.
@@ -380,7 +378,7 @@ Abandonner votre ami était un choix lâche qui vient de se retourner contre vou
 ________________
 
 
-ROUTE A.A.A.B -> FINI
+ROUTE A.A.B -> FINI
 
 
 //changement de fond -> ???????
@@ -423,12 +421,12 @@ Vous réalisez alors qu’on vous laisse vous en chargé au cas où il s’agira
 
 
 COLLECT2
-A.A.A.B.A Victoire
-A.A.A.B.B Défaite
+A.A.B.A Victoire
+A.A.B.B Défaite
 ________________
 
 
-ROUTE A.A.A.B.A -> FINI
+ROUTE A.A.B.A -> FINI
 
 
 //changement de fond -> cuisine
@@ -453,14 +451,14 @@ Vous avez donc deux options :
 
 
 CHOIX 4
-A.A.A.B.A.A Tenter de vous cacher dans la cuisine
-A.A.A.B.A.B Fuir la pièce au plus vite
+A.A.B.A.A Tenter de vous cacher dans la cuisine
+A.A.B.A.B Fuir la pièce au plus vite
 
 
 ________________
 
 
-ROUTE A.A.A.B.A.A -> FINI
+ROUTE A.A.B.A.A -> FINI
 
 
 Vous regardez rapidement autour de vous pour chercher une cachette. Vous voyez ce placard coulissant sous le plan de travail et décidez de vous y glisser.
@@ -484,14 +482,14 @@ Il vous appelle à l’aide. Vous pouvez alors :
 
 
 CHOIX 5
-A.A.A.B.A.A.A Sortir de votre cachette et tenter d’aider le capitaine
-A.A.A.B.A.A.B Rester silencieux et ne pas bouger
+A.A.B.A.A.A Sortir de votre cachette et tenter d’aider le capitaine
+A.A.B.A.A.B Rester silencieux et ne pas bouger
 
 
 ________________
 
 
-ROUTE A.A.A.B.A.A.A -> FINI
+ROUTE A.A.B.A.A.A -> FINI
 
 
 Vous ouvrez votre placard à la volée et sortez pour découvrir qu’il est déjà trop tard, le capitaine est mort. Vous paniquez alors et tentez de fuir, mais vous n’avez aucune chance.
@@ -511,7 +509,7 @@ Vous croyez sérieusement avoir une chance ? Au moins, vous êtes mort en jouant
 ________________
 
 
-ROUTE A.A.A.B.A.A.B -> FINI
+ROUTE A.A.B.A.A.B -> FINI
 
 
 Vous choisissez de l’abandonner, réalisant que vous n’avez aucune chance. Cinq secondes plus tard, vous voyez du sang gicler sur le sol devant vous.
@@ -548,7 +546,7 @@ Avec ce que vous venez de faire, vous avez bousillé votre karma. Vous serez sû
 ________________
 
 
-ROUTE A.A.A.B.A.B -> FINI
+ROUTE A.A.B.A.B -> FINI
 
 
 Vous choisissez de prendre vos jambes à votre cou. Un choix en apparence plus que judicieux.
@@ -558,8 +556,8 @@ Vous faites demi-tour et faites signe à vos camarades de faire de même et vous
 
 
 CHOIX 6
-A.A.A.B.A.B.A Aller à droite
-A.A.A.B.A.B.B Rebrousser chemin en allant à gauche
+A.A.B.A.B.A Aller à droite
+A.A.B.A.B.B Rebrousser chemin en allant à gauche
 
 
 
@@ -569,7 +567,7 @@ A.A.A.B.A.B.B Rebrousser chemin en allant à gauche
 ________________
 
 
-ROUTE A.A.A.B.A.B.A -> FINI
+ROUTE A.A.B.A.B.A ->FINI
 
 
 Vous savez que le monstre vous a entendu partir. Vous ne réfléchissez donc pas pendant trois siècles et partez en courant.
@@ -612,7 +610,7 @@ Mon ami, c’est ce qu’on appelle le karma ! Souviens-toi : “Ne fais pas aux
 ________________
 
 
-ROUTE A.A.A.B.A.B.B ->FINI
+ROUTE A.A.B.A.B.B ->FINI
 
 
 Alors que vous partez en courant, vous l’entendez franchir la porte. Il vous a entendu partir, vous en êtes maintenant sûr.
@@ -648,7 +646,7 @@ Vous mourrez empli de haine et de ressentiment. Si Sekip survit, vous reviendrez
 ________________
 
 
-ROUTE A.A.A.B.B -> FINI
+ROUTE A.A.B.B -> FINI
 
 
 //changement de fond -> ???????
@@ -684,7 +682,7 @@ Vous avez fini en plat japonais pour extraterrestre à cause de vos échecs. Bon
 ________________
 
 
-ROUTE A.A.B -> FINI
+ROUTE A.B -> FINI
 
 
 Pour une raison étonnante, vous décidez de suivre le choix de Sekip même s’il vous déteste.
@@ -697,14 +695,14 @@ Vous échangez un regard avec vos camarades et tentez d’ouvrir cette porte en 
 
 
 SIMON2
-Victoire -> A.A.B.A
-Défaite -> A.A.B.B
+Victoire -> A.B.A
+Défaite -> A.B.B
 
 
 ________________
 
 
-ROUTE A.A.B.A -> FINI
+ROUTE A.B.A -> FINI
 
 
 //changement de fond -> Pouponnière alien. 
@@ -769,7 +767,7 @@ Vous êtes tombé dans un liquide de conversion génétique et avez été transf
 ________________
 
 
-ROUTE A.A.B.B -> FINI
+ROUTE A.B.B -> FINI
 
 
 //changement de fond -> scrat se faisant ecraser par la porte ?
@@ -792,7 +790,7 @@ N’avez-vous pas l’impression d’être devenu Scrat ?
 ________________
 
 
-ROUTE A.A.C -> FINI
+ROUTE A.C -> FINI
 
 
 Vous choisissez la logique et suivez ce que vous dit Innoth.
@@ -815,7 +813,7 @@ A.A.C.B Défaite
 ________________
 
 
-ROUTE A.A.C.A -> FINI
+ROUTE A.C.A -> FINI
 
 
 //changement de fond -> salle d’arme
@@ -857,8 +855,8 @@ Pour ouvrir le boîtier, vous devez déplacer les anneaux sur la barre de droite
 
 
 TOUR DE HANOÏ2
-A.A.C.A.A Victoire
-A.A.C.A.B Défaite
+A.C.A.A Victoire
+A.C.A.B Défaite
 
 
 
@@ -866,7 +864,7 @@ A.A.C.A.B Défaite
 ________________
 
 
-ROUTE A.A.C.A.A -> FINI
+ROUTE A.C.A.A -> FINI
 
 
 //changement de fond -> fils à couper
@@ -897,14 +895,14 @@ Il s’éloigne ensuite et ajout”e :
 
 
 CHOIX 7
-A.A.C.A.A.A Fil rouge
-A.A.C.A.A.B Fil bleu
+A.C.A.A.A Fil rouge
+A.C.A.A.B Fil bleu
 
 
 ________________
 
 
-ROUTE A.A.C.A.A.A -> FINI
+ROUTE A.C.A.A.A -> FINI
 
 
 Vous choisissez de couper le fil rouge. Le bip se stoppe puis un gaz rouge à l’odeur étonnamment sucrée vous explose au visage, se répandant dans toute la pièce. Pris par surprise.
@@ -946,7 +944,7 @@ La drogue, c’est dangereux...
 ________________
 
 
-ROUTE A.A.C.A.A.B -> FINI
+ROUTE A.C.A.A.B -> FINI
 
 
 Vous coupez le fil bleu en faisant une grimace effrayée et le silence se fait. Vous avez visiblement choisi le bon fil. Vous poussez alors un soupir de soulagement avant d’être ramené à la réalité par le capitaine.
@@ -980,14 +978,14 @@ Cette fois-ci, vous devez répondre à un quiz pour ouvrir la porte. Vous demand
 
 
 COLLECT3
-A.A.C.A.A.B.A -> Victoire
-A.A.C.A.A.B.B -> Defaite
+A.C.A.A.B.A -> Victoire
+A.C.A.A.B.B -> Defaite
 
 
 ________________
 
 
-ROUTE A.A.C.A.A.B.A -> FINI
+ROUTE A.C.A.A.B.A -> FINI
 
 
 //changement de fond -> poste pilotage
@@ -1055,7 +1053,7 @@ Bravo, vous avez effectué votre mission avec brio. Vous avez protégé vos coé
 ________________
 
 
-ROUTE A.A.C.A.A.B.B -> FINI
+ROUTE A.C.A.A.B.B -> FINI
 
 
 //changement de fond -> ????????
@@ -1077,7 +1075,7 @@ Je crois que vous avez regardez trop de film d’action… Vous pensiez sérieus
 ________________
 
 
-ROUTE A.A.C.A.B -> FINI
+ROUTE A.C.A.B -> FINI
 
 
 //changement de fond -> boom
@@ -1093,7 +1091,7 @@ Vous avez fait boom. C’était une salle d’armes, vous auriez pu vous douter 
 ________________
 
 
-ROUTE A.A.C.B -> FINI
+ROUTE A.C.B -> FINI
 
 
 //changement de fond -> laser
@@ -1115,7 +1113,7 @@ Cette mission est un échec sur toute la ligne, mais au moins vous avez bénéfi
 ________________
 
 
-ROUTE A.B -> FINI
+ROUTE B -> FINI
 
 
 //changement fond du jeu -> hangar
@@ -1161,14 +1159,14 @@ Face à vous, sur le boîtier tactile, des questions avec réponses au choix… 
 
 
 COLLECT4
-A.B.A -> Victoire
-A.B.B -> Defaite
+B.A -> Victoire
+B.B -> Defaite
 
 
 ________________
 
 
-ROUTE A.B.A -> FINI
+ROUTE B.A -> FINI
 
 
 //changement de scene -> labo
@@ -1285,7 +1283,7 @@ Savez vous que les Welwitschia Mirabilis peuvent vivre entre 1000 et 2000 ans ? 
 ________________
 
 
-ROUTE A.B.B -> FINI
+ROUTE B.B -> FINI
 
 
 //changement de fond -> espace
@@ -1305,81 +1303,3 @@ Vous observez bientôt l’espace autour de vous, et vous savez que c’est la f
 
 FIN 18
 Savez vous que d'après la NASA, la durée moyenne de vie d’un astronaute dans l’espace, sans combinaison, est d’environ 90s ?
-
-
-________________
-
-
-________________
-
-
-ROUTE B
-
-
-Le silence résonne assez lourdement autour de la carte.
-
-
-“... C’est une blague ?”
-
-
-“Détrompe-toi Sekip, j’ai entendu dire que dans le temps, les gens venaient de toutes les galaxies pour amener leurs chats ici.”
-
-
-Le fait qu’Innoth sache cela ne choque personne, même pas Loulou. Après un moment de réflexion, le capitaine prend la parole.
-
-
-“Preparez-vous, nous allons jeter un oeil.”
-
-
-Après un bref salut, tout le monde court se préparer, vous y compris. Une fois prêt, le groupe se dirige vers l’entrée du parc. Après avoir perdu à la courte-paille, vous êtes désigné pour acheter les tickets d’entrée. En vous voyant immobile, Sekip ouvre la bouche, agacé.
-
-
-“Bah alors le bleu, pas capable de récupérer des billets pour qu’on puisse passer ces maudites portes ?”
-
-
-“Et bien si, mais ça à l’air d’être… Original comme distributeur.”
-
-
-“C’est-à-dire ?”
-
-
-“Donnez-moi 1 minute.”
-
-
-TOUR DE HANOÏ3
-B.A Victoire
-B.B Défaite
-________________
-
-
-ROUTE B.A
-
-
-//changement fond du jeu -> fête foraine
-
-
-Le moment de stress est enfin terminé quand le ticket magnétique arrive enfin dans votre main. Vous souriez à la machine qui vous fait un clin d'œil, puis vous reculez doucement, un peu déboussolé. 
-
-
-Vous passez le ticket devant le lecteur, et soudain, la grande porte rosée qui vous empêchait d'entrer s’ouvre. Vous avancez avec précaution et n’en revenez pas. Ce parc est encore en excellent état !
-
-
-Certes, pas un chat à l’horizon, mais au moins, vous n’êtes pas plongez dans le noir.
-
-
-“Quitte à être là, autant parier un peu.”
-
-
-“Que veux-tu dire Sekip ?”
-
-
-“Je dis, Capitaine, laissons le bleu choisir une attraction.”
-
-
-CHOIX 2
-“La table de cartes avec un robot croupier chat” → Memory
-“Les montagnes russes” → Snake
-“L’espèce de Twister” → Simon 
-
-
-________________
