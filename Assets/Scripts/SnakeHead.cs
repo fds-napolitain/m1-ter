@@ -116,8 +116,8 @@ public class SnakeHead : MonoBehaviour
                 break;
         }
         body.transform.position += new Vector3(
-           (float)x * SNAKE_SPEED * Time.deltaTime,
-           (float)y * SNAKE_SPEED * Time.deltaTime,
+           (float)x * SNAKE_SPEED,// * deltaTime,
+           (float)y * SNAKE_SPEED,// * deltaTime,
            0
         );
 
@@ -197,6 +197,8 @@ public class SnakeHead : MonoBehaviour
                     UnityEngine.Random.Range(-3.25f, 3.25f),
                     0
                 );
+                double x = pomme.transform.position.x;
+                double y = pomme.transform.position.y;
                 while ((x > 0 && x < 1 && y > 0.8) || (x > -3.3 && x < -0.9 && y > -0.5 && y < 0.5) || (x > -1.6 && x < 2.9 && y > -3 && y < -1.8))
                 {
                     pomme.transform.position = new Vector3(
@@ -204,6 +206,8 @@ public class SnakeHead : MonoBehaviour
                         UnityEngine.Random.Range(-3.25f, 3.25f),
                         0
                     );
+                    x = pomme.transform.position.x;
+                    y = pomme.transform.position.y;
                 }
             }
         }

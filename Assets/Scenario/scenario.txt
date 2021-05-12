@@ -40,20 +40,13 @@ Un long soupir s’échappe de la bouche du capitaine. Bien sûr qu’Innoth se 
 Le petit singe pointe frénétiquement le radar de la table de commande. Les yeux du capitaine s'ouvrent en grand à la vue d’un grand point lumineux se déplaçant rapidement sous son regard. Ses deux mains se posent de part et d’autre de la table.
 
 
-“Mais c’est …!”
-
-
-CHOIX 1
-A.“Un vaisseau de signature inconnue !”
-B.“Un parc d’attractions spatial dédié aux chats !”
-
-
+“Mais c’est un vaisseau de signature inconnue !”
 
 
 ________________
 
 
-ROUTE A -> FINI !!!!!!!
+ROUTE A -> FINI
 
 
 Innoth sursaute de joie en entendant les mots du capitaine.
@@ -104,7 +97,7 @@ Quand ils sont enfin accrochés au vaisseau, ils sortent pour tenter de rentrer 
 “Mais attendez, c’est un memory ?”
 
 
-“On dirait bien… Il va visiblement falloir le résoudre si nous voulons rentrer. Le bleu, à toi l’honneur !”
+ “On dirait bien… Il va visiblement falloir le résoudre si nous voulons rentrer. Le bleu, à toi l’honneur !”
 
 
 MEMORY
@@ -280,7 +273,7 @@ Vous vous apprêtez donc à refaire le memory quand vous réalisez que le jeu à
 Vous vous lancez donc en jurant que plus jamais vous ne ferez de mini-jeux de votre vie ensuite
 
 
-SNAKE1
+COLLECT1
 A.A.A.A.A.A.A Victoire
 A.A.A.A.A.A.B Défaite
 
@@ -429,7 +422,7 @@ Vous vous écartez dans l’espoir de laisser la place à quelqu’un d’autre 
 Vous réalisez alors qu’on vous laisse vous en chargé au cas où il s’agirait d’un piège. Mais vous n’avez pas le choix alors vous faîtes ce qu’on vous demande.
 
 
-SNAKE2
+COLLECT2
 A.A.A.B.A Victoire
 A.A.A.B.B Défaite
 ________________
@@ -576,7 +569,7 @@ A.A.A.B.A.B.B Rebrousser chemin en allant à gauche
 ________________
 
 
-ROUTE A.A.A.B.A.B.A ->FINI
+ROUTE A.A.A.B.A.B.A -> FINI
 
 
 Vous savez que le monstre vous a entendu partir. Vous ne réfléchissez donc pas pendant trois siècles et partez en courant.
@@ -986,7 +979,7 @@ Vous arrivez dans un couloir et entendez de nombreux bruits provenant de devant 
 Cette fois-ci, vous devez répondre à un quiz pour ouvrir la porte. Vous demandez alors à vos camarades de vous couvrir et commencez à jouer.
 
 
-SNAKE3
+COLLECT3
 A.A.C.A.A.B.A -> Victoire
 A.A.C.A.A.B.B -> Defaite
 
@@ -1167,7 +1160,7 @@ Tout l’équipage se tourne vers lui et vous réalisez qu’il vous indique l�
 Face à vous, sur le boîtier tactile, des questions avec réponses au choix… Voici le seul moyen de déverrouiller la porte.
 
 
-SNAKE4
+COLLECT4
 A.B.A -> Victoire
 A.B.B -> Defaite
 
@@ -1384,9 +1377,9 @@ Certes, pas un chat à l’horizon, mais au moins, vous n’êtes pas plongez da
 
 
 CHOIX 2
-B.A.A “La table de cartes avec un robot croupier chat” → Memory
-B.A.B “Les montagnes russes” → Snake
-B.A.C “L’espèce de Twister” → Simon 
+“La table de cartes avec un robot croupier chat” → Memory
+“Les montagnes russes” → Snake
+“L’espèce de Twister” → Simon 
 
 
 ________________
