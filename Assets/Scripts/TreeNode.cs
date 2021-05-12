@@ -85,17 +85,23 @@ namespace Assets.Scripts
             if (!String.IsNullOrEmpty(phrase))
             {
                 Debug.Log(new String('-', i) + " " + phrase);
+                if (children.Count > 0)
+                    children[0].Print(i + 1);
             }
             else if (!String.IsNullOrEmpty(question))
             {
                 Debug.Log(new String('-', i) + " " + question);
                 Debug.Log(new String('-', i) + " " + reponse1);
+                if(children.Count > 0)
+                    children[0].Print(i + 1);
                 Debug.Log(new String('-', i) + " " + reponse2);
-                if (!String.IsNullOrEmpty(reponse3)) Debug.Log(new String('-', i) + " " + reponse3);
-            }
-            foreach (TreeNode item in children)
-            {
-                item.Print(i + 1);
+                if (children.Count > 1)
+                    children[1].Print(i + 1);
+                if (!String.IsNullOrEmpty(reponse3)) { 
+                    Debug.Log(new String('-', i) + " " + reponse3);
+                    if (children.Count > 2)
+                        children[2].Print(i + 1);
+                }
             }
         }
     }

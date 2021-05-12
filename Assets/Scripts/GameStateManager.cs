@@ -47,10 +47,10 @@ public class GameStateManager : MonoBehaviour
             currentScene = introScene;
             SceneManager.sceneLoaded += OnSceneLoaded;
 
-            // scenario load
+            /*// scenario load
             scenario = new Assets.Scripts.Tree();
             TreeNode tree = scenario.node;
-            tree.Print();
+            tree.Print();*/
 
             flag = true;
         }

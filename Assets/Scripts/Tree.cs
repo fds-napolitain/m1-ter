@@ -40,13 +40,14 @@ namespace Assets.Scripts
             while (i < tmp.Count)
             {
                 // question, réponses (suivi de texte): CHOIX
-                if (i < tmp.Count - 1 && tmp[i + 1].Contains("CHOIX")) 
+                if (i < tmp.Count - 1 && tmp[i+1].Contains("CHOIX")) 
                 {
                     Debug.LogError("choix" + current.phrase);
                     // 3 réponses
-                    if (!tmp[i + 4].Contains("ROUTE")) 
+                    if (!tmp[i + 3].Contains("ROUTE")) 
                     {
                         current.AddChild(new TreeNode(tmp[i], tmp[i + 2], tmp[i + 3], tmp[i + 4]));
+                        Debug.LogError(current.phrase);
                         i += 4;
                     }
                     // 2 réponses
@@ -60,10 +61,10 @@ namespace Assets.Scripts
                 }
                 // mini jeu: MINIJEU
                 else if (i < tmp.Count - 1 && (
-                    tmp[i + 1].Contains("MEMORY") || 
-                    tmp[i + 1].Contains("SIMON") ||
-                    tmp[i + 1].Contains("TOUR") ||
-                    tmp[i + 1].Contains("SNAKE")))
+                    tmp[i+1].Contains("MEMORY") || 
+                    tmp[i+1].Contains("SIMON") ||
+                    tmp[i+1].Contains("TOUR") ||
+                    tmp[i+1].Contains("COLLECT")))
                 {
                     Debug.LogError("minijeu" + current.phrase);
                     current.AddChild(new TreeNode(tmp[i], tmp[i + 2], tmp[i + 3]));
@@ -73,8 +74,8 @@ namespace Assets.Scripts
                 // après un choix (q, r): NOUVELLE ROUTE
                 else if (i > 0 && i < tmp.Count-1 && tmp[i-1].Contains("ROUTE")) 
                 {
-                    Debug.LogError("route" + current.phrase);
                     current = node;
+                    node.Print();
                     // parcourir a chaque fois les phrases qui se suivent sans branches
                     while (current.children.Count == 1 && !String.IsNullOrEmpty(current.phrase))
                     {
@@ -123,12 +124,13 @@ namespace Assets.Scripts
                         {
                             current.AddChild(new TreeNode(tmp[i + 1], "qzdqzdd"));
                         }
+                        i++;
                     }
                     else
                     {
                         current.AddChild(new TreeNode(tmp[i]));
                     }
-                    current = current.children[current.children.Count-1];
+                    current = current.children[0];
                 }
                 // texte classique: PROCHAINE PHRASE
                 else if (!tmp[i].Contains("ROUTE") && !tmp[i].StartsWith("//"))

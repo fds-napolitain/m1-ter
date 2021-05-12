@@ -91,7 +91,7 @@ Quand ils sont enfin accrochés au vaisseau, ils sortent pour tenter de rentrer 
 “Mais attendez, c’est un memory ?”
 
 
- “On dirait bien… Il va visiblement falloir le résoudre si nous voulons rentrer. Le bleu, à toi l’honneur !”
+“On dirait bien… Il va visiblement falloir le résoudre si nous voulons rentrer. Le bleu, à toi l’honneur !”
 
 
 MEMORY
