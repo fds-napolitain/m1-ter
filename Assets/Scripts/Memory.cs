@@ -152,7 +152,7 @@ public class Memory : MonoBehaviour
                 if (errors == ERRORS_MAX)
                 { // défaite
                     Debug.Log("Défaite");
-                    SceneManager.LoadScene("Hangar_AA");
+                    SceneManager.LoadScene("Hangar_AB");
                 }
                 StartCoroutine(Reset());
             }

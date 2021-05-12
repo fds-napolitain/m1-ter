@@ -80,6 +80,11 @@ public class GameStateManager : MonoBehaviour
             }
         }
 
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+
         /*if (currentScene == game) {
 
             if (Input.GetKey(KeyCode.Space)) {
