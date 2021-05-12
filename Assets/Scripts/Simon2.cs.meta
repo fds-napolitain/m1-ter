@@ -3,7 +3,11 @@ guid: 914859d66e2a1e942bd80021cde0f7fd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - couleur: {fileID: 21300000, guid: dbdfe7ce80f524647ac7828edebce605, type: 3}
+  - black: {fileID: 21300000, guid: 4ddb20b826502804bb5ca9e938b94a1d, type: 3}
+  - error: {fileID: 21300000, guid: 035d431d532e5c248aeccb1f77eacfa0, type: 3}
+  - spriteRenderer: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
