@@ -28,7 +28,7 @@ public class SnakeHead : MonoBehaviour
     GameObject boutton_down;
     GameObject boutton_right;
     GameObject boutton_left;
-    public static int maxPommes = 10;
+    public static int maxPommes = 7;
     public static int nbPommes;
 
     public enum Direction
@@ -116,8 +116,8 @@ public class SnakeHead : MonoBehaviour
                 break;
         }
         body.transform.position += new Vector3(
-           (float)x * SNAKE_SPEED,// * deltaTime,
-           (float)y * SNAKE_SPEED,// * deltaTime,
+           (float)x * SNAKE_SPEED * Time.deltaTime,
+           (float)y * SNAKE_SPEED * Time.deltaTime,
            0
         );
 
@@ -127,6 +127,58 @@ public class SnakeHead : MonoBehaviour
     private void Update()
     {
         Move();
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            if (body.direction != Direction.DOWN)
+            {
+                body.direction = Direction.UP;
+                body.hasChangedDirection = true;
+                Debug.Log("change direction");
+            }
+            else
+            {
+                SceneManager.LoadScene("Hangar_AB");
+            }
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            if (body.direction != Direction.UP)
+            {
+                body.direction = Direction.DOWN;
+                body.hasChangedDirection = true;
+                Debug.Log("change direction");
+            }
+            else
+            {
+                SceneManager.LoadScene("Hangar_AB");
+            }
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            if (body.direction != Direction.RIGHT)
+            {
+                body.direction = Direction.LEFT;
+                body.hasChangedDirection = true;
+                Debug.Log("change direction");
+            }
+            else
+            {
+                SceneManager.LoadScene("Hangar_AB");
+            }
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            if (body.direction != Direction.LEFT)
+            {
+                body.direction = Direction.RIGHT;
+                body.hasChangedDirection = true;
+                Debug.Log("change direction");
+            }
+            else
+            {
+                SceneManager.LoadScene("Hangar_AB");
+            }
+        }
     }
 
 
