@@ -598,6 +598,7 @@ GameObject:
   - component: {fileID: 955388613}
   - component: {fileID: 955388615}
   - component: {fileID: 955388614}
+  - component: {fileID: 955388616}
   m_Layer: 5
   m_Name: Reponse3
   m_TagString: Untagged
@@ -667,6 +668,19 @@ MonoBehaviour:
   m_Text: 'rep3
 
 '
+--- !u!65 &955388616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955388612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1741.0813, y: 35.579407, z: 1.0000794}
+  m_Center: {x: -6.4228053, y: 72.262566, z: -0.000039668754}
 --- !u!1 &1266658529
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,6 +795,7 @@ GameObject:
   - component: {fileID: 1502707118}
   - component: {fileID: 1502707120}
   - component: {fileID: 1502707119}
+  - component: {fileID: 1502707121}
   m_Layer: 5
   m_Name: Reponse2
   m_TagString: Untagged
@@ -847,7 +862,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: rep3
+  m_Text: rep2
+--- !u!65 &1502707121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502707117}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1735.6543, y: 43.33111, z: 1.0000794}
+  m_Center: {x: -3.1599438, y: 67.34438, z: -0.000039668754}
 --- !u!1 &1591348260
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +887,7 @@ GameObject:
   - component: {fileID: 1591348261}
   - component: {fileID: 1591348263}
   - component: {fileID: 1591348262}
+  - component: {fileID: 1591348264}
   m_Layer: 5
   m_Name: Reponse1
   m_TagString: Untagged
@@ -926,6 +955,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: rep1
+--- !u!65 &1591348264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591348260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1736.376, y: 50.17207, z: 1}
+  m_Center: {x: -2.712299, y: 68.37138, z: 0}
 --- !u!1 &1684295570
 GameObject:
   m_ObjectHideFlags: 0

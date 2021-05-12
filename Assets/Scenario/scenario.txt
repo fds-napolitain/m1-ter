@@ -1,0 +1,1385 @@
+﻿Galaxie d’Andromède, 2742, USS Unknown
+
+
+Une simple mission de routine. Une rapide reconnaissance. C’est, en tout cas, ce qui avait été promis à l’équipage du bâtiment.
+
+
+Un capitaine à peine nommé, Chiver, et le ouistiti de compagnie offert par la Ligue Galactique, Loulou.
+
+
+Loulou ne quitte presque jamais le capitaine. Et quand il n’est pas sur son épaules, il est sur le pont, scrutant la carte du système à la recherche de la moindre anomalie.
+
+
+De temps en temps, Sekip, le pilote, tente quelques blagues, très souvent incomprises.
+
+
+Et vous, Spat, vous êtes au milieu de tout ça, le petit nouveau tout juste sorti de l'académie, qui effectue sa première mission spatiale.
+
+
+Le capitaine se dirige vers le centre de commandement, au centre du vaisseau. Autour de la station de commande se trouve la seconde du capitaine, Innoth.
+
+
+“Du nouveau ?”
+
+
+“Toujours rien, capitaine. Je ne comprends toujours pas, que fait-on ici ?”
+
+
+“Je suppose que c’est à nous de le découvrir. Après tout, nous sommes une équipe de reconnaissance.”
+
+
+“Reconnaissance, reconnaissance… Je pense surtout qu’ils nous ont envoyé sur une mission bidon absurde ! Il n’y a rien ici !”
+
+
+Un long soupir s’échappe de la bouche du capitaine. Bien sûr qu’Innoth se montrait impatiente. Et ce serait mentir que de dire que le capitaine n’était pas lui aussi frustré de ne rien trouver. Soudain, Loulou crève le silence pesant, en commençant à gesticuler violemment en criant tel un enfant sur les épaules du capitaine. 
+
+
+“Du calme, Loulou ! Qu’est-ce-qu’il te prend ?”
+
+
+Le petit singe pointe frénétiquement le radar de la table de commande. Les yeux du capitaine s'ouvrent en grand à la vue d’un grand point lumineux se déplaçant rapidement sous son regard. Ses deux mains se posent de part et d’autre de la table.
+
+
+“Mais c’est un vaisseau de signature inconnue !”
+
+
+________________
+
+
+ROUTE A -> FINI
+
+
+Innoth sursaute de joie en entendant les mots du capitaine.
+
+
+“Enfin ! Que comptez-vous faire capitaine ?”
+
+
+“Ouvrez un canal de communication. Essayons d’établir un contact.”
+
+
+Après un salut militaire à son supérieur, Innoth se rue vers le poste de communication et applique le protocole standard s’imposant. Sekip, toujours à son poste dans le cockpit, se demande pourquoi tant d'effervescence. 
+
+
+“Attendez, on a enfin quelque chose ?”
+
+
+“Tout juste, Sekip.”
+
+
+“Et moi qui commençais à croire qu’on nous avait envoyé ici en espérant qu’on se perde !”
+
+
+Vous regardez alors Sekip avec un sourire mesquin et affirmez :
+
+
+“Tu me dois dix dollars !”
+
+
+“Tu peux toujours rêver, le bleu. C’est pas parce qu’il y a en effet quelque chose, que je n’avais pas raison !”
+
+
+Vu le caractère de Sekip, vous avez peu de chance de récupérer les dix dollars qu’il vous doit pour avoir gagné ce pari, mais au moins, vous avez essayé.
+
+
+“Capitaine, nous n’arrivons pas à rentrer en contact avec le vaisseau, il ouvre son port d'amarrage. Que faisons-nous ?"
+
+
+“Il semblerait qu’on nous invite… Ce serait malpoli de décliner ! Allons-y !”
+
+
+C’est ainsi que l’équipe prend le cap pour le vaisseau inconnu.
+
+
+Quand ils sont enfin accrochés au vaisseau, ils sortent pour tenter de rentrer dans ledit vaisseau inconnu, et tombent face à une porte close. Vous remarquez alors un petit boîtier permettant d’ouvrir la porte.
+
+
+“Mais attendez, c’est un memory ?”
+
+
+ “On dirait bien… Il va visiblement falloir le résoudre si nous voulons rentrer. Le bleu, à toi l’honneur !”
+
+
+MEMORY
+A.A Victoire
+A.B Défaite
+
+
+________________
+
+
+ROUTE A.A -> FINI
+
+
+//changement fond du jeu -> couloir
+
+
+La porte s’ouvre devant vous, dévoilant l’intérieur du vaisseau.
+
+
+Vous entrez avec précaution. Le capitaine préfère vous envoyer devant, sûrement pour que vous soyez le premier touché par quoi que ce soit qui pourrait se passer.
+
+
+Les couloirs du vaisseau sont étonnamment grands et vous commencez à vous inquiéter de la taille de ses occupants.
+
+
+La technologie est assez rustique et vous devez utiliser votre lampe torche pour voir plus clair dans ce dédale de couloirs sombres.
+
+
+Bientôt, vous arrivez à une intersection. Trois choix s’offrent à vous : tout droit, à droite ou à gauche.
+
+
+Loulou s’excite en indiquant le couloir d’en face, Innoth affirme que la plupart des gens vont à gauche dans un cas comme celui là et que nous devrions donc peut-être essayer la direction opposée, et Sekip insiste pour aller à gauche disant qu’il a un bon pressentiment à ce propos.
+
+
+Le choix vous revient donc. Vous choisissez d’aller :
+
+
+CHOIX 2
+A.A.A“En face”
+A.A.B“A gauche”
+A.A.C“A droite”
+
+
+________________
+
+
+ROUTE A.A.A -> FINI
+
+
+Vous avez visiblement plus confiance en Loulou qu’en les autres membres de votre équipage. C’est un choix étonnant.
+
+
+Vous avancez donc dans le couloir d’en face lorsque Loulou saute par terre et s’élance dans le couloir sans vous attendre. Vous vous mettez alors tous à courir pour le rattraper.
+
+
+Vous arrivez à une nouvelle intersection et évidemment, vous l’avez perdu. Vous choisissez donc de vous séparer. Vous et le capitaine irez en face, Innoth à droite et Sekip à gauche.
+
+
+Si vous aviez réfléchi un peu plus, vous auriez réalisé que cela ressemblait en tout point au début d’un film d’horreur…
+
+
+Vous progressez en appelant désespérément le nom du petit singe, lorsque que vous entendez un long hurlement. C’était la voix de Innoth.
+
+
+Vous faites alors demi-tour en courant et prenez le chemin qu’elle a suivi. Malheureusement, la seule chose que vous trouvez c’est du sang formant un chemin jusqu’à une porte close.
+
+
+“Encore une memory !”
+
+
+“Euh non, cette fois je crois que c’est un jeu de couleurs à retenir et à reproduire !”
+
+
+“Mais qu’est-ce qu’ils ont avec les mini-jeux dans ce vaisseau ? Allez Spat, tu sais ce qu’il te reste à faire !”
+
+
+SIMON1
+A.A.A.A Victoire
+A.A.A.B Défaite
+
+
+________________
+
+
+ROUTE A.A.A.A -> FINI
+
+
+//changement de fond -> salle de repos vaisseau
+La porte s’ouvre devant vous sur une salle de repos.
+
+
+Au centre de la salle sur une table à manger se trouve Innoth en train de se faire dévorer par un alien gigantesque, vert avec des yeux de mouche des antennes et quatre bras tous enfoncés dans le corps de votre amie. 
+
+
+Vous reculez en essayant de rester discret et appuyez frénétiquement sur le bouton de la porte pour la refermer. Mais vous savez, vous savez qu’il vous a vu. Vous avez croisé son regard.
+
+
+Vous ne vous attardez pas et partez en courant dans le sens inverse. Cinq secondes plus tard, la porte se rouvre sur le monstre. Vous savez que le timing est serré et que vous devez vous échapper, malheureusement, le capitaine glisse sur le sang et tombe. Vous pouvez alors choisir de l’aider ou de l’abandonner à son sort :
+
+
+CHOIX 3
+A.A.A.A.A“Aider le capitaine”
+A.A.A.A.B“Partir sans te retourner”
+
+
+________________
+
+
+ROUTE A.A.A.A.A -> FINI
+
+
+Vous ne pouvez pas vous résoudre à abandonner votre ami alors vous faites demi-tour pour l’aider. Comme vous vous en doutiez malheureusement, ce temps perdu a suffi pour que l’alien vous rattrape.
+
+
+Vous recevez un coup sur la tête, voyez mille chandelles puis le noir complet.
+
+
+Quand vous rouvrez les yeux vous êtes dans ce qui semble être le garde-manger du vaisseau. Il semblerait qu’Innoth ait suffi pour le rassasier et qu’il vous garde pour plus tard. 
+
+
+Le capitaine est à côté de vous inconscient. Vous le secouez donc pour le réveillez.
+
+
+“Où sommes-nous ?”
+
+
+“Dans le garde-manger je dirais. Nous devons trouver un moyen de sortir ou nous finirons comme casse-croûte"
+
+
+Vous cherchez autour de vous la porte et finissait par la trouver. Malheureusement, elle ne s’ouvre pas de l’intérieur. Toutefois, un boitier éléctrique si trouve. Vous l’ouvrez et commencer à comprendre comme il fonctionne avant de réaliser :
+
+
+“Mais il s’agit de tours de Hanoï ! Décidément, la conception de ce vaisseau m’étonnera toujours !”
+
+
+“Vous pouvez ouvrir la porte ?”
+
+
+“Oui, si j’arrive à placer ces trois anneaux à gauche sur la barre de droite, comme pour des tours de Hanoï classique, je devrais pouvoir court-circuiter les commandes et ouvrir la porte !”
+
+
+“Dans ce cas, dépêchez-vous, je ne veux pas être ici quand il reviendra !”
+
+
+TOUR DE HANOÏ1
+A.A.A.A.A.A Victoire
+A.A.A.A.A.B Défaite
+
+
+
+
+________________
+
+
+ROUTE A.A.A.A.A.A -> FINI
+
+
+//changement de fond -> porte de sortie
+
+
+La porte s’ouvre enfin. Alors, avec le capitaine vous ne vous attardez pas dans ce vaisseau de mort et choisissez de rejoindre la sortie. Tant pis pour Sekip et Loulou, de toute façon, ils n’ont aucune chance, et si vous tentez de les aidez, vous non plus.
+
+
+Par chance, un plan se trouve non loin et vous permet de vous localiser.
+
+
+Vous avancez donc précautionneusement dans les couloirs, vous arrêtant au moindre bruit et prêt à vous cacher à tout moment, et arrivez par miracle, en vie, à la porte qui vous a permis de rentrer dans ce piège. 
+
+
+Vous vous apprêtez donc à refaire le memory quand vous réalisez que le jeu à changer ! Vous êtes désormais devant un quiz !
+
+
+Vous vous lancez donc en jurant que plus jamais vous ne ferez de mini-jeux de votre vie ensuite
+
+
+COLLECT1
+A.A.A.A.A.A.A Victoire
+A.A.A.A.A.A.B Défaite
+
+
+________________
+
+
+ROUTE A.A.A.A.A.A.A -> FINI
+
+
+//changement de fond -> archive
+
+
+La sortie, ENFIN ! Vous vous précipitez dans votre vaisseau et appuyez pour refermer la porte alors que déjà des bruits se font entendre dans le couloir. 
+
+
+Vous observez la fente se refermer lentement quand Loulou surgit de nulle part et bondit dans l’espace restant, juste avant que la porte ne soit fermée.
+
+
+Il saute sur les épaules du capitaine et se réfugie contre lui, probablement terrifié. Vous vous souvenez alors qu’une partie de cette histoire est sa faute, mais vous décidez de laisser votre rancune pour plus tard. Pour l’instant, vous avez plus important à faire.
+
+
+Vous courrez dans le vaisseau, laissez les commandes au capitaine qui, lui, sait piloter, même si ça fait un moment depuis la dernière fois, et vous empressez de vous désamarrer de l’autre vaisseau.
+
+
+Vous fuyez ensuite le plus loin possible décidant que rentrer chez vous était une bonne idée. Cette histoire vous marquera à vie, et plus jamais, au grand jamais, vous ne remonterez à bord d’un vaisseau ! 
+
+
+FIN 1
+Bravo, vous avez survécu à un piège mortel ! Vous êtes traumatisé à vie et vous ne repartirez jamais en mission, mais vous êtes vivant ! A votre retour de mission, vous avez demandé une mutation aux archives du bureau des naissances, juste pour être sûr.
+
+
+________________
+
+
+ROUTE A.A.A.A.A.A.B -> FINI
+
+
+//changement de fond -> vaisseau qui explose
+
+
+Une seule mauvaise réponse et le piège vient de se refermer sur vous. Des pas se font entendre dans le couloir et vous savez que vous êtes perdu. Vous décidez alors que vous préférez choisir votre mort.
+
+
+Vous frappez sur une des barres du mur jusqu’à ce qu’elle se casse, en espérant en faire une arme pour vous défendre. 
+
+
+Mais la chance n’est pas avec vous aujourd’hui, et ce que vous aviez pris pour une barre en métal était en fait une conduite de gaz hautement inflammable. Quand elle se casse, une étincelle en découle et vous êtes pulvérisé par l’explosion.
+
+
+FIN 2
+Quand le destin vous en veut, vous ne pouvez rien faire pour y échapper. Ce n’était décidément pas votre jour. La mort vous attendait.
+
+
+
+
+________________
+
+
+ROUTE A.A.A.A.A.B -> FINI
+
+
+//changement de fond -> couteau ou guillotine
+
+
+La chance semble vous avoir quitté, ou le talent, toujours est-il que vous faites griller la commande interne. Vous n’avez donc plus aucun moyen d’ouvrir cette porte. L’avantage c’est que votre ennemi ne peut pas l’ouvrir nous plus. Tout du moins, c’est ce que vous croyez.
+
+
+Environ 12h plus tard, votre ennemi force l’ouverture de la porte avec l’aide d’un de ses “camarades”.
+
+
+Terrifié, vous reculez et tentez de lui échapper par tous les moyens, mais il vous assomme avant de vous traîner à travers le vaisseau. Vous êtes conscient, mais pour une raison qui vous échappe, vous ne pouvez plus bouger.
+
+
+Il vous installe alors sur une table, attrape un gigantesque couteau, et l’instant d’après votre tête roule loin de votre corps.
+
+
+FIN 3
+Une seule petite erreur peut vous coûter la vie… Souvenez-vous en.
+
+
+________________
+
+
+ROUTE A.A.A.A.B -> FINI
+
+
+Vous suivez votre instinct de survie et partez en courant en laissant le capitaine derrière. Vous slalomez dans les couloirs sans savoir où vous allez, cherchant juste à vous éloigner le plus loin possible en espérant secrètement que dévorer le capitaine le retiendra.
+
+
+Vous percutez alors quelque chose et tombez douloureusement par terre.
+
+
+Vous relevez la tête, ne comprenant pas ce qu’il vient de se passer et vous voyez le groupe d’aliens que vous venez de percuter.
+
+
+Vous n’avez aucune chance. Avant que vous ayez pu faire le moindre geste, ils se sont jetés sur vous, et ils sont maintenant en train de vous dévorer vivant.
+
+
+FIN 4
+Abandonner votre ami était un choix lâche qui vient de se retourner contre vous. Vous devriez peut-être en tirer une leçon.
+
+
+________________
+
+
+ROUTE A.A.A.B -> FINI
+
+
+//changement de fond -> ???????
+
+
+Vous jetez un coup d’oeil sur le côté pour vérifier que le capitaine ne vous a pas vu échoué avant d’affirmer sans vergogne :
+
+
+“La porte est bloquée ! Résoudre le jeu ne marche pas ! Nous devons trouver une autre entrée.”
+
+
+Vous prenez alors à droite, seul chemin possible, dans l’espoir de contourner la pièce et qui peut-être trouver une autre porte.
+
+
+Vous avancez donc en longeant le mur et tombez sur Sekip qui vient dans l’autre sens.
+
+
+“Capitaine ! Le bleu ! Vous allez bien ? Vous avez trouvé Loulou ? Vous avez vu Innoth ? Je l’ai entendu hurler !”
+
+
+Vous échangez un regard avec le capitaine, il se décide à lui répondre en allant à l’ensentiel.
+
+
+“Loulou est toujours perdu et nous savons où est Innoth, mais la porte d’accès est bloquée. Nous cherchons donc un autre accès dans cette direction.”
+
+
+“Dans ce cas, je suis passé à côté d’une porte il y a environ deux mètres.”
+
+
+“Nous n’avons rien à perdre à essayer.”
+
+
+Vous le suivez donc jusqu’à la fameuse porte. Cette fois-ci, c’est un quizz pour l’ouvrir. Décidément les goûts des passagers du vaisseau sont étonnants. 
+
+
+Vous vous écartez dans l’espoir de laisser la place à quelqu’un d’autre cette fois-ci, mais les deux autres membres d’équipage vous fixent attendant que vous vous en occupiez.
+
+
+Vous réalisez alors qu’on vous laisse vous en chargé au cas où il s’agirait d’un piège. Mais vous n’avez pas le choix alors vous faîtes ce qu’on vous demande.
+
+
+COLLECT2
+A.A.A.B.A Victoire
+A.A.A.B.B Défaite
+________________
+
+
+ROUTE A.A.A.B.A -> FINI
+
+
+//changement de fond -> cuisine
+
+
+La porte s’ouvre et vous soufflez de soulagement. Au moins cette fois vous ne vous êtes pas planté…
+
+
+Vous passez en premier et découvrez que vous venez d’entrer dans la cuisine. Vous vous sentez alors étonnamment mal à l’aise sans comprendre exactement pourquoi. Rapidement, vous remarquez une porte à gauche au fond de la pièce.
+
+
+Vous vous en approchez et regardez par la petite fenêtre de porte en espérant qu’elle soit connectée à la bonne pièce, et ce que vous découvrez vous glace le sang.
+
+
+Un alien gigantesque, vert avec des yeux de mouche des antennes et quatre bras se tient à côté de ce qui semble être les restes du corps d’Innoth. Il a la bouche couverte de sang et il en est train de lécher un à un ses seize doigt ensanglanté.
+
+
+Vous savez que vous avez bloqué l’autre porte en échouant. Vous savez donc qu’il y a une très forte probabilité pour que la porte soit également bloquée de l’intérieur. Ainsi, il ne reste qu’une sortie pour cet extraterrestre vert : la porte contre laquelle vous êtes actuellement collé.
+
+
+Vous avez donc deux options :
+
+
+CHOIX 4
+A.A.A.B.A.A Tenter de vous cacher dans la cuisine
+A.A.A.B.A.B Fuir la pièce au plus vite
+
+
+________________
+
+
+ROUTE A.A.A.B.A.A -> FINI
+
+
+Vous regardez rapidement autour de vous pour chercher une cachette. Vous voyez ce placard coulissant sous le plan de travail et décidez de vous y glisser.
+
+
+Vous voyez Sekip se glisser dans un autre placard en face de vous. Le capitaine est entré dans la chambre froide et compte sur vous pour l’en faire sortir une fois tout cela fini.
+
+
+Vous entendez la porte s’ouvrir et inconsciemment vous retenez votre respiration. Par une petite fente vous pouvez voir Sekip en face de vous. Il est tout aussi mal que vous.
+
+
+L’extraterrestre passe devant vous et continue sa progression. Vous entendez la porte de la chambre froide, puis un long frisson vous glace le sang quand vous entendez votre capitaine crier.
+
+
+“Non ! Laissez-moi ! Spat ! Sekip !”
+
+
+Il vous appelle à l’aide. Vous pouvez alors :
+
+
+
+
+CHOIX 5
+A.A.A.B.A.A.A Sortir de votre cachette et tenter d’aider le capitaine
+A.A.A.B.A.A.B Rester silencieux et ne pas bouger
+
+
+________________
+
+
+ROUTE A.A.A.B.A.A.A -> FINI
+
+
+Vous ouvrez votre placard à la volée et sortez pour découvrir qu’il est déjà trop tard, le capitaine est mort. Vous paniquez alors et tentez de fuir, mais vous n’avez aucune chance.
+
+
+L’alien vous saute dessus et en tombant vous croisez le regard de Sekip horrifié juste avant d’être dévoré vivant.
+
+
+
+
+FIN 5
+Vous croyez sérieusement avoir une chance ? Au moins, vous êtes mort en jouant les héros. Si Sekip s’en sort, et qu’il n’est pas traumatisé à vie, il pourra raconter à tout le monde votre acte héroïque inutile.
+
+
+
+
+________________
+
+
+ROUTE A.A.A.B.A.A.B -> FINI
+
+
+Vous choisissez de l’abandonner, réalisant que vous n’avez aucune chance. Cinq secondes plus tard, vous voyez du sang gicler sur le sol devant vous.
+
+
+Vous attendez avec horreur en entendant les bruits terrifiants de votre capitaine se faisant dévorer, quand soudain la tête du capitaine tombe devant vous.
+
+
+Sekip en face de vous, terrifié, ne peut retenir un couinement.
+
+
+Les bruits cessent alors immédiatement et vous entendez votre ennemi se rapprocher. Avant que vous ne compreniez ce qu’il se passe vous vous retrouvez nez à nez avec l’alien.
+
+
+Il vous regarde de ses yeux noirs opaques dans lequel vous voyez votre reflet. Et vous savez, vous savez que vous êtes mort… A cause de Sekip !
+
+
+Alors, pris d’une rage soudaine, vous bondissez de votre placard et ouvrez le placard de Sekip. Si vous devez mourir, vous voulez que lui aussi !
+
+
+L’extraterrestre vous attrape par le col puis attrape Sekip en faisant un sourire tordu très effrayant, puis il vous emmène dans la chambre froide. Il n’a aucun mal à vous retenir malgré votre résistance, et mais vous n’abandonnez pas !
+
+
+Toutefois, c’était un combat perdu d’avance et vous le réalisez quand il vous transperce la poitrine avec un crochet pour vous accrochez dans la chambre froide.
+
+
+Alors que vos derniers instants arrivent, vous croisez le regard de Sekip suspendu en face de vous, et vous vous mitraillez du regard jusqu’à votre dernier soupir.
+
+
+FIN 6
+Avec ce que vous venez de faire, vous avez bousillé votre karma. Vous serez sûrement réincarné en limace de mer dans une prochaine vie.
+
+
+________________
+
+
+ROUTE A.A.A.B.A.B -> FINI
+
+
+Vous choisissez de prendre vos jambes à votre cou. Un choix en apparence plus que judicieux.
+
+
+Vous faites demi-tour et faites signe à vos camarades de faire de même et vous trouvez à nouveau face à un choix :
+
+
+CHOIX 6
+A.A.A.B.A.B.A Aller à droite
+A.A.A.B.A.B.B Rebrousser chemin en allant à gauche
+
+
+
+
+
+
+________________
+
+
+ROUTE A.A.A.B.A.B.A -> FINI
+
+
+Vous savez que le monstre vous a entendu partir. Vous ne réfléchissez donc pas pendant trois siècles et partez en courant.
+
+
+Vous avancez dans l’inconnue la plus complète. Il fait sombre et vous ne voyez pas à plus de deux mètres devant vous ! Si seulement vous n’aviez pas oublié votre lampe torche dans la cuisine !
+
+
+Vous continuez à avancer jusqu’à tomber dans une impasse. Non ! C’est impossible ! Vous réalisez que vous avez fait le mauvais choix ! Ce chemin est sans issue !
+
+
+Bientôt, vous entendez la respiration excitée de votre ennemi qui visiblement adore chasser. Il se rapproche et vous ne savez pas quoi faire !
+
+
+Quand vous le voyez en face de vous, quelque chose se déconnecte dans votre cerveau et sans réfléchir, vous poussez violemment Sekip sur l’alien avant de passer en courant à côté, utilisant le pilote comme appat.
+
+
+Le capitaine qui comprend ce que vous venez de faire vous suit rapidement. 
+
+
+Alors que vous courrez, vous entendez les hurlements de douleur de Sekip, puis le silence. La seule chose qui vous vient à l’esprit c’est que maintenant, vous ne verrez jamais vos dix dollars.
+
+
+Vous repassez devant la porte bloquée et tombez sur deux autres aliens tenant Loulou en discutant dans une langue inconnue.
+
+
+Alors, avant que vous ne puissiez penser à quoi que ce soit, vous sentez qu’on vous pousse violemment sur les deux monstres. Le capitaine vient de vous faire exactement ce que vous avez fait à Sekip.
+
+
+Il part en courant avec Loulou qui en a profiter pour se libérer et vous êtes presque sûr de l’avoir entendu vous chuchoter : “ce n’est pas contre toi…”
+
+
+Les deux aliens vous regardent avec envie, et moins d’un centième de seconde plus tard vous hurlez en appelant vos parents, priant pour qu’on abrège vos souffrances.
+
+
+FIN 7
+Mon ami, c’est ce qu’on appelle le karma ! Souviens-toi : “Ne fais pas aux autres ce que tu n’aimerais pas qu’on nous fasse !”
+
+
+________________
+
+
+ROUTE A.A.A.B.A.B.B ->FINI
+
+
+Alors que vous partez en courant, vous l’entendez franchir la porte. Il vous a entendu partir, vous en êtes maintenant sûr.
+
+
+Vous tentez de rebrousser chemin pour aller au vaisseau. Vous vous élancez donc, retombez face à la porte que vous avez bloquée et continuez en suivant les traces de sang en sans inverse.
+
+
+Mais vous entendez rapidement du bruit au bout du couloir. Beaucoup de bruit !
+
+
+Ainsi, encore une fois, vous faites marche arrière et vous retrouvez face à la porte bloquée. A droite, l’alien qui a mangé votre ami. Derrière vous, probablement un groupe d’aliens ! Vous êtes piégés.
+
+
+Vous tentez donc de vous acharner sur cette porte pour l’ouvrir mais rien à faire.
+
+
+Et puis, vous sentez quelqu’un vous pousser violemment et vous atterrissez directement sur l’alien qui arrive de la droite. Vous comprenez alors que Sekip vient de vous jeter sur l’extraterrestre pour faire dimension pour que lui et le capitaine puisse s’enfuir. 
+
+
+Bientôt vous sentez des dents s’enfoncer dans votre épaule et en arracher un bout. Vous hurlez et vous débattez, mais vous n’avez aucune chance ! Vous devenez alors le deuxième casse-croûte vivant de la journée de ce monstre vert.
+
+
+Alors que votre dernière heure arrive, vous maudissez le pilote de votre équipage en priant pour qu’ils ne survivent pas à cet enfer !
+
+
+FIN 8
+Vous mourrez empli de haine et de ressentiment. Si Sekip survit, vous reviendrez probablement le hanter jusqu’à la fin de ses jours.
+
+
+
+
+________________
+
+
+ROUTE A.A.A.B.B -> FINI
+
+
+//changement de fond -> ???????
+
+
+“Mais je t’avais dis que c’était l’autre réponse ! Bon sang mais pourquoi tu ne m’as pas écouté ?”
+
+
+Sekip est en train de vous enguirlander. Encore une fois, vous avez lamentablement échoué. Vous commencez à vous sentir coupable un peu malgré vous.
+
+
+Le ton monte alors que Sekip continue à critiquer votre erreur. Cette fois toutefois, vous ne voyez pas le message “porte bloquée” s’afficher sur le boîtier. Au moins vous pouvez réessayer de l’ouvrir.
+
+
+Vous faites remarquer cette information au capitaine, et Sekip s’exclame alors :
+
+
+“Pousse toi ! C’est à moi d’essayer cette fois !”
+
+
+Le pilote s’apprête à recommencer le quiz quand la porte s’ouvre sur un alien gigantesque, vert avec des yeux de mouche, des antennes et quatre bras recouverts de gouttelettes de sang.
+
+
+Il vous observe tour à tour l’un après l’autre, puis avec trois de ces bras, il vous embroche et vous traîne dans la pièce derrière lui. Quelques minutes plus tard, vous finissez en sushis que l’équipage se fait une joie de déguster.
+
+
+FIN 9
+Vous avez fini en plat japonais pour extraterrestre à cause de vos échecs. Bon appétit !
+
+
+
+
+________________
+
+
+ROUTE A.A.B -> FINI
+
+
+Pour une raison étonnante, vous décidez de suivre le choix de Sekip même s’il vous déteste.
+
+
+Vous avancez dans ce couloir et arrivez dans une impasse avec une simple porte. Cette porte s’ouvre à l’aide d’un jeu de couleurs à retenir sur un petit boîtier numérique.
+
+
+Vous échangez un regard avec vos camarades et tentez d’ouvrir cette porte en réussissant le mini-jeu.
+
+
+SIMON2
+Victoire -> A.A.B.A
+Défaite -> A.A.B.B
+
+
+________________
+
+
+ROUTE A.A.B.A -> FINI
+
+
+//changement de fond -> Pouponnière alien. 
+
+
+Un bip sonore suivi d’une lumière verte et la porte s’ouvre. Vous découvrez alors une salle sombre avec pour seule source de lumière une forme étrange possédant des liserés fluorecent de couleur verte.
+
+
+Sekip étant une personne peu patiente, il s’engouffre dans la pièce et trouve ce qui semble être un interrupteur. Vous fermez les yeux au moment où votre camarade pose sa main sur l'interrupteur, puis vous êtes surpris de ne pas sentir que vous êtes mort.
+
+
+Une bonne chose en soi.
+
+En ouvrant les yeux, vos yeux s’écarquillent sous l'incompréhension.
+
+
+“C’est une blague ?”
+
+
+Non, non. La faible lumière verdâtre qui sert à éclairer la pièce révèle l’objet visible plus tôt. Cela semble être un berceau.
+
+
+Sekip se place derrière vous et vous pousse légèrement.
+
+
+“Va jeter un oeil.”
+
+
+On dirait que vous n’avez pas le choix. Vous avancez lentement en direction du berceau.
+
+
+Une ignoble créature, verte, aux yeux globuleux, avec des quatres tentacules verts au lieu des bras, et de grandes dents de requin dans la bouche, gigotait dans le berceau.
+
+
+Horrifié, vous reculez précipitamment pour vous éloigner de ce monstre et vous entravez dans un câble sur le sol. Vous tombez alors dans un bassin derrière vous, rempli d’un liquide vert épais.
+
+
+Vous luttez pour essayer de remonter en retenant votre respiration, mais vous ne pouvez pas nager dans ce liquide épais et visqueux. Vous êtes donc en train de vous noyer.
+A bout de force, vous ouvrez la bouche et vous sentez le liquide vous pénétrer la gorge et les poumons. Vous tentez de cracher mais ne pouvez pas et devez donc supporter sans rien faire l’affreuse sensation de brûlure qui se répand de votre bouche à votre poitrine.
+
+
+Petit à petit, la sensation prend de l’ampleur, concernant bientôt tout votre corps. Puis, pendant un instant, vous ne ressentez plus rien. Votre esprit se vide et vous restez là une minute avant que les sensations reviennent dans votre corps.
+ 
+Vous bougez vos membres et remontez à la surface sans problème, empli d’une rage nouvelle.
+
+
+A la surface vous apercevez des amuses-gueules étranges, gesticulants et criants, mais particulièrement appétissants et ayant terriblement faim, vous vous jetez dessus et les dévorez avec grande satisfaction.
+
+
+Vous avancez ensuite dans la pièce et apercevez votre reflet. Intrigué, vous le regardez et l'admirez avec satisfaction. Cette peau verte sur laquelle la lumière se réfléter, vos yeux d’un noir profond, plutôt charmeur, et ses quatre bras musclés !
+
+
+Oh oui, vous étiez véritablement un beau spécimen.
+
+
+FIN 10
+Vous êtes tombé dans un liquide de conversion génétique et avez été transformé en alien. Vous vivez désormais une vie d’alien (après avoir dévoré vos camarades) et vous avez un succès fou auprès du sexe opposé.
+
+
+
+
+________________
+
+
+ROUTE A.A.B.B -> FINI
+
+
+//changement de fond -> scrat se faisant ecraser par la porte ?
+
+
+Vous échouez au mini-jeu et un bip sonore retentit.
+
+
+L’instant d’après, vous vous faites écraser par la porte qui vous tombe dessus sans prévenir.
+
+
+FIN 11
+N’avez-vous pas l’impression d’être devenu Scrat ?
+
+
+  
+
+
+
+________________
+
+
+ROUTE A.A.C -> FINI
+
+
+Vous choisissez la logique et suivez ce que vous dit Innoth.
+
+
+Vous avancez dans ce long couloir en faisant attention au moindre bruit et finissez par tomber sur ce qui ressemblait à une porte blindée doublement renforcée.
+
+
+Un petit boîtier tactile, semblable à celui de la porte d’embarquement, permet de déverrouiller la porte. Contrairement à précédemment, ce n’est pas memory, mais un simon qu’il faut réussir.
+
+
+Encore une fois, la tâche vous incombe de vous en occuper.
+SIMON3
+A.A.C.A Victoire
+A.A.C.B Défaite
+
+
+
+
+________________
+
+
+ROUTE A.A.C.A -> FINI
+
+
+//changement de fond -> salle d’arme
+
+
+La porte devant vous s’ouvre sur ce qui semble être une gigantesque armurerie. Vous et le reste de l’équipage êtes comme des enfants un matin de Noël.
+
+
+Vous vous dispersez dans la pièce pour mieux l’explorer. 
+
+
+Vous restez bientôt figé devant des armes semblable à des pistolets à eau mais avec un réservoir remplit de liquide noir étrange. Vous avez soudainement très envie de l’essayer !
+
+
+Un clic retentit alors derrière vous, suivi d’un bip régulier. Vous avez un mauvais pressentiment. Vous vous retournez lentement en direction du bruit et trouvez Sekip l’air coupable, debout devant une machine désormais activée et produisant ces bips.
+
+
+“Sekip ! Bon sang, mais qu’est-ce que tu as fait ?!”
+
+
+“C’est pas moi Capitaine, c’est Loulou !”
+
+
+Le petit singe protesta alors en sautant sur l’épaule de Sekip pour lui tirer les oreilles.
+
+
+“C’est pas important pour l’instant ! Nous devons surtout désamorcer cette arme !”
+
+
+Encore une fois, Innoth était la voix de la raison.
+
+
+Vous vous approchez donc de l’arme avec elle et découvrez que le boîtier est fermé par trois anneaux de taille croissante posés sur une barre en métal, à côté de deux autres barres vides.
+
+
+Pour ouvrir le boîtier, vous devez déplacer les anneaux sur la barre de droite. Toutefois, le nombre de coups pour effectuer cette action est limité car votre temps est limité !
+
+
+
+
+TOUR DE HANOÏ2
+A.A.C.A.A Victoire
+A.A.C.A.B Défaite
+
+
+
+
+________________
+
+
+ROUTE A.A.C.A.A -> FINI
+
+
+//changement de fond -> fils à couper
+
+
+Une goutte de sueur coule sur votre front alors que vous ouvrez enfin délicatement ce boîtier. Le bip de l’engin s'accélère, devant vous deux fils. Un rouge et un bleu ! Vous devez choisir lequel couper.
+
+
+“Coupe le rouge” vous crie Sekip. “C’est toujours le rouge !”
+
+
+“Mais justement, c’est peut-être un piège” réplique Innoth.
+
+
+"Laissez-le choisir !” les coupe alors le Capitaine.
+
+
+Il se rapproche ensuite de vous et affirme :
+
+
+“Le choix te revient petit, je te fais confiance !”
+
+
+Il s’éloigne ensuite et ajout”e :
+
+
+“Par contre, si tu nous tues, je ne te le pardonnerai jamais !”
+
+
+CHOIX 7
+A.A.C.A.A.A Fil rouge
+A.A.C.A.A.B Fil bleu
+
+
+________________
+
+
+ROUTE A.A.C.A.A.A -> FINI
+
+
+Vous choisissez de couper le fil rouge. Le bip se stoppe puis un gaz rouge à l’odeur étonnamment sucrée vous explose au visage, se répandant dans toute la pièce. Pris par surprise.
+
+
+En quelques secondes le gaz se dissipe et vous reprenez votre souffle. Vous appelez les autres membres de l’équipage pour vérifier qu’ils vont bien et soupirez en réalisant que le gaz n’était visiblement pas mortel.
+
+
+Vous avez un peu la tête qui tourne mais vous savez que vous devez rester concentrer, alors vous vous redressez.
+
+
+Vous voyez alors un gigantesque ours en peluche vivant entrer dans la pièce et faire un énorme câlin à Innoth.
+
+
+Vous clignez des yeux plusieurs fois cherchant à comprendre ce qu’il se passe, et vous entendez alors un deuxième ours entrer en chantonnant :
+
+
+“Je veux des câlins, lins, lins, lins, lins, lins. Je veux plein de câlins, lins, lins, lins, lins, lins.”
+
+
+Vous saviez que quelque chose est louche, mais vous ne pouvez vous empêcher de vouloir faire un câlin à ces ours en peluche géants. 
+
+
+Vous vous précipitez alors sur l’un d’eux et lui faites un énorme câlin. Il vous regarde, vous le regardez et faites un sourire béa stupide.
+
+
+Ses deux énormes patounes vous attrapent alors le visage et vous rapprochent de sa bouche comme pour vous faire un énorme bisou.
+
+
+Votre vision se trouble alors et vous avez juste le temps de réaliser que le gaz était hallucinogène et que ce n’était pas un doudou qui voulait vous faire un bisou, mais un alien qui voulait vous manger, avant que ledit alien croque dans votre tête.
+
+
+FIN 12
+La drogue, c’est dangereux...
+
+
+
+
+________________
+
+
+ROUTE A.A.C.A.A.B -> FINI
+
+
+Vous coupez le fil bleu en faisant une grimace effrayée et le silence se fait. Vous avez visiblement choisi le bon fil. Vous poussez alors un soupir de soulagement avant d’être ramené à la réalité par le capitaine.
+
+
+“Nous devons nous armer ! L’alarme a probablement alerté tous les occupants du vaisseau et il ne devrait pas tarder à arriver, et nous ne savons toujours pas s’ils sont hostiles ou non.”
+
+
+Vous hochez la tête en accord et vous précipitez vers les fameux pistolets à liquides noirs qui vous intriguaient tant. Vous en attrapez un, attachez quelque chose ressemblant trait pour trait à un sabre laser à votre ceinture, puis vous équipez de ce qui semble être une arme plasmique dans votre seconde main.
+
+
+Quelques instants plus tard, un alien vert géant avec des yeux de mouches et quatre bras squelettiques passe la porte et se jette sur vous. Alors, sans réfléchir, vous tirez avec le pistolet plasmique.
+
+
+En un instant l’alien explose ne laissant qu’un millier de petits copeaux noirs.
+
+
+“Wouhou ! C’était trop cool !” s’exclame le pilote.
+
+
+Si ces aliens n’étaient pas vos ennemis avant, vous pouvez être sûr qu’ils le sont maintenant ! Vous n’avez donc plus le choix, vous devez vous battre.
+
+
+Vous sortez alors de la pièce en formation et progressez un peu aléatoirement dans le vaisseau en tirant sur tous les ennemis que vous croisez. C’est affreux, mais vous commencez à y prendre goût.
+
+
+Vous arrivez dans un couloir et entendez de nombreux bruits provenant de devant vous et derrière vous. Vous décidez donc d’ouvrir la porte au milieu.
+
+
+Cette fois-ci, vous devez répondre à un quiz pour ouvrir la porte. Vous demandez alors à vos camarades de vous couvrir et commencez à jouer.
+
+
+COLLECT3
+A.A.C.A.A.B.A -> Victoire
+A.A.C.A.A.B.B -> Defaite
+
+
+________________
+
+
+ROUTE A.A.C.A.A.B.A -> FINI
+
+
+//changement de fond -> poste pilotage
+
+
+La porte s’ouvre devant vous et vous vous dépêchez d’y pénétrer juste à temps pour échapper à la vague de monstres armés qui vous courez dessus. Vous auriez peut-être mieux fait de ne pas quitter l’armurerie…
+
+
+La porte se referme derrière Sekip et vous réalisez que vous êtes dans la salle de contrôle.
+
+
+Deux aliens avec des cornes sur la tête se tourne vers vous et sans réfléchir vous tirer dessus avec le pistolet noir, le faisant se décomposer lentement.
+
+
+C’était officiel, vous adorez cette arme.
+
+
+“Et maintenant ?”
+
+
+La question d’Innoth est excellente, et vous vous demandez la même chose. 
+
+
+“Je propose qu’on trouve un moyen de se débarrasser des aliens à l’extérieur pour commencer !”
+
+
+“Bonne idée !”
+
+
+Vous explorez alors le poste de pilotage et regardez les boutons en vous demandant à quoi ils servent.
+
+
+Contrairement à vous, Sekip semble parfaitement à sa place. Au moins est-il qualifié !
+
+
+Il passe un coup sur le fauteuil de pilote et s’y installe. Il appuie ensuite sur un bouton vert et des écrans de contrôle sortent sur tableau de contrôle, vous montrant l’extérieur de la pièce.
+
+
+Il appuie sur un autre bouton et un gaze vert se répand dans le couloir. Les aliens tombent alors les uns après les autres !
+
+
+“Sekip ! Tu es un génie !”
+
+
+“Je sais”
+
+
+Vous sortez enfin de la pièce grâce à un plan sur une tablette obtenu par Sekip, vous vous rendez à la sortie.
+
+
+Vous remontez à bord de votre vaisseau et contactez le centre de contrôle pour les prévenir et leur demander de venir pour récupérer le vaisseau désormais vide de toute vie.
+
+
+Pour une première mission, c’est une belle réussite !
+
+
+FIN 13
+Bravo, vous avez effectué votre mission avec brio. Vous avez protégé vos coéquipiers, obtenu des armes dont vous êtes fan et récupéré un vaisseau qui sera démantelé par une compagnie et vous rapportera une prime généreuse !
+
+
+
+
+
+
+________________
+
+
+ROUTE A.A.C.A.A.B.B -> FINI
+
+
+//changement de fond -> ????????
+
+
+Le message porte verrouillé s’affiche devant vos yeux et vous paniquez. Vous commencez à être surpassé par le nombre, et des renforts armés arrivent !
+
+
+Vous regardez donc autour de vous désespérés et quelque chose saute dans votre cerveau. Vous dégainé alors votre sabre et vous prenez pour une espèce de grosse brute, héros d’un film d’action, avant de vous jeter dans le tas en criant.
+
+
+Une seconde plus tard, un rayon plasmique vous fait exploser !
+
+
+FIN 14
+Je crois que vous avez regardez trop de film d’action… Vous pensiez sérieusement pouvoir devenir comme rambo ?
+
+
+________________
+
+
+ROUTE A.A.C.A.B -> FINI
+
+
+//changement de fond -> boom
+
+
+Avec horreur vous réalisez que vous avez mis trop de temps. Vous n’avez pas le temps de réaliser ce qu’il se passe que vous êtes dispersé en fines particules avec le vaisseau.
+
+
+FIN 15
+Vous avez fait boom. C’était une salle d’armes, vous auriez pu vous douter que ce serait dangereux de laisser un singe et un pilote, un peu crétin par moment, entrer dans la pièce.
+
+
+________________
+
+
+ROUTE A.A.C.B -> FINI
+
+
+//changement de fond -> laser
+
+
+Le message “GAME OVER” s’affiche devant vos yeux et vous palissez. Vous avez comme un mauvais pressentiment cette fois-ci.
+
+
+Un quart de seconde plus tard, des lasers sortant des parois autour de la porte, vous découpent en fines lamelles.
+
+
+Cette porte était piégée, et vous venez de payer les conséquences de votre échec.
+
+
+FIN 16
+Cette mission est un échec sur toute la ligne, mais au moins vous avez bénéficié d’une mort rapide...
+
+
+________________
+
+
+ROUTE A.B -> FINI
+
+
+//changement fond du jeu -> hangar
+
+
+“Tu as vraiment perdu le bleu ! Ah bah bravo ! Et maintenant, que fait-on ?”
+
+
+Comme vous pouvez le voir, Sekip est un grand fan de vous.
+
+
+“Bon essayons de passer par le hangar. En étudiant le vaisseau rapidement tout à l’heure pendant que je tentais une communication, j’ai remarqué que le hangar était assez facile d’accès.”
+
+
+Innoth est véritablement la “tête” du groupe, et encore une fois ça se sentait.
+
+
+“Vu que Spat a échoué, nous n’avons pas vraiment le choix. Va pour le hangar.”
+
+
+C’est ainsi que vous décidez de passer par le hangar pour rentrer dans vaisseau.
+
+
+Vous enfilez vos combinaisons pour sortir et rejoignez la porte extérieure du vaisseau inconnu.
+
+
+Vous appuyez sur un petit bouton noir et une porte donnant sur un sas, s’ouvre. Vous y pénétrez tous en vous serrant un peu et la porte se referme derrière vous pour pressuriser le sas. Une fois la pression régulée, vous enlevez vos casques et sortez du sas.
+
+
+Devant vous se trouve un gigantesque hangar avec de vieux mini-vaisseaux de combat en tout un tas de bric-à-brac.
+
+
+Vous l’explorez avec curiosité quand Loulou se met à crier en sautillant sur place.
+
+
+Tout l’équipage se tourne vers lui et vous réalisez qu’il vous indique l’emplacement d’une porte.
+
+
+“Bon, voici une nouvelle chance d’entrer ! Cette fois-ci, ne te foire pas le bleu !”
+
+
+Face à vous, sur le boîtier tactile, des questions avec réponses au choix… Voici le seul moyen de déverrouiller la porte.
+
+
+COLLECT4
+A.B.A -> Victoire
+A.B.B -> Defaite
+
+
+________________
+
+
+ROUTE A.B.A -> FINI
+
+
+//changement de scene -> labo
+
+
+La porte s’ouvre devant vous, et vous soupirez de soulagement. Cette fois au moins vous avez réussi.
+
+
+Le capitaine passe devant avec Loulou, et vous vous retrouvez en queue de ploton.
+
+
+Vous progressez dans le vaisseau, vous étonnant devant sa rusticité et observant chaque détail de ces couloirs sous la lumière faible des lieux.
+
+
+Plus vous progressez et plus vous avez le sentiment que vous ne sortirez jamais vivant de ces lieux, mais vous vous convainquez que c’est parce que c’est votre première mission.
+
+
+Une porte ouverte attire votre attention à une intersection.
+
+
+“Capitaine ! Il y a une porte ouverte là-bas !” vous exclamez vous.
+
+
+Vos compagnons s’arrêtent alors et le capitaine vient vous rejoindre à l’intersection où vous vous êtes arrêté pour constater les faits.
+
+
+Finalement, il vous fait signe de le suivre avec vos camarades, et c’est ainsi que vous pénétrez dans ce qui ressemble à un vieux laboratoire de scientifique fou.
+
+
+Vous faites le tour des lieux curieux, vous demandant à quoi servent la plupart des objets, fioles et trucs étranges en tout genre que vous voyez.
+
+
+
+
+Soudain un cri dans la salle vous fait sursauter. Sekip était en train d’observer un organisme inconnu dans un bocal géant rempli de fluide, quand soudains l’organisme à ouvert les yeux et prononcé faiblement :
+
+
+“Aidez-moi”
+
+
+Il n’en fallut pas plus pour qu’il comprenne que cette chose difforme était humaine avant. Il avait donc lâché un cri (celui qui vous avait fait sursauter) et avait reculé précipitamment.
+
+
+Dans sa précipitation, vous le voyez bousculer Innoth qui déséquilibré s’entrave dans la chaise à côté d’elle et frappe le bord d’une planche en bois en équilibre avec sa main en tombant.
+
+
+Le bécher sur la planche en bois s'envole, libérant son contenu qui atterrit dans les yeux du capitaine. Ce dernier hurle de douleur et avance à l’aveugle dans la pièce.
+
+
+Il marche alors sur la queue de Loulou qui crie et jette la petite fiole qu’il tenait dans votre direction. Vous sentez la fiole vous percuter et l’instant d’après, vous voyez le monde de beaucoup plus bas.
+
+
+Vous cherchez à parler pour demander ce qu’il s’est passé, mais vous en êtes incapable. Vous essayez donc de bouger, de tourner la tête, de faire des signes, mais vous êtes comme paralysé, complètement incapable de bouger.
+
+
+Le capitaine se débarrasse finalement du liquide qu’il a dans les yeux et commence à engueuler Sekip quand Innoth les interrompt.
+
+
+“Euh… Capitaine ?”
+
+
+“Quoi” s’emporte-t-il un peu plus
+
+
+Elle désigne alors quelque chose plus loin dans la pièce et s’exclame :
+
+
+“Je… Je crois que c’est Spat”
+
+
+Tous les regards se tournèrent alors vers vous et vous les voyez s’approcher de vous, vous surplombant de toute leur hauteur.
+
+
+“Mais qu’est ce que c’est ?”
+
+
+“Une Welwitschia Mirabilis” répond Innoth.
+
+
+Les connaissances de cette fille vous étonneront toujours.
+
+
+“Une quoi ?” demande Sekip
+
+
+“Une Welwitschia Mirabilis ! Une plante des déserts côtiers de Namibie et d'Angola.”
+
+
+“Et on va faire quoi de lui maintenant ?”
+
+
+“Je crois que nous n’avons d’autres choix que de le laisser ici” affirme le Capitaine. “Sauf si l’un de vous sait comment le détransformer…"
+
+
+Ils échangent un regard puis vous jettent un coup d'œil avant de prendre la direction de la sortie. Vous essayez alors de hurler pour les retenir, mais vous êtes toujours aussi silencieux.
+
+
+Innoth est la dernière personne à sortir. Elle vous jette un regard coupable et s’excuse une dernière fois avant de partir :
+
+
+“Désolé Spat”
+
+
+FIN 17
+Savez vous que les Welwitschia Mirabilis peuvent vivre entre 1000 et 2000 ans ? Vous avez devant vous une longue vie de plante qui s’annonce.
+  
+
+
+
+
+
+
+
+________________
+
+
+ROUTE A.B.B -> FINI
+
+
+//changement de fond -> espace
+
+
+Vous avez encore échoué… Alors que vos coéquipiers vous enguirlandent et que Loulou se moque de vous, une secousse sous vos pieds vous déséquilibre. Alors, vous avez un mauvais pressentiment.
+
+
+Vous vous précipitez vers le côté gauche de la pièce pour tenter de rejoindre le sas de pression pour sortir, mais ce que vous craignez se produit avant que vous puissiez l’atteindre.
+
+
+Devant vos yeux ébahis, la grande porte extérieure du hangar s'ouvre. L’instant d’après vous vous sentez aspiré vers l’extérieur.
+
+
+Vous observez bientôt l’espace autour de vous, et vous savez que c’est la fin. Votre première mission vous aura été fatale, et c’est entièrement votre faute.
+
+
+FIN 18
+Savez vous que d'après la NASA, la durée moyenne de vie d’un astronaute dans l’espace, sans combinaison, est d’environ 90s ?
+
+
+________________
+
+
+________________
+
+
+ROUTE B
+
+
+Le silence résonne assez lourdement autour de la carte.
+
+
+“... C’est une blague ?”
+
+
+“Détrompe-toi Sekip, j’ai entendu dire que dans le temps, les gens venaient de toutes les galaxies pour amener leurs chats ici.”
+
+
+Le fait qu’Innoth sache cela ne choque personne, même pas Loulou. Après un moment de réflexion, le capitaine prend la parole.
+
+
+“Preparez-vous, nous allons jeter un oeil.”
+
+
+Après un bref salut, tout le monde court se préparer, vous y compris. Une fois prêt, le groupe se dirige vers l’entrée du parc. Après avoir perdu à la courte-paille, vous êtes désigné pour acheter les tickets d’entrée. En vous voyant immobile, Sekip ouvre la bouche, agacé.
+
+
+“Bah alors le bleu, pas capable de récupérer des billets pour qu’on puisse passer ces maudites portes ?”
+
+
+“Et bien si, mais ça à l’air d’être… Original comme distributeur.”
+
+
+“C’est-à-dire ?”
+
+
+“Donnez-moi 1 minute.”
+
+
+TOUR DE HANOÏ3
+B.A Victoire
+B.B Défaite
+________________
+
+
+ROUTE B.A
+
+
+//changement fond du jeu -> fête foraine
+
+
+Le moment de stress est enfin terminé quand le ticket magnétique arrive enfin dans votre main. Vous souriez à la machine qui vous fait un clin d'œil, puis vous reculez doucement, un peu déboussolé. 
+
+
+Vous passez le ticket devant le lecteur, et soudain, la grande porte rosée qui vous empêchait d'entrer s’ouvre. Vous avancez avec précaution et n’en revenez pas. Ce parc est encore en excellent état !
+
+
+Certes, pas un chat à l’horizon, mais au moins, vous n’êtes pas plongez dans le noir.
+
+
+“Quitte à être là, autant parier un peu.”
+
+
+“Que veux-tu dire Sekip ?”
+
+
+“Je dis, Capitaine, laissons le bleu choisir une attraction.”
+
+
+CHOIX 2
+“La table de cartes avec un robot croupier chat” → Memory
+“Les montagnes russes” → Snake
+“L’espèce de Twister” → Simon 
+
+
+________________
