@@ -20,12 +20,12 @@ public class Memory : MonoBehaviour
 
     // game variables
     private static int ERRORS_MAX = 5;
-    private static int errors = 0;
+    public static int errors = 0;
     private static bool flag = false;
     private static List<Memory> carteTirees = new List<Memory>();
     private static List<CardID> spritesName = new List<CardID>();
     // card variables
-    public Sprite sun, asteroid, banana, satellite, moon, alien_ship_alt, card_back;
+    public Sprite sun, asteroid, banana, satellite, moon, alien_ship_alt, card_back, erreur1, erreur2;
     public SpriteRenderer spriteRenderer;
     private bool isFacingCard = false;
 
@@ -53,10 +53,26 @@ public class Memory : MonoBehaviour
         }
     }
 
-    /// <summary>
-    ///  Appelé sur chaque gameobject avec le script ET boxcollider
-    /// </summary>
-    private void OnMouseDown() //This function is called each time player clicks on GameObject
+    void Update()
+    {
+        if (name.StartsWith("erreur"))
+        {
+            switch (errors)
+            {
+                case 1:
+                    spriteRenderer.sprite = erreur1;
+                    break;
+                case 2:
+                    spriteRenderer.sprite = erreur2;
+                    break;
+            }
+        }
+    }
+
+            /// <summary>
+            ///  Appelé sur chaque gameobject avec le script ET boxcollider
+            /// </summary>
+    void OnMouseDown() //This function is called each time player clicks on GameObject
     {
         if (!isFacingCard && CompareLastTwoCards())
         {
@@ -103,7 +119,7 @@ public class Memory : MonoBehaviour
         }
     }
 
-    private void ChangeSide(CardID cardID)
+    void ChangeSide(CardID cardID)
     {
         switch (cardID)
         {
@@ -159,7 +175,7 @@ public class Memory : MonoBehaviour
         }
     }
 
-    private IEnumerator Reset()
+    IEnumerator Reset()
     {
         yield return new WaitForSeconds(1);
         carteTirees[carteTirees.Count - 2].spriteRenderer.sprite = card_back;
@@ -175,7 +191,7 @@ public class Memory : MonoBehaviour
     /// Retourne vrai si les 2 dernieres cartes sont == ou si il n'y a pas 2 cartes.
     /// </summary>
     /// <returns></returns>
-    private bool CompareLastTwoCards()
+    bool CompareLastTwoCards()
     {
         if (carteTirees.Count >= 2 && carteTirees.Count % 2 == 0)
         {
