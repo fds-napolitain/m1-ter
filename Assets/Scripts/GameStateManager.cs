@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.IO;
 using Assets.Scripts;
-using System.Text.RegularExpressions;
-
 
 public class GameStateManager : MonoBehaviour
 {
@@ -33,7 +32,8 @@ public class GameStateManager : MonoBehaviour
     public static int text_indice = 0;
     public static bool flag = false;
 
-
+    GameObject start_button_v3;
+    GameObject start_button_v4;
 
     // Start is called before the first frame update
     void Start()
@@ -106,6 +106,16 @@ public class GameStateManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }*/
 
+    }
+
+    private void OnMouseDown()
+    {
+
+        if(name == "start_button_v3" || name == "start_button_v4")
+        {
+            LoadGame();
+            Destroy(this.gameObject);
+        }
     }
 
     //Classic scenes loaders
