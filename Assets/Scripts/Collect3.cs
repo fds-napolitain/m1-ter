@@ -3,19 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-/// <summary>
-/// Point d'entrée et tête du snake + logique.
-/// </summary>
-public class SnakeHead : MonoBehaviour
+public class Collect3 : MonoBehaviour
 {
     // [Head, Body1, Body2, ...]
     private static LinkedList<Direction> snakePosition = new LinkedList<Direction>();
-    public Sprite snakehead, snakebody;
     public GameObject pomme;
     protected const float SNAKE_SPEED = 0.5f;
 
     //public List<GameObject> pommes;
-    public static SnakeHead body;
+    public static Collect3 body;
     private double x;
     private double y;
     public static int MAX_X = 8;
@@ -251,7 +247,7 @@ public class SnakeHead : MonoBehaviour
                 );
                 double x = pomme.transform.position.x;
                 double y = pomme.transform.position.y;
-                while ((x > 0 && x < 1 && y > 0.8) || (x > -3.3 && x < -0.9 && y > -0.5 && y < 0.5) || (x > -1.6 && x < 2.9 && y > -3 && y < -1.8))
+                while ((x > -0.5 && x < 0.5 && y > 1.8) || (x < -1.8 && y > -0.5 && y < 0.5) || (x > -0.5 && x < 0.5 && y < -1.8) || (x > -1.6 && y > -0.5 && y < 0.5))
                 {
                     pomme.transform.position = new Vector3(
                         UnityEngine.Random.Range(-3.25f, 3.25f),

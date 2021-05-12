@@ -177,7 +177,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9a90c77dad34c1743a45d80340576d37, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6272c5fb99c49094a8d55cda189bd4e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -268,7 +268,7 @@ SpriteRenderer:
   m_Size: {x: 1.1800001, y: 23.69255}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &279872205
@@ -376,7 +376,7 @@ SpriteRenderer:
   m_Size: {x: 1.1800001, y: 23.69255}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &659309058
@@ -484,7 +484,7 @@ SpriteRenderer:
   m_Size: {x: 1.1800001, y: 23.69255}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1058200538
@@ -713,7 +713,7 @@ SpriteRenderer:
   m_Size: {x: 1.1800001, y: 23.69255}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1154246678
@@ -797,7 +797,7 @@ SpriteRenderer:
   m_Size: {x: 23.62, y: 3.5406935}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1206366435
@@ -940,7 +940,7 @@ SpriteRenderer:
   m_Size: {x: 11.81, y: 3.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1763891005
@@ -1047,14 +1047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introScene: Intro
   gameScene: SampleScene
-  corridorScene: Corridor_AA
-  hangarScene: Hangar_AB
   endingScene: Ending
-  memoryScene: Memory
-  simonScene: Simon
-  hanoiScene: Hanoir
-  snakeScene: Snake
-  quizScene: Quiz
   lastUpdate: 0
 --- !u!4 &1797734074
 Transform:
@@ -1137,7 +1130,7 @@ SpriteRenderer:
   m_Size: {x: 17.72, y: 3.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2085503508
