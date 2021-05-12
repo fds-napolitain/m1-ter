@@ -56,6 +56,7 @@ namespace Assets.Scripts
                         i += 3;
                     }
                     current = current.children[0];
+                    Debug.Log(current.reponse1);
                 }
                 // mini jeu: MINIJEU
                 else if (i < tmp.Count - 1 && (
@@ -86,6 +87,7 @@ namespace Assets.Scripts
                         if (path.StartsWith("A"))
                         {
                             current = current.children[0];
+                            
                         }
                         else if (path.StartsWith("B"))
                         {
@@ -131,7 +133,6 @@ namespace Assets.Scripts
                 // texte classique: PROCHAINE PHRASE
                 else if (!tmp[i].Contains("ROUTE") && !tmp[i].StartsWith("//"))
                 {
-                    Debug.LogError("narmol" + current.phrase);
                     current.AddChild(new TreeNode(tmp[i]));
                     current = current.children[0];
                 }
