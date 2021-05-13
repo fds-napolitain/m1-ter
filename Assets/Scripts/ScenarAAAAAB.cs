@@ -19,7 +19,7 @@ public class ScenarAAAAAB : MonoBehaviour
     {
         scenario.Add("Une seule mauvaise réponse et le piège vient de se refermer sur vous. Des pas se font entendre dans le couloir et vous savez que vous êtes perdu. Vous décidez alors que vous préférez choisir votre mort.");
         scenario.Add("Vous frappez sur une des barres du mur jusqu’à ce qu’elle se casse, en espérant en faire une arme pour vous défendre. ");
-        scenario.Add("Mais la chance n’est pas avec vous aujourd’hui, et ce que vous aviez pris pour une barre en métal était en fait une conduite de gaz hautement inflammable. Quand elle se casse, une étincelle en découle et vous êtes pulvérisé par l’explosion.");
+        scenario.Add("Mais la chance n’est pas avec vous aujourd’hui, et ce que vous aviez pris pour une barre en métal était en fait une conduite de gaz hautement inflammable. Quand elle se casse, une étincelle se produit et vous êtes pulvérisé par l’explosion.");
         scenarioText.text = scenario[0];
         indice++;
     }
