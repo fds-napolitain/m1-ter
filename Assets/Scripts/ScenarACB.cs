@@ -17,7 +17,9 @@ public class ScenarACB : MonoBehaviour
 
     void Start()
     {
-
+        scenario.Add("Le message “GAME OVER” s’affiche devant vos yeux et vous palissez. Vous avez comme un mauvais pressentiment cette fois-ci.");
+        scenario.Add("Un quart de seconde plus tard, des lasers sortant des parois autour de la porte, vous découpent en fines lamelles.");
+        scenario.Add("Cette porte était piégée, et vous venez de payer les conséquences de votre échec.");
         scenarioText.text = scenario[0];
         indice++;
     }

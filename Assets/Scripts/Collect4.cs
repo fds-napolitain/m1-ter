@@ -235,7 +235,7 @@ public class Collect4 : MonoBehaviour
             {
                 Debug.Log("Snake se prend un mur !");
                 Debug.Log("Défaite");
-                SceneManager.LoadScene("Hangar_AB");
+                SceneManager.LoadScene("EspaceBB");
             }
             else
             {
@@ -243,7 +243,7 @@ public class Collect4 : MonoBehaviour
                 if (nbPommes == maxPommes)
                 {
                     Debug.Log("Victoire");
-                    SceneManager.LoadScene("Corridor_AA");
+                    SceneManager.LoadScene("LaboBA");
                 }
                 pomme.transform.position = new Vector3(
                     UnityEngine.Random.Range(-3.25f, 3.25f),

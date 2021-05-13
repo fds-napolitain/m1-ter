@@ -17,7 +17,7 @@ public class ScenarACAB : MonoBehaviour
 
     void Start()
     {
-
+        scenario.Add("Avec horreur vous réalisez que vous avez mis trop de temps. Vous n’avez pas le temps de comprendre ce qu’il se passe que vous êtes dispersé en fines particules avec le vaisseau.");
         scenarioText.text = scenario[0];
         indice++;
     }

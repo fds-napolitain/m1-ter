@@ -33,6 +33,60 @@ EditorBuildSettings:
     path: Assets/Scenes/Collect.unity
     guid: 43abb6cf81d33554d90f50f86d629f94
   - enabled: 1
+    path: Assets/Scenes/ArchiveAAAAAA.unity
+    guid: 4c4c40fe6995727408b190f198ffe9a7
+  - enabled: 1
+    path: Assets/Scenes/ArmurerieACA.unity
+    guid: 202b9c0140246c24c8577924128eb740
+  - enabled: 1
+    path: Assets/Scenes/BombeACAA.unity
+    guid: 89fd4edca2a01bc419a539012d99d290
+  - enabled: 1
+    path: Assets/Scenes/BoomACAB.unity
+    guid: 1975bf37d03082e4b9c4b834b43c5437
+  - enabled: 1
+    path: Assets/Scenes/CouloirAAB.unity
+    guid: e5f0324dc6c87bc4e8117f01f6f08f79
+  - enabled: 1
+    path: Assets/Scenes/CouteauAAAAB.unity
+    guid: a215a4ba6980cdd4599989be84ade78a
+  - enabled: 1
+    path: Assets/Scenes/CuisineAABA.unity
+    guid: b82368825ec33b747a6bcf7f554de1ac
+  - enabled: 1
+    path: Assets/Scenes/EspaceBB.unity
+    guid: 76acc20fa57344347a8b5ceb21375066
+  - enabled: 1
+    path: Assets/Scenes/ExplosionAAAAAB.unity
+    guid: 58d6401cbf8b744458ab20c6857e1bcf
+  - enabled: 1
+    path: Assets/Scenes/LaboBA.unity
+    guid: a7e919997c0e8ce4ba4e405ecd1ff061
+  - enabled: 1
+    path: Assets/Scenes/LaserACB.unity
+    guid: 4816ccc01c093bc44aa25429f579f35c
+  - enabled: 1
+    path: Assets/Scenes/PilotageACAABA.unity
+    guid: 3803b1e1a738bd045a81ba43ab6d629d
+  - enabled: 1
+    path: Assets/Scenes/PouponniereABA.unity
+    guid: 9e6de8013afe46946a3f88ed50ed1a9c
+  - enabled: 1
+    path: Assets/Scenes/RamboACAABB.unity
+    guid: 1358f5d280c2af64fb761565762bf86b
+  - enabled: 1
+    path: Assets/Scenes/Repos_AAA.unity
+    guid: b87c1cb01e172cb498bed02316842167
+  - enabled: 1
+    path: Assets/Scenes/ScratABB.unity
+    guid: fbdbd53ff2f2d8d4d9aa8e61815eb5ca
+  - enabled: 1
+    path: Assets/Scenes/SortieAAAAA.unity
+    guid: c05aceb49618f424381f4033deff65a1
+  - enabled: 1
+    path: Assets/Scenes/SuchiAABB.unity
+    guid: 5a28cbf91fd91cf4bbabdae6568eebe5
+  - enabled: 1
     path: Assets/Scenes/Collect2.unity
     guid: 81c7dd51bf56fca4198daa54d4daa2f5
   - enabled: 1

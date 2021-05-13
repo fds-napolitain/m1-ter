@@ -17,7 +17,10 @@ public class ScenarBB : MonoBehaviour
 
     void Start()
     {
-
+        scenario.Add("Vous avez encore échoué… Alors que vos coéquipiers vous enguirlandent et que Loulou se moque de vous, une secousse sous vos pieds vous déséquilibre. Alors, vous avez un mauvais pressentiment.");
+        scenario.Add("Vous vous précipitez vers le côté gauche de la pièce pour tenter de rejoindre le sas de pression pour sortir, mais ce que vous craignez se produit avant que vous puissiez l’atteindre.");
+        scenario.Add("Devant vos yeux ébahis, la grande porte extérieure du hangar s'ouvre. L’instant d’après vous vous sentez aspiré vers l’extérieur.");
+        scenario.Add("Vous observez bientôt l’espace autour de vous, et vous savez que c’est la fin. Votre première mission vous aura été fatale, et c’est entièrement votre faute.");
         scenarioText.text = scenario[0];
         indice++;
     }
