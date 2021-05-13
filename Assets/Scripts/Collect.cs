@@ -30,6 +30,7 @@ public class Collect : MonoBehaviour
     public static int maxPommes = 7;
     public static int nbPommes;
     public Sprite pomme1, pomme2, pomme3, pomme4, pomme5, pomme6, pomme7;
+    public static bool start;
 
     public enum Direction
     {
@@ -49,8 +50,6 @@ public class Collect : MonoBehaviour
             direction = Direction.RIGHT;
             precDirection = Direction.RIGHT;
             hasChangedDirection = false;
-
-            Move();
         }
     }
 
@@ -126,34 +125,37 @@ public class Collect : MonoBehaviour
 
     private void Update()
     {
-        if (name.StartsWith("apple"))
+        if (start)
         {
-            switch (nbPommes)
+            if (name.StartsWith("apple"))
             {
-                case 1:
-                    spriteRenderer.sprite = pomme1;
-                    break;
-                case 2:
-                    spriteRenderer.sprite = pomme2;
-                    break;
-                case 3:
-                    spriteRenderer.sprite = pomme3;
-                    break;
-                case 4:
-                    spriteRenderer.sprite = pomme4;
-                    break;
-                case 5:
-                    spriteRenderer.sprite = pomme5;
-                    break;
-                case 6:
-                    spriteRenderer.sprite = pomme6;
-                    break;
-                case 7:
-                    spriteRenderer.sprite = pomme7;
-                    break;
+                switch (nbPommes)
+                {
+                    case 1:
+                        spriteRenderer.sprite = pomme1;
+                        break;
+                    case 2:
+                        spriteRenderer.sprite = pomme2;
+                        break;
+                    case 3:
+                        spriteRenderer.sprite = pomme3;
+                        break;
+                    case 4:
+                        spriteRenderer.sprite = pomme4;
+                        break;
+                    case 5:
+                        spriteRenderer.sprite = pomme5;
+                        break;
+                    case 6:
+                        spriteRenderer.sprite = pomme6;
+                        break;
+                    case 7:
+                        spriteRenderer.sprite = pomme7;
+                        break;
+                }
             }
+            Move();
         }
-                    Move();
         if (Input.GetKey(KeyCode.UpArrow))
         {
             if (body.direction != Direction.DOWN)
@@ -161,6 +163,8 @@ public class Collect : MonoBehaviour
                 body.direction = Direction.UP;
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
+                if (!start)
+                    start = true;
             }
         }
         if (Input.GetKey(KeyCode.DownArrow))
@@ -170,6 +174,8 @@ public class Collect : MonoBehaviour
                 body.direction = Direction.DOWN;
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
+                if (!start)
+                    start = true;
             }
         }
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -179,6 +185,8 @@ public class Collect : MonoBehaviour
                 body.direction = Direction.LEFT;
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
+                if (!start)
+                    start = true;
             }
         }
         if (Input.GetKey(KeyCode.RightArrow))
@@ -188,6 +196,8 @@ public class Collect : MonoBehaviour
                 body.direction = Direction.RIGHT;
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
+                if (!start)
+                    start = true;
             }
         }
     }
@@ -216,6 +226,8 @@ public class Collect : MonoBehaviour
                     body.direction = Direction.RIGHT;
                 break;
         }
+        if (!start)
+            start = true;
         body.hasChangedDirection = true;
         Debug.Log("change direction");
 

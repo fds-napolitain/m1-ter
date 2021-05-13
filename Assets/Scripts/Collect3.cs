@@ -24,9 +24,10 @@ public class Collect3 : MonoBehaviour
     GameObject boutton_down;
     GameObject boutton_right;
     GameObject boutton_left;
-    public static int maxPommes = 10;
+    public static int maxPommes = 7;
     public static int nbPommes;
-    public Sprite pomme1, pomme2, pomme3, pomme4, pomme5, pomme6, pomme7, pomme8, pomme9, pomme10;
+    public Sprite pomme1, pomme2, pomme3, pomme4, pomme5, pomme6, pomme7;
+    public static bool start;
 
     public enum Direction
     {
@@ -46,8 +47,6 @@ public class Collect3 : MonoBehaviour
             direction = Direction.RIGHT;
             precDirection = Direction.RIGHT;
             hasChangedDirection = false;
-
-            Move();
         }
     }
 
@@ -123,43 +122,37 @@ public class Collect3 : MonoBehaviour
 
     private void Update()
     {
-        if (name.StartsWith("apple"))
+        if (start)
         {
-            switch (nbPommes)
+            if (name.StartsWith("apple"))
             {
-                case 1:
-                    spriteRenderer.sprite = pomme1;
-                    break;
-                case 2:
-                    spriteRenderer.sprite = pomme2;
-                    break;
-                case 3:
-                    spriteRenderer.sprite = pomme3;
-                    break;
-                case 4:
-                    spriteRenderer.sprite = pomme4;
-                    break;
-                case 5:
-                    spriteRenderer.sprite = pomme5;
-                    break;
-                case 6:
-                    spriteRenderer.sprite = pomme6;
-                    break;
-                case 7:
-                    spriteRenderer.sprite = pomme7;
-                    break;
-                case 8:
-                    spriteRenderer.sprite = pomme8;
-                    break;
-                case 9:
-                    spriteRenderer.sprite = pomme9;
-                    break;
-                case 10:
-                    spriteRenderer.sprite = pomme10;
-                    break;
+                switch (nbPommes)
+                {
+                    case 1:
+                        spriteRenderer.sprite = pomme1;
+                        break;
+                    case 2:
+                        spriteRenderer.sprite = pomme2;
+                        break;
+                    case 3:
+                        spriteRenderer.sprite = pomme3;
+                        break;
+                    case 4:
+                        spriteRenderer.sprite = pomme4;
+                        break;
+                    case 5:
+                        spriteRenderer.sprite = pomme5;
+                        break;
+                    case 6:
+                        spriteRenderer.sprite = pomme6;
+                        break;
+                    case 7:
+                        spriteRenderer.sprite = pomme7;
+                        break;
+                }
             }
+            Move();
         }
-        Move();
         if (Input.GetKey(KeyCode.UpArrow))
         {
             if (body.direction != Direction.DOWN)
@@ -167,6 +160,8 @@ public class Collect3 : MonoBehaviour
                 body.direction = Direction.UP;
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
+                if (!start)
+                    start = true;
             }
         }
         if (Input.GetKey(KeyCode.DownArrow))
@@ -176,6 +171,8 @@ public class Collect3 : MonoBehaviour
                 body.direction = Direction.DOWN;
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
+                if (!start)
+                    start = true;
             }
         }
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -185,6 +182,8 @@ public class Collect3 : MonoBehaviour
                 body.direction = Direction.LEFT;
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
+                if (!start)
+                    start = true;
             }
         }
         if (Input.GetKey(KeyCode.RightArrow))
@@ -194,6 +193,8 @@ public class Collect3 : MonoBehaviour
                 body.direction = Direction.RIGHT;
                 body.hasChangedDirection = true;
                 Debug.Log("change direction");
+                if (!start)
+                    start = true;
             }
         }
     }
@@ -222,6 +223,8 @@ public class Collect3 : MonoBehaviour
                     body.direction = Direction.RIGHT;
                 break;
         }
+        if (!start)
+            start = true;
         body.hasChangedDirection = true;
         Debug.Log("change direction");
 
