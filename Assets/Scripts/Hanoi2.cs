@@ -199,7 +199,7 @@ public class Hanoi2 : MonoBehaviour
             pointeurFil = null;
             if (tours[2].Count == 4) // victoire
             {
-                SceneManager.LoadScene("Corridor_AA");
+                SceneManager.LoadScene("BombeACAA");
             }
         }
     }
@@ -258,7 +258,7 @@ public class Hanoi2 : MonoBehaviour
                         cp++;
                         if (CP_MAX == cp) // défaite
                         {
-                            SceneManager.LoadScene("Hangar_AB");
+                            SceneManager.LoadScene("BoomACAB");
                         }
                     }
                 }

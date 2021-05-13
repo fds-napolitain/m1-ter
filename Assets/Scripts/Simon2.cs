@@ -90,7 +90,7 @@ public class Simon2 : MonoBehaviour
                 {
                     if (nbreCouleur == nbreCouleurMax) // victoire
                     {
-                        SceneManager.LoadScene("Corridor_AA");
+                        SceneManager.LoadScene("PouponniereABA");
                     }
                     nbreCouleur++;
                     cp = 0;
@@ -100,7 +100,7 @@ public class Simon2 : MonoBehaviour
             else // erreur
             {
                 StartCoroutine(AfficheErreur());
-                SceneManager.LoadScene("Hangar_AB");
+                SceneManager.LoadScene("ScratABB");
             }
         }
     }

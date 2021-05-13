@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class ScenarB : MonoBehaviour
+public class ScenarABB : MonoBehaviour
 {
     public Text scenarioText;
 
@@ -17,7 +17,8 @@ public class ScenarB : MonoBehaviour
 
     void Start()
     {
-
+        scenario.Add("Vous échouez au mini-jeu et un bip sonore retentit.");
+        scenario.Add("L’instant d’après, vous vous faites écraser par la porte qui vous tombe dessus sans prévenir.");
         scenarioText.text = scenario[0];
         indice++;
     }
@@ -32,8 +33,11 @@ public class ScenarB : MonoBehaviour
                 indice++;
             }
             else
-                SceneManager.LoadScene("Collect4");
+                SceneManager.LoadScene("Fin11");
             Debug.Log("Clic.");
         }
     }
 }
+
+
+

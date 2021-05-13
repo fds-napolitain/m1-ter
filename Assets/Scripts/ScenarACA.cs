@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class ScenarB : MonoBehaviour
+public class ScenarACA : MonoBehaviour
 {
     public Text scenarioText;
 
@@ -17,7 +17,7 @@ public class ScenarB : MonoBehaviour
 
     void Start()
     {
-
+        
         scenarioText.text = scenario[0];
         indice++;
     }
@@ -32,8 +32,11 @@ public class ScenarB : MonoBehaviour
                 indice++;
             }
             else
-                SceneManager.LoadScene("Collect4");
+                SceneManager.LoadScene("Hanoi2");
             Debug.Log("Clic.");
         }
     }
 }
+
+
+
