@@ -89,7 +89,6 @@ public class ScenarA : MonoBehaviour
                     }
                     else if (branche == 2)
                     {
-                        Debug.Log("entre");
                         SceneManager.LoadScene("Simon2");
                     }
                     else

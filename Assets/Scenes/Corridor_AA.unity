@@ -262,7 +262,6 @@ GameObject:
   m_Component:
   - component: {fileID: 290201597}
   - component: {fileID: 290201594}
-  - component: {fileID: 290201596}
   - component: {fileID: 290201595}
   m_Layer: 5
   m_Name: Phrase
@@ -312,23 +311,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290201593}
   m_CullTransparentMesh: 0
---- !u!114 &290201596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290201593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbda0fc8172be1a4b8915b9b46e51a4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scenarioText: {fileID: 290201594}
-  questionText: {fileID: 1452962169}
-  reponse1Text: {fileID: 880826803}
-  reponse2Text: {fileID: 1787216730}
-  reponse3Text: {fileID: 1765785261}
 --- !u!224 &290201597
 RectTransform:
   m_ObjectHideFlags: 0

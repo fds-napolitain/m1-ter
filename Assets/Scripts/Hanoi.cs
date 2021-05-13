@@ -165,7 +165,7 @@ public class Hanoi : MonoBehaviour
             pointeurFil = null;
             if (tours[2].Count == 3) // victoire
             {
-                SceneManager.LoadScene("Corridor_AA");
+                SceneManager.LoadScene("SortieAAAAA");
             }
         }
     }
@@ -225,7 +225,7 @@ public class Hanoi : MonoBehaviour
                         
                         if (CP_MAX == cp) // défaite
                         {
-                            SceneManager.LoadScene("Hangar_AB");
+                            SceneManager.LoadScene("CouteauAAAAB");
                         }
                     }
                 }
