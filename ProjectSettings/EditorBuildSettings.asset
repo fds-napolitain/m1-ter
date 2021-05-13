@@ -26,4 +26,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Corridor_AA.unity
     guid: 68a50ac4deb593e418c768313d698470
+  - enabled: 1
+    path: Assets/Scenes/Simon2.unity
+    guid: b77a5da3d69a96641a28b85aed7ecf35
+  - enabled: 1
+    path: Assets/Scenes/Collect.unity
+    guid: 43abb6cf81d33554d90f50f86d629f94
+  - enabled: 1
+    path: Assets/Scenes/Collect2.unity
+    guid: 81c7dd51bf56fca4198daa54d4daa2f5
+  - enabled: 1
+    path: Assets/Scenes/Collect3.unity
+    guid: 462f5f32a5b438a46b4b61c8ecaf4ffb
+  - enabled: 1
+    path: Assets/Scenes/Collect4.unity
+    guid: 2f8a0077ddca71244bfbc7710253e607
+  - enabled: 1
+    path: Assets/Scenes/Hanoi.unity
+    guid: 9aa9ddac821fd9d40a3593c4b6748ded
+  - enabled: 1
+    path: Assets/Scenes/Hanoi2.unity
+    guid: e099d8ef7b0ed284592599016919d3e2
+  - enabled: 1
+    path: Assets/Scenes/Simon3.unity
+    guid: 22f33ec91d1eb8943820dfb1b4c91d2c
   m_configObjects: {}
