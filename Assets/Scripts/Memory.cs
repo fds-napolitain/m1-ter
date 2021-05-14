@@ -25,7 +25,7 @@ public class Memory : MonoBehaviour
     private static List<Memory> carteTirees = new List<Memory>();
     private static List<CardID> spritesName = new List<CardID>();
     // card variables
-    public Sprite sun, asteroid, banana, satellite, moon, alien_ship_alt, card_back, erreur1, erreur2, erreur3, erreur4, erreur5;
+    public Sprite sun, asteroid, banana, satellite, moon, alien_ship_alt, card_back, erreur1, erreur2, erreur3, erreur4, erreur0;
     public SpriteRenderer spriteRenderer;
     private bool isFacingCard = false;
 
@@ -60,19 +60,19 @@ public class Memory : MonoBehaviour
             switch (errors)
             {
                 case 1:
-                    spriteRenderer.sprite = erreur1;
-                    break;
-                case 2:
-                    spriteRenderer.sprite = erreur2;
-                    break;
-                case 3:
-                    spriteRenderer.sprite = erreur3;
-                    break;
-                case 4:
                     spriteRenderer.sprite = erreur4;
                     break;
+                case 2:
+                    spriteRenderer.sprite = erreur3;
+                    break;
+                case 3:
+                    spriteRenderer.sprite = erreur2;
+                    break;
+                case 4:
+                    spriteRenderer.sprite = erreur1;
+                    break;
                 case 5:
-                    spriteRenderer.sprite = erreur5;
+                    spriteRenderer.sprite = erreur0;
                     break;
             }
         }
