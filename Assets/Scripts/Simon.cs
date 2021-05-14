@@ -90,7 +90,7 @@ public class Simon : MonoBehaviour
                 {
                     if (nbreCouleur == 6) // victoire
                     {
-                        SceneManager.LoadScene("ReposAAA");
+                        SceneManager.LoadScene("Repos_AAA");
                     }
                     nbreCouleur++;
                     cp = 0;
