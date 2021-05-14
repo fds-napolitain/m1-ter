@@ -33,6 +33,60 @@ EditorBuildSettings:
     path: Assets/Scenes/Collect.unity
     guid: 43abb6cf81d33554d90f50f86d629f94
   - enabled: 1
+    path: Assets/Scenes/Fin.unity
+    guid: 6edc75723d84e2e4c94fe951bd7b9b0c
+  - enabled: 1
+    path: Assets/Scenes/Fin2.unity
+    guid: 3b18954dd0360bf42942ce16ab882ae1
+  - enabled: 1
+    path: Assets/Scenes/Fin3.unity
+    guid: ea98bb66b79c09c4aa8ae986b745e649
+  - enabled: 1
+    path: Assets/Scenes/Fin4.unity
+    guid: 86f498036b42c6644a82580353964a5e
+  - enabled: 1
+    path: Assets/Scenes/Fin5.unity
+    guid: d1bb29dded2cc0247a72186c4a06f23c
+  - enabled: 1
+    path: Assets/Scenes/Fin6.unity
+    guid: 949388a34d9efbe43a14c12c897a6c60
+  - enabled: 1
+    path: Assets/Scenes/Fin7.unity
+    guid: e77915b7b746da24fab19b3f3103131b
+  - enabled: 1
+    path: Assets/Scenes/Fin8.unity
+    guid: c9fe7ed0b0a8c1d499d9b37c1044b1a9
+  - enabled: 1
+    path: Assets/Scenes/Fin9.unity
+    guid: 8ba276313365ac749abb834d3be70333
+  - enabled: 1
+    path: Assets/Scenes/Fin10.unity
+    guid: cdd59f41ab5df1b4f98d4ec9d5e13309
+  - enabled: 1
+    path: Assets/Scenes/Fin11.unity
+    guid: a52cb9e4df9aab34695d4ee9d8ef80b1
+  - enabled: 1
+    path: Assets/Scenes/Fin12.unity
+    guid: 6782c41960143184f988935d44437cca
+  - enabled: 1
+    path: Assets/Scenes/Fin13.unity
+    guid: 15d99958b7b538a4884ff5d39f8800f7
+  - enabled: 1
+    path: Assets/Scenes/Fin14.unity
+    guid: da642b549b23e0841875e8c8041dcb7c
+  - enabled: 1
+    path: Assets/Scenes/Fin15.unity
+    guid: fdf9ec702c16ccf4db86c802b223fbfd
+  - enabled: 1
+    path: Assets/Scenes/Fin16.unity
+    guid: 1d08c32638c605844b25f134c411ba31
+  - enabled: 1
+    path: Assets/Scenes/Fin17.unity
+    guid: 949d8701313a82746b1263cc5150b11e
+  - enabled: 1
+    path: Assets/Scenes/Fin18.unity
+    guid: 05417fc7457b0e64e8e9dd007699458c
+  - enabled: 1
     path: Assets/Scenes/ArchiveAAAAAA.unity
     guid: 4c4c40fe6995727408b190f198ffe9a7
   - enabled: 1
