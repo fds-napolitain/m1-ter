@@ -20,7 +20,7 @@ public class Scenar : MonoBehaviour
         scenario.Add("Galaxie d’Andromède, 2742, USS Unknown");
         scenario.Add("Une simple mission de routine. Une rapide reconnaissance. C’est, en tout cas, ce qui avait été promis à l’équipage du bâtiment.");
         scenario.Add("Un capitaine à peine nommé, Chiver, et le ouistiti de compagnie offert par la Ligue Galactique, Loulou.");
-        scenario.Add("Loulou ne quitte presque jamais le capitaine.Et quand il n’est pas sur son épaules, il est sur le pont, scrutant la carte du système à la recherche de la moindre anomalie.");
+        scenario.Add("Loulou ne quitte presque jamais le capitaine.Et quand il n’est pas sur son épaule, il est sur le pont, scrutant la carte du système à la recherche de la moindre anomalie.");
         scenario.Add("De temps en temps, Sekip, le pilote, tente quelques blagues, très souvent incomprises.");
         scenario.Add("Et vous, Spat, vous êtes au milieu de tout ça, le petit nouveau tout juste sorti de l'académie, qui effectue sa première mission spatiale.");
         scenario.Add("Le capitaine se dirige vers le centre de commandement, au centre du vaisseau. Autour de la station de commande se trouve la seconde du capitaine, Innoth.");
