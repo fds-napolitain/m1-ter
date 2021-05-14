@@ -15,7 +15,7 @@ public class Fin17 : MonoBehaviour
 
     void Start()
     {
-        fin = "Savez vous que les Welwitschia Mirabilis peuvent vivre entre 1000 et 2000 ans ? Vous avez devant vous une longue vie de plante qui s’annonce.";
+        fin = "Savez-vous que les Welwitschia Mirabilis peuvent vivre entre 1000 et 2000 ans ? Vous avez devant vous une longue vie de plante qui s’annonce.";
         finText.text = fin;
     }
 
