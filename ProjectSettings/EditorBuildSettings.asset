@@ -84,7 +84,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SortieAAAAA.unity
     guid: c05aceb49618f424381f4033deff65a1
   - enabled: 1
-    path: Assets/Scenes/SuchiAABB.unity
+    path: Assets/Scenes/SushiAABB.unity
     guid: 5a28cbf91fd91cf4bbabdae6568eebe5
   - enabled: 1
     path: Assets/Scenes/Collect2.unity
