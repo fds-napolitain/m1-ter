@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95fe0ba3d70db384fb6f1d4c01aae55c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenarioText: {fileID: 0}
+  scenarioText: {fileID: 701380084}
   scenario: []
   indice: 0
 --- !u!114 &2134535412
