@@ -15,7 +15,7 @@ public class Fin14 : MonoBehaviour
 
     void Start()
     {
-        fin = "Je crois que vous avez regardez trop de films d’action… Vous pensiez sérieusement pouvoir devenir comme Rambo ?";
+        fin = "Je crois que vous avez regardez trop de films d’action… Vous pensiez sérieusement pouvoir devenir Rambo ?";
         finText.text = fin;
     }
 

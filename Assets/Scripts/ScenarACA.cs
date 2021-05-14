@@ -26,7 +26,7 @@ public class ScenarACA : MonoBehaviour
         scenario.Add("Le petit singe proteste alors en sautant sur l’épaule de Sekip pour lui tirer les oreilles.");
         scenario.Add("“C’est pas important pour l’instant ! Nous devons surtout désamorcer cette arme !”");
         scenario.Add("Encore une fois, Innoth est la voix de la raison.");
-        scenario.Add("Vous vous approchez donc de l’arme avec elle et découvrez que le boîtier est fermé par trois anneaux de taille croissante posés sur une barre en métal, à côté de deux autres barres vides.");
+        scenario.Add("Vous vous approchez donc de l’arme avec elle et découvrez que le boîtier est fermé par quatre anneaux de taille croissante posés sur une barre en métal, à côté de deux autres barres vides.");
         scenario.Add("Pour ouvrir le boîtier, vous devez déplacer les anneaux sur la barre de droite. Toutefois, le nombre de coups pour effectuer cette action est limité car votre temps est limité !");
         scenarioText.text = scenario[0];
         indice++;

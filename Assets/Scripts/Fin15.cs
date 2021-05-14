@@ -15,7 +15,7 @@ public class Fin15 : MonoBehaviour
 
     void Start()
     {
-        fin = "Vous avez fait boom. C’était une salle d’armes, vous auriez pu vous douter que ce serait dangereux de laisser un singe et un pilote, un peu crétin par moment, entrer dans la pièce.";
+        fin = "Vous avez fait BOUM. C’était une salle d’armes, vous auriez pu vous douter que ce serait dangereux de laisser un singe et un pilote, un peu crétin par moment, entrer dans la pièce.";
         finText.text = fin;
     }
 
