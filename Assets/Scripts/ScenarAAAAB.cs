@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class ScenarAAAA : MonoBehaviour
+public class ScenarAAAAB : MonoBehaviour
 {
     public Text scenarioText;
 
