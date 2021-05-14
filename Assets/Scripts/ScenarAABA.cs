@@ -64,7 +64,7 @@ public class ScenarAABA : MonoBehaviour
         scenario4.Add("Il vous regarde de ses yeux noirs opaques dans lequel vous voyez votre reflet. Et vous savez, vous savez que vous êtes mort… A cause de Sekip !");
         scenario4.Add("Alors, pris d’une rage soudaine, vous bondissez de votre placard et ouvrez le placard de Sekip. Si vous devez mourir, vous voulez que lui aussi !");
         scenario4.Add("L’extraterrestre vous attrape par le col puis attrape Sekip en faisant un sourire tordu très effrayant, puis il vous emmène dans la chambre froide. Il n’a aucun mal à vous retenir malgré votre résistance, et mais vous n’abandonnez pas !");
-        scenario4.Add("Toutefois, c’était un combat perdu d’avance et vous le réalisez quand il vous transperce la poitrine avec un crochet pour vous accrochez dans la chambre froide.");
+        scenario4.Add("Toutefois, c’était un combat perdu d’avance et vous le réalisez quand il vous transperce la poitrine avec un crochet pour vous accrocher dans la chambre froide.");
         scenario4.Add("Alors que vos derniers instants arrivent, vous croisez le regard de Sekip suspendu en face de vous, et vous vous mitraillez du regard jusqu’à votre dernier soupir.");
 
         // AABABA
@@ -86,7 +86,7 @@ public class ScenarAABA : MonoBehaviour
         scenario6.Add("Mais vous entendez rapidement du bruit au bout du couloir. Beaucoup de bruit !");
         scenario6.Add("Ainsi, encore une fois, vous faites marche arrière et vous retrouvez face à la porte bloquée. A droite, l’alien qui a mangé votre ami. Derrière vous, probablement un groupe d’aliens ! Vous êtes piégés.");
         scenario6.Add("Vous tentez donc de vous acharner sur cette porte pour l’ouvrir mais rien à faire.");
-        scenario6.Add("Et puis, vous sentez quelqu’un vous pousser violemment et vous atterrissez directement sur l’alien qui arrive de la droite. Vous comprenez alors que Sekip vient de vous jeter sur l’extraterrestre pour faire dimension pour que lui et le capitaine puisse s’enfuir. ");
+        scenario6.Add("Et puis, vous sentez quelqu’un vous pousser violemment et vous atterrissez directement sur l’alien qui arrive de la droite. Vous comprenez alors que Sekip vient de vous jeter sur l’extraterrestre pour faire dimension pour que lui et le capitaine puissent s’enfuir. ");
         scenario6.Add("Bientôt vous sentez des dents s’enfoncer dans votre épaule et en arracher un bout. Vous hurlez et vous débattez, mais vous n’avez aucune chance ! Vous devenez alors le deuxième casse-croûte vivant de la journée de ce monstre vert.");
         scenario6.Add("Alors que votre dernière heure arrive, vous maudissez le pilote de votre équipage en priant pour qu’ils ne survivent pas à cet enfer !");
 
