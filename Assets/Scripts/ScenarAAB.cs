@@ -27,7 +27,7 @@ public class ScenarAAB : MonoBehaviour
         scenario.Add("“Dans ce cas, je suis passé à côté d’une porte il y a environ deux mètres.”");
         scenario.Add("“Nous n’avons rien à perdre à essayer.”");
         scenario.Add("Vous le suivez donc jusqu’à la fameuse porte. Cette fois-ci, c’est un... on dirait un snake ou quelque chose dans le genre pour l’ouvrir. Décidément les goûts des passagers du vaisseau sont étonnants. ");
-        scenario.Add("Vous vous écartez dans l’espoir de laisser la place à quelqu’un d’autre cette fois-ci, mais les deux autres membres d’équipage vous fixent attendant que vous vous en occupiez.");
+        scenario.Add("Vous vous écartez dans l’espoir de laisser la place à quelqu’un d’autre cette fois-ci, mais les deux autres membres d’équipage vous fixent attendant que vous vous en occupiez. ");
         scenario.Add("Vous réalisez alors qu’on vous laisse vous en chargé au cas où il s’agirait d’un piège. Mais vous n’avez pas le choix alors vous faîtes ce qu’on vous demande.");
         scenarioText.text = scenario[0];
         indice++;
@@ -48,4 +48,3 @@ public class ScenarAAB : MonoBehaviour
         }
     }
 }
-

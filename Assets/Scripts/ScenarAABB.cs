@@ -22,7 +22,7 @@ public class ScenarAABB : MonoBehaviour
         scenario.Add("Le ton monte alors que Sekip continue à critiquer votre erreur. Cette fois toutefois, vous ne voyez pas le message “porte bloquée” s’afficher sur le boîtier. Au moins vous pouvez réessayer de l’ouvrir.");
         scenario.Add("Vous faites remarquer cette information au capitaine, et Sekip s’exclame alors :");
         scenario.Add("“Pousse toi ! C’est à moi d’essayer cette fois !”");
-        scenario.Add("Le pilote s’apprête à recommencer le quiz quand la porte s’ouvre sur un alien gigantesque, vert avec des yeux de mouche, des antennes et quatre bras recouverts de gouttelettes de sang.");
+        scenario.Add("Le pilote s’apprête à recommencer le jeu quand la porte s’ouvre sur un alien gigantesque, vert avec des yeux de mouche, des antennes et quatre bras recouverts de gouttelettes de sang.");
         scenario.Add("Il vous observe tour à tour l’un après l’autre, puis avec trois de ces bras, il vous embroche et vous traîne dans la pièce derrière lui. Quelques minutes plus tard, vous finissez en sushis que l’équipage se fait une joie de déguster.");
         scenarioText.text = scenario[0];
         indice++;
