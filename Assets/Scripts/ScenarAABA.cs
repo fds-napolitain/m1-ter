@@ -77,7 +77,7 @@ public class ScenarAABA : MonoBehaviour
         scenario5.Add("Alors que vous courrez, vous entendez les hurlements de douleur de Sekip, puis le silence. La seule chose qui vous vient à l’esprit c’est que maintenant, vous ne verrez jamais vos dix dollars.");
         scenario5.Add("Vous repassez devant la porte bloquée et tombez sur deux autres aliens tenant Loulou en discutant dans une langue inconnue.");
         scenario5.Add("Alors, avant que vous ne puissiez penser à quoi que ce soit, vous sentez qu’on vous pousse violemment sur les deux monstres. Le capitaine vient de vous faire exactement ce que vous avez fait à Sekip.");
-        scenario5.Add("Il part en courant avec Loulou qui en a profiter pour se libérer et vous êtes presque sûr de l’avoir entendu vous chuchoter : “ce n’est pas contre toi…”");
+        scenario5.Add("Il part en courant avec Loulou qui en a profiter pour se libérer et vous êtes presque sûr de l’avoir entendu vous chuchoter : “Ce n’est pas contre toi…”");
         scenario5.Add("Les deux aliens vous regardent avec envie, et moins d’un centième de seconde plus tard vous hurlez en appelant vos parents, priant pour qu’on abrège vos souffrances.");
 
         // AABABB

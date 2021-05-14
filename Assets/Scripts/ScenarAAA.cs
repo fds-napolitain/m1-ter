@@ -37,7 +37,7 @@ public class ScenarAAA : MonoBehaviour
         scenario1.Add("Quand vous rouvrez les yeux vous êtes dans ce qui semble être le garde-manger du vaisseau. Il semblerait qu’Innoth ait suffi pour le rassasier et qu’il vous garde pour plus tard. ");
         scenario1.Add("Le capitaine est à côté de vous inconscient. Vous le secouez donc pour le réveillez.");
         scenario1.Add("“Où sommes-nous ?”");
-        scenario1.Add("“Dans le garde-manger je dirais. Nous devons trouver un moyen de sortir ou nous finirons comme casse-croûte”");
+        scenario1.Add("“Dans le garde-manger je dirais. Nous devons trouver un moyen de sortir ou nous finirons en casse-croûte.”");
         scenario1.Add("Vous cherchez autour de vous la porte et finissait par la trouver. Malheureusement, elle ne s’ouvre pas de l’intérieur. Toutefois, un boitier éléctrique si trouve. Vous l’ouvrez et commencer à comprendre comme il fonctionne avant de réaliser :");
         scenario1.Add("“Mais il s’agit de tours de Hanoï ! Décidément, la conception de ce vaisseau m’étonnera toujours !”");
         scenario1.Add("“Vous pouvez ouvrir la porte ?”");

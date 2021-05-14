@@ -15,7 +15,7 @@ public class Fin18 : MonoBehaviour
 
     void Start()
     {
-        fin = "Savez vous que d'après la NASA, la durée moyenne de vie d’un astronaute dans l’espace, sans combinaison, est d’environ 90s ?";
+        fin = "Savez-vous que d'après la NASA, la durée de vie moyenne d’un astronaute dans l’espace, sans combinaison, est d’environ 90s ?";
         finText.text = fin;
     }
 
