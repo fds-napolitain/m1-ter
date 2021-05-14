@@ -42,7 +42,7 @@ public class GameStateManager : MonoBehaviour
         {
             Debug.Log("Loading GameManager");
             //isFinished = false;
-            DontDestroyOnLoad(this.gameObject);
+            //DontDestroyOnLoad(this.gameObject);
             //projectPath = Application.dataPath;
             currentScene = introScene;
             SceneManager.sceneLoaded += OnSceneLoaded;
