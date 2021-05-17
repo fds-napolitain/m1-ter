@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 11
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,8 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 7c52f510c97a06148a3484ab6ec68674,
-    type: 2}
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -119,8 +118,6 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
-    maxJobWorkers: 0
-    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -205,7 +202,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -288,7 +284,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -398,7 +393,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -527,7 +521,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -609,7 +602,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -689,6 +681,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pomme: {fileID: 0}
+  direction: 0
+  precDirection: 0
+  hasChangedDirection: 0
+  pomme1: {fileID: 21300000, guid: b2b360876ddf54747946fcbfbd7e4ae2, type: 3}
+  pomme2: {fileID: 21300000, guid: ca0ee32eaebc542b7bae66303a54f3a7, type: 3}
+  pomme3: {fileID: 21300000, guid: f431e4ba4f69149739e52720501db3b1, type: 3}
+  pomme4: {fileID: 21300000, guid: 439339afe89224572836dd861e42bae2, type: 3}
+  pomme5: {fileID: 21300000, guid: 695c38023351c4c9c9a738c9ea0c5d91, type: 3}
+  pomme6: {fileID: 21300000, guid: 5c2e0377e91ef49f8b388c11b9ea7637, type: 3}
+  pomme7: {fileID: 21300000, guid: d5aa4d82ae4f348f1b3a75b5b69c4da5, type: 3}
 --- !u!212 &895111364
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -704,7 +707,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -785,6 +787,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pomme: {fileID: 0}
+  direction: 0
+  precDirection: 0
+  hasChangedDirection: 0
+  pomme1: {fileID: 0}
+  pomme2: {fileID: 0}
+  pomme3: {fileID: 0}
+  pomme4: {fileID: 0}
+  pomme5: {fileID: 0}
+  pomme6: {fileID: 0}
+  pomme7: {fileID: 0}
 --- !u!61 &953767101
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -826,7 +839,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -957,7 +969,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1038,6 +1049,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pomme: {fileID: 0}
+  direction: 0
+  precDirection: 0
+  hasChangedDirection: 0
+  pomme1: {fileID: 0}
+  pomme2: {fileID: 0}
+  pomme3: {fileID: 0}
+  pomme4: {fileID: 0}
+  pomme5: {fileID: 0}
+  pomme6: {fileID: 0}
+  pomme7: {fileID: 0}
 --- !u!61 &1153904288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1079,7 +1101,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1161,6 +1182,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pomme: {fileID: 0}
+  direction: 0
+  precDirection: 0
+  hasChangedDirection: 0
+  pomme1: {fileID: 0}
+  pomme2: {fileID: 0}
+  pomme3: {fileID: 0}
+  pomme4: {fileID: 0}
+  pomme5: {fileID: 0}
+  pomme6: {fileID: 0}
+  pomme7: {fileID: 0}
 --- !u!61 &1197071216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1202,7 +1234,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1333,7 +1364,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1464,7 +1494,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1567,7 +1596,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1677,7 +1705,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1863,7 +1890,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1994,7 +2020,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2076,7 +2101,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2157,6 +2181,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pomme: {fileID: 0}
+  direction: 0
+  precDirection: 0
+  hasChangedDirection: 0
+  pomme1: {fileID: 0}
+  pomme2: {fileID: 0}
+  pomme3: {fileID: 0}
+  pomme4: {fileID: 0}
+  pomme5: {fileID: 0}
+  pomme6: {fileID: 0}
+  pomme7: {fileID: 0}
 --- !u!61 &1911628847
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2198,7 +2233,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2377,7 +2411,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2439,3 +2472,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c08ce05594a434986dc900a1c08363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pomme: {fileID: 359489442}
+  direction: 0
+  precDirection: 0
+  hasChangedDirection: 0
+  pomme1: {fileID: 0}
+  pomme2: {fileID: 0}
+  pomme3: {fileID: 0}
+  pomme4: {fileID: 0}
+  pomme5: {fileID: 0}
+  pomme6: {fileID: 0}
+  pomme7: {fileID: 0}
