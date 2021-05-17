@@ -45,7 +45,7 @@ public class Scenar : MonoBehaviour
         scenario.Add("“Tu peux toujours rêver, le bleu. C’est pas parce qu’il y a en effet quelque chose, que je n’avais pas raison !”");
         scenario.Add("Vu le caractère de Sekip, vous avez peu de chance de récupérer les dix dollars, qu’il vous doit pour avoir gagné ce pari, mais au moins, vous avez essayé.");
         scenario.Add("“Capitaine, nous n’arrivons pas à rentrer en contact avec le vaisseau, il ouvre son port d'amarrage. Que faisons-nous ?”");
-        scenario.Add("“Il semblerait qu’on nous invite… Ce serait malpoli de décliner! Allons-y!”");
+        scenario.Add("“Il semblerait qu’on nous invite… Ce serait malpoli de décliner ! Allons-y !”");
         scenario.Add("C’est ainsi que l’équipe prend le cap pour le vaisseau inconnu.");
         scenario.Add("Quand ils sont enfin accrochés au vaisseau, ils sortent pour tenter de rentrer dans ledit vaisseau inconnu, et tombent face à une porte close. Vous remarquez alors un petit boîtier permettant d’ouvrir la porte.");
         scenario.Add("“Mais attendez, c’est un memory ?”");
