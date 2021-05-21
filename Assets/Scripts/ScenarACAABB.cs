@@ -26,7 +26,7 @@ public class ScenarACAABB : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
+        if (Input.GetMouseButtonDown(0) || Input.GetTouch(0).phase == TouchPhase.Began)
         {
             if (indice != scenario.Count)
             {
