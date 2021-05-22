@@ -364,13 +364,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 621261073}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d700a09b6599c33479281c901353341e, type: 3}
+  m_Script: {fileID: 11500000, guid: b645391781c4e664cad633d49bb77f64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introScene: Intro
   gameScene: SampleScene
-  endingScene: Ending
-  lastUpdate: 0
 --- !u!1 &859604373
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +415,7 @@ MonoBehaviour:
   gameScene: SampleScene
   endingScene: Ending
   lastUpdate: 0
+  _audioSource: {fileID: 0}
 --- !u!1 &1011286836
 GameObject:
   m_ObjectHideFlags: 0

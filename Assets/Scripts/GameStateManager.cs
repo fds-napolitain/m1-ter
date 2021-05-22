@@ -22,8 +22,9 @@ public class GameStateManager : MonoBehaviour
     public static int text_indice = 0;
     public static bool flag = false;
 
+    public AudioSource _audioSource;
+
     GameObject start_button_v3;
-    GameObject start_button_v4;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +32,7 @@ public class GameStateManager : MonoBehaviour
         if (!flag)
         {
             Debug.Log("Loading GameManager");
-            //isFinished = false;
-            //DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(this.gameObject);
             //projectPath = Application.dataPath;
             currentScene = introScene;
             SceneManager.sceneLoaded += OnSceneLoaded;
@@ -49,37 +49,13 @@ public class GameStateManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("escape"))
+        if (Input.GetKey("escape")) // sur mobile on quitte tout simplement l'appli
         {
             Application.Quit();
         }
-
-        //Modification 08/03
-
-        /*
-            // Scene change on click (space/touch)
-        // https://docs.unity3d.com/ScriptReference/Input.GetKey.html
-        if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0)
-        {
-            // https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html
-            // https://gamedevbeginner.com/how-to-load-a-new-scene-in-unity-with-a-loading-screen/
-            // ici on incrémente betement pour tester les jeux, a changer une fois l'arbre fait
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }*/
-
     }
 
-    /// <summary>
-    /// Normalement OnMouseDown détecte également Touch
-    /// </summary>
-    private void OnMouseDown()
-    {
-        if (name == "start_button_v3" || name == "start_button_v4")
-        {
-            SceneManager.LoadScene(gameScene);
-            Destroy(this.gameObject);
-        }
-    }
+
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
