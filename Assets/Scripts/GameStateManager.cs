@@ -5,7 +5,6 @@ using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using Assets.Scripts;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -19,7 +18,6 @@ public class GameStateManager : MonoBehaviour
     private string currentScene;
 
     public float lastUpdate;
-    public Assets.Scripts.Tree scenario;
 
     public static int text_indice = 0;
     public static bool flag = false;
