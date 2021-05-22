@@ -8,42 +8,27 @@ using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
-
-    //public bool isFinished;
-
     public string introScene;
     public string gameScene;
-    public string endingScene;
-
     private string currentScene;
-
-    public float lastUpdate;
-
-    public static int text_indice = 0;
-    public static bool flag = false;
-
-    public AudioSource _audioSource;
-
+    public AudioSource audioSource;
     GameObject start_button_v3;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (!flag)
-        {
-            Debug.Log("Loading GameManager");
-            DontDestroyOnLoad(this.gameObject);
-            //projectPath = Application.dataPath;
-            currentScene = introScene;
-            SceneManager.sceneLoaded += OnSceneLoaded;
+        Debug.Log("Loading GameManager");
+        DontDestroyOnLoad(this.gameObject);
+        //projectPath = Application.dataPath;
+        currentScene = introScene;
+        SceneManager.sceneLoaded += OnSceneLoaded;
 
-            /*// scenario load
-            scenario = new Assets.Scripts.Tree();
-            TreeNode tree = scenario.node;
-            tree.Print();*/
+        /*// scenario load
+        scenario = new Assets.Scripts.Tree();
+        TreeNode tree = scenario.node;
+        tree.Print();*/
 
-            flag = true;
-        }
+        PlayMusic();
     }
 
     // Update is called once per frame
@@ -55,11 +40,24 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-
-
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
 
         currentScene = scene.name;
+    }
+
+    public void PlayMusic()
+    {
+        if (audioSource.isPlaying)
+        {
+            return;
+        }
+
+        audioSource.Play();
+    }
+
+    public void StopMusic()
+    {
+        audioSource.Stop();
     }
 }
