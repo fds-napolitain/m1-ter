@@ -414,7 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introScene: Intro
   gameScene: SampleScene
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 859604376}
 --- !u!82 &859604376
 AudioSource:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e55f105e1ad06d64ca4b0c741905613b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
