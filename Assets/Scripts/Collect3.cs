@@ -255,7 +255,7 @@ public class Collect3 : MonoBehaviour
                 );
                 double x = pomme.transform.position.x;
                 double y = pomme.transform.position.y;
-                while ((x > -0.5 && x < 0.5 && y > 1.8) || (x < -1.8 && y > -0.5 && y < 0.5) || (x > -0.5 && x < 0.5 && y < -1.8) || (x > -1.6 && y > -0.5 && y < 0.5))
+                while (x > -2.66 && x < 2.63 && y < 0.5 && y > -0.54)
                 {
                     pomme.transform.position = new Vector3(
                         UnityEngine.Random.Range(-3.25f, 3.25f),

@@ -255,7 +255,10 @@ public class Collect4 : MonoBehaviour
                 );
                 double x = pomme.transform.position.x;
                 double y = pomme.transform.position.y;
-                while ((x > -2.6 && x < -1.6 && y > 1.6 &&  y > 2.6) || (x > -2.6 && x < -1.6 && y > -2.6 && y < -1.6) || (x > 1.6 && x < 2.6 && y > 1.6 && y < 2.6) || (x > 1.6 && x < 2.6 && y > -2.6 && y < -1.6))
+                while ((x > -2.75 && x < -1.28 && y < 2.69 &&  y > 1.31) || 
+                (x > 1.26 && x < 2.73 && y < 2.69 && y > 1.31) || 
+                (x > -2.75 && x < -1.28 && y > -2.68 && y < -1.3) || 
+                (x > 1.26 && x < 2.73 && y > -2.68 && y < -1.3))
                 {
                     pomme.transform.position = new Vector3(
                         UnityEngine.Random.Range(-3.25f, 3.25f),
