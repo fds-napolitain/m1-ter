@@ -41,7 +41,7 @@ public class ScenarA : MonoBehaviour
         scenario1.Add("Vous avancez donc dans l'obscurité lorsque Loulou saute par terre et s’élance dans le couloir sans vous attendre. Vous vous mettez alors tous à courir pour le rattraper.");
         scenario1.Add("Vous arrivez à une nouvelle intersection et évidemment, vous l’avez perdu. Vous choisissez donc de vous séparer. Vous et le capitaine irez en face, Innoth à droite et Sekip à gauche.");
         scenario1.Add("Si vous aviez réfléchi un peu plus, vous auriez réalisé que cela ressemblait en tout point au début d’un film d’horreur…");
-        scenario1.Add("Vous progressez en appelant désespérément le nom du petit singe, lorsque que vous entende+6z un long hurlement. C’était la voix de Innoth.");
+        scenario1.Add("Vous progressez en appelant désespérément le nom du petit singe, lorsque que vous entendez un long hurlement. C’était la voix de Innoth.");
         scenario1.Add("Vous faites alors demi-tour en courant et prenez le chemin qu’elle a suivi. Malheureusement, la seule chose que vous trouvez c’est du sang formant une trainée jusqu’à une porte close.");
         scenario1.Add("“Encore un memory !”");
         scenario1.Add("“Euh non, cette fois je crois que c’est un jeu de boutons à retenir et à reproduire dans le bon ordre !”");
